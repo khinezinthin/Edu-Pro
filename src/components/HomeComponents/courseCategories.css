@@ -1,0 +1,26 @@
+.under::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.175rem;
+  bottom: 0;
+  background-color: blue;
+}
+
+.under-left::after {
+  transform: scale(0, 0.1);
+  transform-origin: 0% 100%;
+  transition: transform 0.5s ease;
+}
+
+.under-left:hover::after {
+  transform: scale(1,0.5);
+}
+
+.go-up {
+  transition: transform 0.5s ease;
+}
+
+.go-up:hover {
+  transform: translateY(-20px);
+}
