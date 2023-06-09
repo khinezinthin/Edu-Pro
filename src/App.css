@@ -1,42 +1,138 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+:root {
+  --color-primary: #525fe1;
+  --color-secondary: #f86f03;
+  --color-secondary-alt: #fff6f4;
+  --color-tertiary: #ffa41b;
+  --color-tertiary-2: #7152e9;
+  --color-dark: #231f40;
+  --color-body: #6f6b80;
+  --color-heading: #231f40;
+  --color-white: #ffffff;
+  --color-shape: #eeeeee;
+  --color-shade: #f5f5f5;
+  --color-border: #eeeeee;
+  --color-black: #000000;
+  --color-blackest: #0f0f11;
+  --color-extra01: #666666;
+  --color-extra02: #606770;
+  --color-extra03: #fbfbfd;
+  --color-extra04: #1a1a1a;
+  --color-extra05: #242424;
+  --color-extra06: #dbf1c0;
+  --color-extra07: #c6ece8;
+  --color-extra08: #c3ecce;
+  --color-success: #3eb75e;
+  --color-danger: #ff0003;
+  --color-warning: #ff8f3c;
+  --color-info: #1ba2db;
+  --color-facebook: #3b5997;
+  --color-twitter: #1ba1f2;
+  --color-youtube: #ed4141;
+  --color-linkedin: #0077b5;
+  --color-pinterest: #e60022;
+  --color-instagram: #c231a1;
+  --color-vimeo: #00adef;
+  --color-twitch: #6441a3;
+  --color-discord: #7289da;
+  --border-width: 2px;
+  --radius-small: 5px;
+  --radius: 10px;
+  --radius-big: 16px;
+  --p-light: 300;
+  --p-regular: 400;
+  --p-medium: 500;
+  --p-semi-bold: 600;
+  --p-bold: 700;
+  --p-extra-bold: 800;
+  --p-black: 900;
+  --shadow-primary: 0px 8px 30px rgba(0, 0, 0, 0.04);
+  --shadow-light: 1px 1px 6px rgba(0, 0, 0, 0.25);
+  --shadow-lighter: 4px 4px 20px 20px rgba(0, 0, 0, 0.01);
+  --transition: 0.3s;
+  --transition-2: 0.7s;
+  --transition-transform: transform 0.65s cubic-bezier(0.23, 1, 0.32, 1);
+  --font-primary: "Urbanist", sans-serif;
+  --font-secondary: "Urbanist", sans-serif;
+  --font-awesome: "Font Awesome 5 Pro";
+  --font-size-b1: 18px;
+  --font-size-b2: 16px;
+  --font-size-b3: 14px;
+  --font-size-b4: 12px;
+  --line-height-b1: 1.67;
+  --line-height-b2: 1.63;
+  --line-height-b3: 1.6;
+  --line-height-b4: 1.3;
+  --h1: 44px;
+  --h2: 36px;
+  --h3: 30px;
+  --h4: 24px;
+  --h5: 18px;
+  --h6: 16px;
+  --h1-lineHeight: 1.25;
+  --h2-lineHeight: 1.24;
+  --h3-lineHeight: 1.4;
+  --h4-lineHeight: 1.38;
+  --h5-lineHeight: 1.5;
+  --h6-lineHeight: 1.6;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+:root {
+  --woocommerce: #a46497;
+  --wc-green: #7ad03a;
+  --wc-red: #a00;
+  --wc-orange: #ffba00;
+  --wc-blue: #2ea2cc;
+  --wc-primary: #a46497;
+  --wc-primary-text: white;
+  --wc-secondary: #ebe9eb;
+  --wc-secondary-text: #515151;
+  --wc-highlight: #77a464;
+  --wc-highligh-text: white;
+  --wc-content-bg: #fff;
+  --wc-subtext: #767676;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.animate__animated.animate__fadeInUp {
+  --animate-duration: 2s;
+}
+.animate__animated.animate__slideInUp {
+  --animate-duration: 1.5s;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.hoverCustom:hover .hoverItem {
+  transition: transform 1s ease-in-out;
+  transform: scale(1.1);
+}
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(50%);
   }
-  to {
-    transform: rotate(360deg);
+  /* 80% {
+    transform: translate3d(0, 20%, 0);
+  } */
+  100% {
+    transform: translateY(-50%);
+  }
+}
+.moveUpDownClass {
+  animation: moveUpDown 6s linear infinite alternate;
+}
+@keyframes Fresh {
+  0% {
+    transform: translate3d(0, 20%, 0);
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.FreshAnimationClass {
+  animation: Fresh 1.5s both;
 }
