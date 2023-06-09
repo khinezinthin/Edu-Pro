@@ -1,18 +1,14 @@
-import "./App.css";
-import AboutUs from "./components/HomeComponents/AboutUs";
-import BlogAndNew from "./components/HomeComponents/BlogAndNew";
 
-function App() {
+import React from 'react'
+import Path from './route/Path'
+
+const App = () => {
   return (
-    <div className="h-[3000px]">
-      <section>
-        <AboutUs />
-      </section>
-      <section className="">
-        <BlogAndNew />
-      </section>
+    <div>
+      <Path/>
     </div>
-  );
+  )
+
 }
 
 export default App;
