@@ -1,11 +1,8 @@
-import React from 'react'
-import Learning from '../components/HomeComponents/Learning'
+import React from "react";
 
 const Home = () => {
-  return (
-    <div>
-    </div>
-  )
-}
+  return <div>Home</div>;
+};
 
-export default Home
+
+export default Home;
