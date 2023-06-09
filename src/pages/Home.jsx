@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import Testimonial from "../components/HomeComponents/Testimonial";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div>
+      Home
+      <section>
+        <Testimonial />
+      </section>
+    </div>
+  );
+};
 
-export default Home
+export default Home;
