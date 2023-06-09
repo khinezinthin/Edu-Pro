@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Path from './route/Path'
 
@@ -7,6 +8,7 @@ const App = () => {
       <Path/>
     </div>
   )
+
 }
 
-export default App
+export default App;
