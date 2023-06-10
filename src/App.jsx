@@ -1,5 +1,5 @@
 import React from "react";
-
+import './app.css'
 import Path from "./route/Path";
 import Navbar from "./components/Navbar.jsx";
 import "./App.css";
