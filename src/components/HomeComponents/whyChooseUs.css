@@ -43,12 +43,12 @@
 }
 
 .shape {
-  border: 2px solid rgb(249 115 22 );
+  border: 2px solid rgb(249 115 22);
   animation: one 5s linear infinite;
   border-radius: 28% 72% 42% 58% / 34% 37% 63% 66%;
   animation-duration: 18s;
   height: 85%;
-  width:85%;
+  width: 85%;
   max-width: 530px; /* Set a maximum width for responsiveness */
   max-height: 530px; /* Set a maximum height for responsiveness */
   z-index: -1;
@@ -64,12 +64,12 @@
 }
 
 .shape-two {
-  border: 2px solid rgb(249 115 22 );
+  border: 2px solid rgb(249 115 22);
   animation: two 5s linear infinite;
   border-radius: 44% 56% 69% 31% / 50% 37% 63% 50%;
   animation-duration: 18s;
   height: 85%;
-  width:85%;
+  width: 85%;
   max-width: 530px; /* Set a maximum width for responsiveness */
   max-height: 530px; /* Set a maximum height for responsiveness */
   z-index: -1;

@@ -3,18 +3,17 @@ import './app.css'
 import Path from "./route/Path";
 import Navbar from "./components/Navbar.jsx";
 import "./App.css";
-
+import FreeWorkshop from "./components/AboutUsPagesComponent/FreeWorkshop";
+import WhyChooseUs from "./components/HomeComponents/WhyChooseUs";
 
 const App = () => {
   return (
     <div className=" relative">
-      <Navbar />
-    
+      {/* <Navbar /
 
-
-
-      <Path />
-
+      <Path /> */}
+      <FreeWorkshop />
+      <WhyChooseUs />
     </div>
   );
 };
