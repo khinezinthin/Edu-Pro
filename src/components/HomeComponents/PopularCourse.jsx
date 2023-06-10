@@ -10,7 +10,7 @@ import { IoNewspaperOutline } from "react-icons/io5";
 
 const PopularCourse = () => {
   return (
-    <div className=" m-2">
+    <div className=" mt-14 mb-28">
       <div className=" flex flex-col gap-1 items-center py-10">
         <h2 className=" text-[16px] font-sans text-[#525fe1] font-semibold tracking-widest ">
           POPULAR COURSES
@@ -471,7 +471,7 @@ const PopularCourse = () => {
         </div>
       </div>
 
-      <div className=" flex justify-center my-9">
+      <div className=" flex justify-center mb-3 mt-20">
         <button className=" bg-[#525fe1] hover:bg-[#070c44] px-8 py-4 flex items-center gap-3 rounded-md text-white font-semibold text-xl">
           View All Courses
           <BsArrowRight />

@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 const Testimonial = () => {
   return (
     <div>
-      <div className=" flex justify-center flex-col items-center gap-2 bg-[url(https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/10/home-one-testimonial-2.jpg)] bg-no-repeat bg-cover relative ">
+      <div className=" flex justify-center flex-col items-center gap-2 bg-[url(https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/10/home-one-testimonial-2.jpg)] bg-no-repeat bg-cover relative pb-14 ">
         <div className="  pt-20 flex justify-center items-center flex-col  ">
           <h2 className=" uppercase text-[16px] tracking-wide text-[#525fe1] font-bold">
             Testimonial
