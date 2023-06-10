@@ -5,8 +5,8 @@ import CourseCategories from "../components/HomeComponents/CourseCategories";
 import PopularCourse from "../components/HomeComponents/PopularCourse";
 import NewsLetter from "../components/HomeComponents/NewsLetter";
 import BlogsAndNews from "../components/HomeComponents/BlogAndNew";
+import Skilled from "../components/AboutUsPagesComponent/Skilled";
 const Home = () => {
-
   return (
     <>
       <section className="">
@@ -30,13 +30,11 @@ const Home = () => {
       <section className=" overflow-hidden">
         <BlogsAndNews />
       </section>
+      <section className=" overflow-hidden">
+        <Skilled />
+      </section>
     </>
   );
 };
-
-
-
-};
-
 
 export default Home;

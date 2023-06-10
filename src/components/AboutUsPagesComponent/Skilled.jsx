@@ -25,9 +25,9 @@ const Skilled = () => {
             Introduce Our Life Coaches
           </h1>
         </div>
-        <div className="flex gap-10  flex-wrap lg:gap-7 md:gap-5 lg:gap-y-20 md:gap-y-15  justify-center relative">
+        <div className="flex gap-10  flex-wrap lg:gap-7 md:gap-10 lg:gap-y-20 md:gap-y-15  justify-center relative">
           {/* instructorOne */}
-          <div className="lg:w-1/5 instructorShow flex  justify-center items-center flex-col gap-14">
+          <div className="lg:w-1/5 md:w-1/3 instructorShow flex  justify-center items-center flex-col gap-14">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%]  ">
                 <img src={instuctor1} alt="" className="  " />
@@ -64,7 +64,7 @@ const Skilled = () => {
             </div>
           </div>
           {/*2*/}
-          <div className="lg:w-1/5 md:w-1/4 w-full instructorShow flex  justify-center items-center flex-col gap-14">
+          <div className="lg:w-1/5 md:w-1/3 w-full instructorShow flex  justify-center items-center flex-col gap-14">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%]  ">
                 <img src={instuctor1} alt="" className="  " />
@@ -101,7 +101,7 @@ const Skilled = () => {
             </div>
           </div>
           {/*3*/}
-          <div className="lg:w-1/5 md:w-1/4 w-full instructorShow flex  justify-center items-center flex-col gap-14">
+          <div className="lg:w-1/5 md:w-1/3 w-full instructorShow flex  justify-center items-center flex-col gap-14">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%]  ">
                 <img src={instuctor1} alt="" className="  " />
@@ -138,7 +138,7 @@ const Skilled = () => {
             </div>
           </div>
           {/*4*/}
-          <div className="lg:w-1/5 md:w-1/4 w-full instructorShow flex  justify-center items-center flex-col gap-14">
+          <div className="lg:w-1/5 md:w-1/3 w-full instructorShow flex  justify-center items-center flex-col gap-14">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%]  ">
                 <img src={instuctor1} alt="" className="  " />
@@ -175,7 +175,7 @@ const Skilled = () => {
             </div>
           </div>
           {/*5*/}
-          <div className="lg:w-1/5 md:w-1/4 w-full instructorShow flex  justify-center items-center flex-col gap-14">
+          <div className="lg:w-1/5 md:w-1/3 w-full instructorShow flex  justify-center items-center flex-col gap-14">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%]  ">
                 <img src={instuctor1} alt="" className="  " />
@@ -212,7 +212,7 @@ const Skilled = () => {
             </div>
           </div>
           {/*6*/}
-          <div className="lg:w-1/5 md:w-1/4 w-full instructorShow flex  justify-center items-center flex-col gap-14">
+          <div className="lg:w-1/5 md:w-1/3 w-full instructorShow flex  justify-center items-center flex-col gap-14">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%]  ">
                 <img src={instuctor1} alt="" className="  " />
@@ -249,7 +249,7 @@ const Skilled = () => {
             </div>
           </div>
           {/*7*/}
-          <div className="lg:w-1/5 md:w-1/4 w-full instructorShow flex  justify-center items-center flex-col gap-14">
+          <div className="lg:w-1/5 md:w-1/3 w-full instructorShow flex  justify-center items-center flex-col gap-14">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%] ">
                 <img src={instuctor1} alt="" className="  " />
@@ -286,7 +286,7 @@ const Skilled = () => {
             </div>
           </div>
           {/*8*/}
-          <div className="lg:w-1/5 md:w-1/4 w-full instructorShow flex  justify-center items-center flex-col gap-14">
+          <div className="lg:w-1/5 md:w-1/3 w-full instructorShow flex  justify-center items-center flex-col gap-14">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%]  ">
                 <img src={instuctor1} alt="" className="  " />
@@ -323,7 +323,7 @@ const Skilled = () => {
             </div>
           </div>
         </div>
-        <div className=" hidden lg:block md:block min-[820px]:hidden absolute left-[20px] bottom-[-20px] ">
+        <div className=" hidden lg:block md:block min-[820px]:hidden absolute left-[20px] bottom-[101px] ">
           <div className=" ">
             <img src={blur} alt="" className="moveUpDownClass  rounded-[50%]" />
           </div>
