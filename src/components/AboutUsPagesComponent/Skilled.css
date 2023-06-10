@@ -1,0 +1,31 @@
+.iconHover:hover .icon {
+  color: #ffffff;
+}
+
+.hoverImageContainer:hover .hoverImage {
+  opacity: 0.4;
+}
+.hoverImageContainer:hover .hoverIconAppear {
+  display: block;
+}
+
+.hoverImageContainer:hover .mouseEnter {
+  transform: rotate(90deg);
+}
+
+.transitionCustom {
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@keyframes iconUp {
+  from {
+    transform: translate3d(0, 20%, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.hoverImageContainer:hover .iconUpAnimation {
+  animation: Fresh 0.5s both;
+}

@@ -6,6 +6,7 @@ import PopularCourse from "../components/HomeComponents/PopularCourse";
 import NewsLetter from "../components/HomeComponents/NewsLetter";
 import BlogsAndNews from "../components/HomeComponents/BlogAndNew";
 const Home = () => {
+
   return (
     <>
       <section className="">
@@ -32,5 +33,10 @@ const Home = () => {
     </>
   );
 };
+
+
+
+};
+
 
 export default Home;

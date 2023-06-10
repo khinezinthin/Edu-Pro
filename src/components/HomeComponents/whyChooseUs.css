@@ -1,0 +1,85 @@
+.image {
+  width: 100%;
+  mask-repeat: no-repeat;
+}
+
+.image img {
+  width: 100%;
+}
+
+.one {
+  mask-image: url(data:image/svg+xml;base64,PCEtLT94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/LS0+CiAgICAgICAgICAgICAgPHN2ZyBpZD0ic3ctanMtYmxvYi1zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSI+CiAgICAgICAgICAgICAgICAgICAgPGRlZnM+IAogICAgICAgICAgICAgICAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN3LWdyYWRpZW50IiB4MT0iMCIgeDI9IjEiIHkxPSIxIiB5Mj0iMCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3RvcCBpZD0ic3RvcDEiIHN0b3AtY29sb3I9InJnYmEoMTQuODcsIDE0LjI0LCAxMy45NDIsIDEpIiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3RvcCBpZD0ic3RvcDIiIHN0b3AtY29sb3I9InJnYmEoMjEuNzAxLCAyMS4zMjgsIDIwLjcxMywgMSkiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgICAgICAgICAgICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICAgICAgICAgICAgICAgIDwvZGVmcz4KICAgICAgICAgICAgICAgIDxwYXRoIGZpbGw9InVybCgjc3ctZ3JhZGllbnQpIiBkPSJNMjMuNSwtMzkuNEMzMC42LC0zNi42LDM2LjcsLTMwLjcsNDAuNywtMjMuNkM0NC42LC0xNi41LDQ2LjQsLTguMiw0Ni4zLC0wLjFDNDYuMiw4LjEsNDQuMiwxNi4yLDM5LjksMjIuN0MzNS42LDI5LjIsMjksMzQsMjIsMzYuN0MxNC45LDM5LjQsNy41LDQwLDAuNCwzOS4zQy02LjcsMzguNiwtMTMuNCwzNi43LC0yMC4yLDMzLjlDLTI3LjEsMzEuMSwtMzQuMiwyNy40LC0zOC42LDIxLjdDLTQzLjEsMTUuOSwtNDUsNy45LC00My42LDAuOEMtNDIuMywtNi4zLC0zNy42LC0xMi43LC0zMywtMTguM0MtMjguNCwtMjMuOSwtMjMuOSwtMjguOCwtMTguNSwtMzIuNkMtMTMsLTM2LjMsLTYuNSwtMzksMC45LC00MC41QzguMiwtNDEuOSwxNi40LC00Mi4yLDIzLjUsLTM5LjRaIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MCA1MCkiIHN0cm9rZS13aWR0aD0iMCIgc3R5bGU9InRyYW5zaXRpb246IGFsbCAwLjNzIGVhc2UgMHM7Ij48L3BhdGg+CiAgICAgICAgICAgICAgPC9zdmc+);
+}
+
+.play-btn::before,
+.play-btn::after {
+  content: "";
+  border: 2px solid #fff;
+  position: absolute;
+  border-radius: 50%;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  animation: animate 1.5s linear infinite;
+  opacity: 0;
+  animation-duration: 2s;
+}
+
+.play-btn::after {
+  animation-delay: 1s;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.shape {
+  border: 2px solid rgb(249 115 22 );
+  animation: one 5s linear infinite;
+  border-radius: 28% 72% 42% 58% / 34% 37% 63% 66%;
+  animation-duration: 18s;
+  height: 85%;
+  width:85%;
+  max-width: 530px; /* Set a maximum width for responsiveness */
+  max-height: 530px; /* Set a maximum height for responsiveness */
+  z-index: -1;
+}
+
+@keyframes one {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.shape-two {
+  border: 2px solid rgb(249 115 22 );
+  animation: two 5s linear infinite;
+  border-radius: 44% 56% 69% 31% / 50% 37% 63% 50%;
+  animation-duration: 18s;
+  height: 85%;
+  width:85%;
+  max-width: 530px; /* Set a maximum width for responsiveness */
+  max-height: 530px; /* Set a maximum height for responsiveness */
+  z-index: -1;
+}
+
+@keyframes two {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
