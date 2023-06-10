@@ -1,0 +1,20 @@
+/* bg  */
+
+.learning-div{
+    background-image: url("https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/02/home-one-banner-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.title{
+    font-weight: bolder;
+}
+
+.first-card:hover .first-card-img{
+    transform: scale(1.1);
+}
+
+.card-shadow{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
