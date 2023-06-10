@@ -1,6 +1,9 @@
 import React from "react";
 import { BiRightArrowAlt } from "react-icons/bi";
 import "./courseCategories.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const CourseCategories = () => {
   return (
@@ -14,7 +17,12 @@ const CourseCategories = () => {
       className="flex justify-center items-center"
     >
       <div className=" flex flex-col gap-14 justify-center my-20">
-        <div className="mx-auto flex gap-3 w-[90%] flex-col justify-center">
+        <div
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-duration="1000"
+          className="mx-auto flex gap-3 w-[90%] flex-col justify-center"
+        >
           <h1 className=" text-blue-700 tracking-wider font-medium text-center">
             COURSE CATEGORIES
           </h1>
@@ -22,7 +30,12 @@ const CourseCategories = () => {
             Popular Topics To Learn
           </h1>
         </div>
-        <div className="flex gap-10 lg:gap-7 max-lg:flex-wrap justify-center relative">
+        <div
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-duration="1000"
+          className="flex gap-10 lg:gap-7 max-lg:flex-wrap justify-center relative"
+        >
           <div className=" flex flex-col gap-1 sm:w-[45%] w-[90%] lg:w-[20%] bg-white rounded-md relative under under-left go-up z-10">
             <img
               src="	https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/02/course-26-590x430.webp"
@@ -87,7 +100,12 @@ const CourseCategories = () => {
             <img src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/10/shape-04-01-2.png" />
           </div>
         </div>
-        <div className=" mx-auto">
+        <div
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-duration="1000"
+          className=" mx-auto"
+        >
           <button className=" bg-blue-600 px-7 py-4 rounded gap-2 text-lg text-white font-medium flex items-center hover:bg-blue-950 duration-500">
             Creative Courses
             <span>
