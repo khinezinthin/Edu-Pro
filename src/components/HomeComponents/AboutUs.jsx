@@ -10,8 +10,8 @@ import "animate.css";
 
 const AboutUs = () => {
   return (
-    <section className="lg:h-screen md:h-screen flex h-auto">
-      <div className="    lg:m-auto md:m-auto mt-5 min-[820px]:my-5  min-[820px]:mx-2 flex container justify-center  lg:p-[15px]">
+    <div className="lg:h-screen md:h-screen flex h-auto  lg:scale-[1.1]">
+      <div className="   lg:m-auto md:m-auto mt-5 min-[820px]:my-5  min-[820px]:mx-2 flex  justify-center  lg:p-[15px]">
         <div className="w-full  flex flex-wrap  justify-center items-center max-w-[1200px]  ">
           {/* Left */}
           <div className=" w-full  md:w-1/2   lg:w-1/2  min-[820px]:w-full">
@@ -115,7 +115,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
