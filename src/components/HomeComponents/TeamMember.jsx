@@ -20,7 +20,7 @@ const TeamMember = () => {
             <div className='team-img-card relative duration-300 z-10 max-lg:w-[45%] max-[575px]:w-[95%]' >
                     <img src="	https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/11/instructor-03-01-2.webp" alt="" className=' rounded w-full' />
 
-                    <div className={`bg-[#fff] w-[100%] py-[25px] px-[30px] rounded absolute bottom-[-20px] transition-all duration-500 left-[32px] opacity-0 max-[720px]:w-[90%] max-[575px]:w-[94%]`}>
+                    <div className={`bg-[#fff] w-[100%] py-[25px] px-[30px] rounded absolute bottom-[-20px] transition-all duration-500 left-[32px] opacity-0 max-[720px]:w-[90%] max-[575px]:w-[94%] team-shadow`}>
                         <h1 className=' text-gray-700 font-bold tracking-wider text-xl hover:text-[#525FE1] cursor-pointer'>James Carlson</h1>
                         <p className=' text-gray-500 tracking-wide text-sm mt-1 mb-3'>WordPress Expert</p>
                         <div className=' flex items-center gap-3 text-[#525FE1] '>
@@ -38,7 +38,7 @@ const TeamMember = () => {
             <div className='team-img-card relative duration-300 max-lg:w-[45%] max-[575px]:w-[95%]' >
                 <img src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/11/instructor-03-02-2.webp" alt="" className=' rounded w-full' />
 
-                <div className={`bg-[#fff] w-[100%] py-[25px] px-[30px] rounded absolute bottom-[-20px] transition-all duration-500   left-[32px] opacity-0 max-[720px]:w-[90%] max-[575px]:w-[94%]`}>
+                <div className={`bg-[#fff] w-[100%] py-[25px] px-[30px] rounded absolute bottom-[-20px] transition-all duration-500   left-[32px] opacity-0 max-[720px]:w-[90%] max-[575px]:w-[94%] team-shadow`}>
                     <h1 className=' text-gray-700 font-bold tracking-wider text-xl hover:text-[#525FE1] cursor-pointer'>Nancy Phipps</h1>
                     <p className=' text-gray-500 tracking-wide text-sm mt-1 mb-3'>Digital Marketer</p>
                     <div className=' flex items-center gap-3 text-[#525FE1] '>
@@ -55,7 +55,7 @@ const TeamMember = () => {
             <div className='team-img-card relative duration-300 max-lg:w-[45%] max-[575px]:w-[95%]' >
                 <img src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/11/instructor-03-03-2.webp" alt="" className=' rounded w-full ' />
 
-                <div className={`bg-[#fff] w-[100%] py-[25px] px-[30px] rounded absolute bottom-[-20px] transition-all duration-500   left-[32px] opacity-0 max-[720px]:w-[90%] max-[575px]:w-[94%]`}>
+                <div className={`bg-[#fff] w-[100%] py-[25px] px-[30px] rounded absolute bottom-[-20px] transition-all duration-500   left-[32px] opacity-0 max-[720px]:w-[90%] max-[575px]:w-[94%] team-shadow`}>
                     <h1 className=' text-gray-700 font-bold tracking-wider text-xl hover:text-[#525FE1] cursor-pointer'>Troy Hall</h1>
                     <p className=' text-gray-500 tracking-wide text-sm mt-1 mb-3'>PHP Expert</p>
                     <div className=' flex items-center gap-3 text-[#525FE1] '>
@@ -73,7 +73,7 @@ const TeamMember = () => {
             <div className='team-img-card relative duration-300 max-lg:w-[45%] max-[575px]:w-[95%] box-border' >
                     <img src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/11/instructor-03-06-2.webp" alt="" className=' rounded w-full' />
 
-                    <div className={`bg-[#fff] w-[100%] py-[25px] px-[30px] rounded absolute bottom-[-20px] transition-all duration-500 left-[32px] opacity-0 max-[720px]:w-[90%] max-[575px]:w-[94%]`}>
+                    <div className={`bg-[#fff] w-[100%] py-[25px] px-[30px] rounded absolute bottom-[-20px] transition-all duration-500 left-[32px] opacity-0 max-[720px]:w-[90%] max-[575px]:w-[94%] team-shadow`}>
                         <h1 className=' text-gray-700 font-bold tracking-wider text-xl hover:text-[#525FE1] cursor-pointer'>Isabelle Bruner</h1>
                         <p className=' text-gray-500 tracking-wide text-sm mt-1 mb-3'>UI Designer</p>
                         <div className=' flex items-center gap-3 text-[#525FE1] '>
