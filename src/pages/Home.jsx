@@ -5,6 +5,7 @@ import CourseCategories from "../components/HomeComponents/CourseCategories";
 import PopularCourse from "../components/HomeComponents/PopularCourse";
 import NewsLetter from "../components/HomeComponents/NewsLetter";
 import BlogsAndNews from "../components/HomeComponents/BlogAndNew";
+
 const Home = () => {
 
   return (
