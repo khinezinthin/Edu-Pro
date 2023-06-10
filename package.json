@@ -14,12 +14,16 @@
     "@mantine/carousel": "^6.0.13",
     "@mantine/core": "^6.0.13",
     "@mantine/hooks": "^6.0.13",
+
+    "animate.css": "^4.1.1",
     "aos": "^3.0.0-beta.6",
     "embla-carousel-react": "^7.1.0",
+
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",
-    "react-router-dom": "^6.12.0"
+    "react-router-dom": "^6.12.0",
+    "swiper": "^9.3.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
@@ -31,6 +35,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
     "postcss": "^8.4.24",
+    "sass": "^1.63.3",
     "tailwindcss": "^3.3.2",
     "vite": "^4.3.9"
   }
