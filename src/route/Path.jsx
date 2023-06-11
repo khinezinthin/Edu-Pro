@@ -6,6 +6,7 @@ import ContactUs from "../pages/ContactUs";
 import BackToTop from "../components/BackToTop";
 import Courses from "../pages/Courses";
 import Login from "../pages/Login";
+import Register from "../pages/Register";
 import Navbar from "../components/Navbar.jsx";
 
 const Path = () => {
@@ -18,6 +19,7 @@ const Path = () => {
           <Route path="/contactUs" element={<ContactUs />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/login" element={<Login/>}/>
+          <Route path="/register" element={<Register/>}/>
         </Routes>
         <Footer />
         <BackToTop />
