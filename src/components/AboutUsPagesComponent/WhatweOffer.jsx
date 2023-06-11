@@ -5,8 +5,8 @@ AOS.init();
 
 const WhatweOffer = () => {
   return (
-    <div className="" data-aos="fade-up">
-      <div className=" flex flex-col justify-center items-center pt-10 relative ">
+    <div className="my-20" data-aos="fade-up">
+      <div className=" flex flex-col justify-center items-center relative ">
         <h2 className=" uppercase text-[16px] text-[#525fe1] font-bold">
           what we offer
         </h2>
