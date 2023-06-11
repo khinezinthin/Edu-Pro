@@ -44,6 +44,7 @@ const Home = () => {
       </section>
 
       <section className=" overflow-hidden">
+      </section>
 
     </>
   );

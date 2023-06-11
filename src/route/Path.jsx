@@ -2,7 +2,8 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "../components/Footer";
 import Home from "../pages/Home";
-import BackToTop from '../components/BackToTop'
+import BackToTop from "../components/BackToTop";
+import Courses from "../pages/Courses";
 
 const Path = () => {
   return (
@@ -10,9 +11,10 @@ const Path = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/courses" element={<Courses />} />
         </Routes>
-        <Footer/>
-        <BackToTop/>
+        <Footer />
+        <BackToTop />
       </BrowserRouter>
     </div>
   );
