@@ -5,6 +5,7 @@ import Home from "../pages/Home";
 import ContactUs from "../pages/ContactUs";
 import BackToTop from "../components/BackToTop";
 import Courses from "../pages/Courses";
+import Login from "../pages/Login";
 import Navbar from "../components/Navbar.jsx";
 
 const Path = () => {
@@ -16,6 +17,7 @@ const Path = () => {
           <Route path="/" element={<Home />} />
           <Route path="/contactUs" element={<ContactUs />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/login" element={<Login/>}/>
         </Routes>
         <Footer />
         <BackToTop />
