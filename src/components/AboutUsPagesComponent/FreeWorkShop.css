@@ -1,0 +1,12 @@
+.backgroundOfFreeWorkshop {
+  background-image: url("https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/10/video-home-3-bg-2.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.iconHoverParent:hover .iconHoverChild {
+  color: white;
+}
+.fsh {
+  font-size: 44px;
+}

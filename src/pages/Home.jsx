@@ -5,21 +5,19 @@ import CourseCategories from "../components/HomeComponents/CourseCategories";
 import PopularCourse from "../components/HomeComponents/PopularCourse";
 import NewsLetter from "../components/HomeComponents/NewsLetter";
 import BlogsAndNews from "../components/HomeComponents/BlogAndNew";
-import Testimonial from "../components/HomeComponents/Testimonial";
-import TeamMember from "../components/HomeComponents/TeamMember";
-import WhyChooseUs from "../components/HomeComponents/WhyChooseUs";
 
 const Home = () => {
-
   return (
     <>
       <section className="">
         <Learning />
       </section>
 
+
       <section className=" overflow-hidden">
         <AboutUs />
       </section>
+
 
       <section className=" overflow-hidden">
         <CourseCategories />
@@ -46,16 +44,11 @@ const Home = () => {
       </section>
 
       <section className=" overflow-hidden">
-        <BlogsAndNews />
       </section>
 
     </>
   );
 };
-
-
-
-
 
 
 export default Home;
