@@ -5,6 +5,8 @@ import { BsClockHistory } from "react-icons/bs";
 import { TbArrowBigRightLinesFilled } from "react-icons/tb";
 import { BiCommentDetail } from "react-icons/bi";
 import BlogImg1 from "../../assets/course-06-2-1024x551.webp";
+
+import "swiper/css";
 import { Pagination } from "@mantine/core";
 
 
