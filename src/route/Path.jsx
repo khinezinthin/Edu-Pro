@@ -8,7 +8,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Navbar from "../components/Navbar.jsx";
 import Error from "../pages/Error";
-// import AboutUs from "../pages/AboutUs";
+import AboutUs from "../pages/AboutUs";
 
 const Path = () => {
   return (
@@ -17,7 +17,7 @@ const Path = () => {
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/aboutUs" element={<AboutUs/>}/> */}
+          <Route path="/aboutUs" element={<AboutUs/>}/>
           <Route path="/contactUs" element={<ContactUs />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/login" element={<Login/>}/>
