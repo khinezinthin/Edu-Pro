@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar.jsx";
 import "./App.css";
 import FreeWorkshop from "./components/AboutUsPagesComponent/FreeWorkshop";
 import WhyChooseUs from "./components/HomeComponents/WhyChooseUs";
+import BlogDetails from "./pages/BlogDetails";
 
 const App = () => {
   return (
@@ -12,8 +13,9 @@ const App = () => {
       {/* <Navbar /
 
       <Path /> */}
-      <FreeWorkshop />
-      <WhyChooseUs />
+      {/* <FreeWorkshop />
+      <WhyChooseUs /> */}
+      <BlogDetails/>
     </div>
   );
 };
