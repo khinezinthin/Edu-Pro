@@ -1,0 +1,63 @@
+.circle-shadow{
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}
+
+.circle-shadow2{
+    filter: drop-shadow(rgba(247, 217, 217, 0.74) 0px 5px 30px);
+}
+
+.circle-shadow3{
+    filter: drop-shadow(rgba(0, 0, 0, 0.1) -4px 9px 25px -6px);
+}
+
+.shape{
+    border: 2px solid rgba(247, 134, 53, 0.938);
+    animation: one 5s linear infinite;
+    border-radius:59% 41% 57% 43% / 34% 69% 31% 66%  ;
+    animation-duration: 15s;
+    height: 260px;
+    width: 260px;
+}
+
+@keyframes one {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+  }
+
+
+.donut {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    position: relative;
+    background-color: rgb(241, 176, 130);
+    animation: breathe 3s ease-in-out infinite;
+  }
+  
+.donut::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+
+  @keyframes breathe {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
