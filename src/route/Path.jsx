@@ -13,7 +13,7 @@ const Path = () => {
           <Route path="/" element={<Home />} />
           <Route path="/courses" element={<Courses />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
         <BackToTop />
       </BrowserRouter>
     </div>
