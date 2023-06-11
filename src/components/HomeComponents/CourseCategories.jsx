@@ -16,7 +16,7 @@ const CourseCategories = () => {
       }}
       className="flex justify-center items-center"
     >
-      <div className=" flex flex-col gap-14 justify-center my-20">
+      <div className=" flex flex-col gap-14 justify-center my-24">
         <div
           data-aos="fade-up"
           data-aos-once="true"

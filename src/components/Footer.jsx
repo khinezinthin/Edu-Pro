@@ -8,10 +8,12 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiPhone } from "react-icons/hi";
 import { MdOutlineEmail } from "react-icons/md";
 import "./Footer.css";
+import BackToTop from "./BackToTop";
 
 const Footer = () => {
   return (
-    <div style={{ backgroundColor: "#231F40" }} className="flex flex-col justify-center">
+    <>
+      <div style={{ backgroundColor: "#231F40" }} className="flex flex-col justify-center">
       <div className="w-[90%] flex justify-center flex-wrap gap-16 my-20 mx-auto">
         <div className="w-[20%] max-xl:w-[40%] max-md:w-[100%] flex flex-col gap-10">
           <img
@@ -101,9 +103,12 @@ const Footer = () => {
         </div>
       </div>
       <div className=" w-[80%] flex justify-center items-center my-10 mx-auto">
-        <p className=" text-gray-100 font-medium text-center">Copyright 2023 EduVibe | Developed By DevsVibe. All Rights Reserved</p>
+        <p className=" text-gray-100 font-medium text-center">Copyright 2023 EduPro | Developed By Team C . All Rights Reserved</p>
       </div>
     </div>
+
+    <BackToTop/>
+    </>
   );
 };
 
