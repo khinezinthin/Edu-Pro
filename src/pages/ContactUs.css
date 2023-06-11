@@ -1,0 +1,21 @@
+.contact-card-shadow{
+    box-shadow: rgba(80, 79, 79, 0.1) 0px 5px 30px;
+}
+
+.img-reverse{
+    transform: scale(-1);
+}
+
+.contact-card:hover .contact-title,
+.contact-card:hover .contact-p{
+    color: white;
+}
+
+.contact-card:hover .contact-icon{
+    background-color: white;
+    color: #f86f03;
+}
+
+.contact-card:hover{
+    transform: translate(0px,-15px);
+}
