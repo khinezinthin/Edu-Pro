@@ -5,12 +5,13 @@ import Home from "../pages/Home";
 import ContactUs from "../pages/ContactUs";
 import BackToTop from "../components/BackToTop";
 import Courses from "../pages/Courses";
-
+import Navbar from "../components/Navbar.jsx";
 
 const Path = () => {
   return (
     <div>
       <BrowserRouter>
+        <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contactUs" element={<ContactUs />} />

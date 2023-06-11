@@ -3,6 +3,9 @@ import Learning from "../components/HomeComponents/Learning";
 import AboutUs from "../components/HomeComponents/AboutUs";
 import CourseCategories from "../components/HomeComponents/CourseCategories";
 import PopularCourse from "../components/HomeComponents/PopularCourse";
+import Testimonial from "../components/HomeComponents/Testimonial";
+import TeamMember from "../components/HomeComponents/TeamMember";
+import WhyChooseUs from "../components/HomeComponents/WhyChooseUs";
 import NewsLetter from "../components/HomeComponents/NewsLetter";
 import BlogsAndNews from "../components/HomeComponents/BlogAndNew";
 
@@ -12,7 +15,6 @@ const Home = () => {
       <section className="">
         <Learning />
       </section>
-
 
       <section className=" overflow-hidden">
         <AboutUs />
@@ -44,6 +46,7 @@ const Home = () => {
       </section>
 
       <section className=" overflow-hidden">
+        <BlogsAndNews/>
       </section>
 
     </>
