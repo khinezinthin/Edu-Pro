@@ -13,9 +13,11 @@ const Home = () => {
         <Learning />
       </section>
 
+
       <section className=" overflow-hidden">
         <AboutUs />
       </section>
+
 
       <section className=" overflow-hidden">
         <CourseCategories />
