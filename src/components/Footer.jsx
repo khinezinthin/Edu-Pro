@@ -101,7 +101,7 @@ const Footer = () => {
         </div>
       </div>
       <div className=" w-[80%] flex justify-center items-center my-10 mx-auto">
-        <p className=" text-gray-100 font-medium text-center">Copyright 2023 EduVibe | Developed By DevsVibe. All Rights Reserved</p>
+        <p className=" text-gray-100 font-medium text-center">Copyright 2023 EduPro | Developed By Team C . All Rights Reserved</p>
       </div>
     </div>
   );
