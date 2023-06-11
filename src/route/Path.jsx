@@ -21,7 +21,7 @@ const Path = () => {
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
         <BackToTop />
       </BrowserRouter>
     </div>
