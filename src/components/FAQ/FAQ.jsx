@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import "./FAQ.css";
 import { Accordion } from "@mantine/core";
 import { AiOutlinePlus } from "react-icons/ai";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
+
 import Banner from "../Banner";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
 
 const FAQ = () => {
   const [activeItem, setActiveItem] = useState(0); // Set the active item index
@@ -97,267 +100,270 @@ const FAQ = () => {
 
   return (
     <>
-    <section>
-      <Navbar/>
-    </section>
 
-    <section>
-      <Banner title1={"Frequently Asked Questions"}/>
-    </section>
+      <section>
+        <Banner title1={"Blog"} title2={"Blog Page"} />
+      </section>
+      <section
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-duration="1000"
+        className=" lg:min-h-[900px] flex flex-col justify-center  md:h-screen ">
+        <div className="   select-none flex justify-center w-full p-6    flex-col items-center ">
+          <div className=" flex justify-center w-full    flex-col items-center lg:gap-14 md:gap-6 gap-14">
+            {/* title */}
+            <div className="   w-full container flex justify-center items-center flex-col lg:gap-14 md:gap-6 gap-4">
+              <div className=" flex flex-wrap gap-5 justify-center flex-col items-center">
+                <p className=" font-semibold text-[--color-primary]">
+                  FAQ QUESTIONS
+                </p>
+                <h1 className="text-center w-full lg:w-[80%] md:w-full lg:text-4xl md:text-3xl text-2xl text-[--color-heading] font-bold tracking-wide">
+                  Get Every General Answers From Here
+                </h1>
+              </div>
+              <div className=" flex flex-wrap gap-4 justify-center">
+                <div className=" relative">
+                  <button
+                    onClick={() => setButtonSection(0)}
+                    className={`FAQ-Navigate-Btn ${
+                      buttonSection == 0 && "FAQ-active"
+                    }  lg:py-3 py-[6px] md:py-[8px] lg:px-12 md:px-10 px-5 rounded fontFAQ ${
+                      buttonSection != 0 && "text-[--color-heading]"
+                    }`}>
+                    Online Education
+                  </button>
+                </div>
+                <div onClick={() => setButtonSection(1)} className=" relative">
+                  <button
+                    className={`${
+                      buttonSection == 1 && "FAQ-active"
+                    } FAQ-Navigate-Btn  lg:py-3 py-[6px] md:py-[8px] lg:px-12 md:px-10 px-5 rounded fontFAQ ${
+                      buttonSection != 1 && "text-[--color-heading]"
+                    }`}>
+                    Payment Method
+                  </button>
+                </div>
+                <div onClick={() => setButtonSection(2)} className=" relative">
+                  <button
+                    className={`${
+                      buttonSection == 2 && "FAQ-active"
+                    } FAQ-Navigate-Btn   lg:py-3 py-[6px] md:py-[8px] lg:px-12 md:px-10 px-5 rounded fontFAQ ${
+                      buttonSection != 2 && "text-[--color-heading]"
+                    }`}>
+                    Pricing Plan
+                  </button>
+                </div>
+              </div>
 
-    <div className=" py-20 select-none flex justify-center w-full px-6 flex-col items-center ">
-      <div className=" flex justify-center w-full    flex-col items-center lg:gap-14 md:gap-6 gap-14">
-        {/* title */}
-        <div className="   w-full container flex justify-center items-center flex-col lg:gap-10 md:gap-6 gap-4">
-          <div className=" flex flex-wrap gap-5 justify-center flex-col items-center">
-            <p className=" font-semibold text-[--color-primary]">
-              FAQ QUESTIONS
-            </p>
-            <h1 className="text-center w-full lg:w-[80%] md:w-full lg:text-4xl md:text-3xl text-2xl text-[--color-heading] font-bold tracking-wide">
-              Get Every General Answers From Here
-            </h1>
-          </div>
-          <div className=" flex flex-wrap gap-4 justify-center">
-            <div className=" relative">
-              <button
-                onClick={() => setButtonSection(0)}
-                className={`FAQ-Navigate-Btn ${
-                  buttonSection == 0 && "FAQ-active"
-                }  lg:py-3 py-[6px] md:py-[8px] lg:px-12 md:px-10 px-5 rounded fontFAQ ${
-                  buttonSection != 0 && "text-[--color-heading]"
-                }`}>
-                Online Education
-              </button>
+  
             </div>
-            <div onClick={() => setButtonSection(1)} className=" relative">
-              <button
-                className={`${
-                  buttonSection == 1 && "FAQ-active"
-                } FAQ-Navigate-Btn  lg:py-3 py-[6px] md:py-[8px] lg:px-12 md:px-10 px-5 rounded fontFAQ ${
-                  buttonSection != 1 && "text-[--color-heading]"
-                }`}>
-                Payment Method
-              </button>
+            {/* Question and answer */}
+            <div
+              className={` ${
+                buttonSection != 0 ? "hidden" : ""
+              } h-96  w-full flex   justify-between flex-wrap items-center container`}>
+              <div
+                className={`lg:w-1/2 md:w-full w-full   flex  justify-center items-center`}>
+                <div className="w-full lg:w-[85%] md:w-full">
+                  <Accordion
+                    defaultValue="Eligible"
+                    chevron={<AiOutlinePlus size="1rem" />}
+                    styles={{
+                      chevron: {
+                        "&[data-rotate]": {
+                          transform: "rotate(45deg)",
+                        },
+                        item: {
+                          "&[data-active]": {},
+                        },
+                      },
+                    }}>
+                    {accordionData.map((item, index) => (
+                      <Accordion.Item key={index} value={item.value}>
+                        <Accordion.Control>
+                          <div className="font-semibold fontFAQ">
+                            {item.heading}
+                          </div>
+                        </Accordion.Control>
+                        <Accordion.Panel>
+                          <p className=" text-[--color-body]">{item.content}</p>
+                        </Accordion.Panel>
+                      </Accordion.Item>
+                    ))}
+                  </Accordion>
+                </div>
+              </div>
+              <div className=" lg:w-1/2 md:w-full w-full  flex justify-center items-center">
+                <div className="w-full lg:w-[85%] md:w-full">
+                  <Accordion
+                    defaultValue="Eligible"
+                    chevron={<AiOutlinePlus size="1rem" />}
+                    styles={{
+                      chevron: {
+                        "&[data-rotate]": {
+                          transform: "rotate(45deg)",
+                        },
+                        item: {
+                          "&[data-active]": {},
+                        },
+                      },
+                    }}>
+                    {accordionData.map((item, index) => (
+                      <Accordion.Item key={index} value={item.value}>
+                        <Accordion.Control>
+                          <div className="font-semibold fontFAQ">
+                            {item.heading}
+                          </div>
+                        </Accordion.Control>
+                        <Accordion.Panel>
+                          <p className=" text-[--color-body]">{item.content}</p>
+                        </Accordion.Panel>
+                      </Accordion.Item>
+                    ))}
+                  </Accordion>
+                </div>
+              </div>
             </div>
-            <div onClick={() => setButtonSection(2)} className=" relative">
-              <button
-                className={`${
-                  buttonSection == 2 && "FAQ-active"
-                } FAQ-Navigate-Btn   lg:py-3 py-[6px] md:py-[8px] lg:px-12 md:px-10 px-5 rounded fontFAQ ${
-                  buttonSection != 2 && "text-[--color-heading]"
-                }`}>
-                Pricing Plan
-              </button>
+            <div
+              className={` ${
+                buttonSection != 1 ? "hidden" : ""
+              }   w-full flex justify-between flex-wrap items-center container`}>
+              <div
+                className={`lg:w-1/2 md:w-full   h-full flex  justify-center items-center`}>
+                <div className="w-full lg:w-[85%] md:w-full">
+                  <Accordion
+                    defaultValue="System"
+                    chevron={<AiOutlinePlus size="1rem" />}
+                    styles={{
+                      chevron: {
+                        "&[data-rotate]": {
+                          transform: "rotate(45deg)",
+                        },
+                        item: {
+                          "&[data-active]": {},
+                        },
+                      },
+                    }}>
+                    {accordionData2.map((item, index) => (
+                      <Accordion.Item key={index} value={item.value}>
+                        <Accordion.Control>
+                          <div className="font-semibold fontFAQ select-none">
+                            {item.heading}
+                          </div>
+                        </Accordion.Control>
+                        <Accordion.Panel>
+                          <p className=" text-[--color-body] select-none">
+                            {item.content}
+                          </p>
+                        </Accordion.Panel>
+                      </Accordion.Item>
+                    ))}
+                  </Accordion>
+                </div>
+              </div>
+              <div className=" lg:w-1/2 md:w-full w-full  flex  justify-center items-center">
+                <div className=" w-full lg:w-[85%] md:w-full">
+                  <Accordion
+                    defaultValue="System"
+                    chevron={<AiOutlinePlus size="1rem" />}
+                    styles={{
+                      chevron: {
+                        "&[data-rotate]": {
+                          transform: "rotate(45deg)",
+                        },
+                        item: {
+                          "&[data-active]": {},
+                        },
+                      },
+                    }}>
+                    {accordionData2.map((item, index) => (
+                      <Accordion.Item key={index} value={item.value}>
+                        <Accordion.Control>
+                          <div className="font-semibold fontFAQ">
+                            {item.heading}
+                          </div>
+                        </Accordion.Control>
+                        <Accordion.Panel>
+                          <p className=" text-[--color-body]">{item.content}</p>
+                        </Accordion.Panel>
+                      </Accordion.Item>
+                    ))}
+                  </Accordion>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        {/* Question and answer */}
-        <div
-          className={` ${
-            buttonSection != 0 ? "hidden" : ""
-          } h-96  w-full flex   justify-between flex-wrap items-center container`}>
-          <div
-            className={`lg:w-1/2 md:w-full w-full   flex  justify-center items-center`}>
-            <div className="w-full lg:w-[85%] md:w-full">
-              <Accordion
-                defaultValue="Eligible"
-                chevron={<AiOutlinePlus size="1rem" />}
-                styles={{
-                  chevron: {
-                    "&[data-rotate]": {
-                      transform: "rotate(45deg)",
-                    },
-                    item: {
-                      "&[data-active]": {},
-                    },
-                  },
-                }}>
-                {accordionData.map((item, index) => (
-                  <Accordion.Item key={index} value={item.value}>
-                    <Accordion.Control>
-                      <div className="font-semibold fontFAQ">
-                        {item.heading}
-                      </div>
-                    </Accordion.Control>
-                    <Accordion.Panel>
-                      <p className=" text-[--color-body]">{item.content}</p>
-                    </Accordion.Panel>
-                  </Accordion.Item>
-                ))}
-              </Accordion>
-            </div>
-          </div>
-          <div className=" lg:w-1/2 md:w-full w-full  flex justify-center items-center">
-            <div className="w-full lg:w-[85%] md:w-full">
-              <Accordion
-                defaultValue="Eligible"
-                chevron={<AiOutlinePlus size="1rem" />}
-                styles={{
-                  chevron: {
-                    "&[data-rotate]": {
-                      transform: "rotate(45deg)",
-                    },
-                    item: {
-                      "&[data-active]": {},
-                    },
-                  },
-                }}>
-                {accordionData.map((item, index) => (
-                  <Accordion.Item key={index} value={item.value}>
-                    <Accordion.Control>
-                      <div className="font-semibold fontFAQ">
-                        {item.heading}
-                      </div>
-                    </Accordion.Control>
-                    <Accordion.Panel>
-                      <p className=" text-[--color-body]">{item.content}</p>
-                    </Accordion.Panel>
-                  </Accordion.Item>
-                ))}
-              </Accordion>
-            </div>
-          </div>
-        </div>
-        <div
-          className={` ${
-            buttonSection != 1 ? "hidden" : ""
-          } h-96  w-full flex justify-between flex-wrap items-center container`}>
-          <div
-            className={`lg:w-1/2 md:w-full   h-full flex  justify-center items-center`}>
-            <div className="w-full lg:w-[85%] md:w-full">
-              <Accordion
-                defaultValue="System"
-                chevron={<AiOutlinePlus size="1rem" />}
-                styles={{
-                  chevron: {
-                    "&[data-rotate]": {
-                      transform: "rotate(45deg)",
-                    },
-                    item: {
-                      "&[data-active]": {},
-                    },
-                  },
-                }}>
-                {accordionData2.map((item, index) => (
-                  <Accordion.Item key={index} value={item.value}>
-                    <Accordion.Control>
-                      <div className="font-semibold fontFAQ select-none">
-                        {item.heading}
-                      </div>
-                    </Accordion.Control>
-                    <Accordion.Panel>
-                      <p className=" text-[--color-body] select-none">
-                        {item.content}
-                      </p>
-                    </Accordion.Panel>
-                  </Accordion.Item>
-                ))}
-              </Accordion>
-            </div>
-          </div>
-          <div className=" lg:w-1/2 md:w-full w-full  flex  justify-center items-center">
-            <div className=" w-full lg:w-[85%] md:w-full">
-              <Accordion
-                defaultValue="System"
-                chevron={<AiOutlinePlus size="1rem" />}
-                styles={{
-                  chevron: {
-                    "&[data-rotate]": {
-                      transform: "rotate(45deg)",
-                    },
-                    item: {
-                      "&[data-active]": {},
-                    },
-                  },
-                }}>
-                {accordionData2.map((item, index) => (
-                  <Accordion.Item key={index} value={item.value}>
-                    <Accordion.Control>
-                      <div className="font-semibold fontFAQ">
-                        {item.heading}
-                      </div>
-                    </Accordion.Control>
-                    <Accordion.Panel>
-                      <p className=" text-[--color-body]">{item.content}</p>
-                    </Accordion.Panel>
-                  </Accordion.Item>
-                ))}
-              </Accordion>
-            </div>
-          </div>
-        </div>
-        <div
-          className={` ${
-            buttonSection != 2 ? "hidden" : ""
-          } h-96  w-full flex justify-between flex-wrap items-center container`}>
-          <div
-            className={`lg:w-1/2 md:w-full w-full   flex  justify-center items-center`}>
-            <div className="w-full lg:w-[85%] md:w-full">
-              <Accordion
-                defaultValue="Kim NamJoon"
-                chevron={<AiOutlinePlus size="1rem" />}
-                styles={{
-                  chevron: {
-                    "&[data-rotate]": {
-                      transform: "rotate(45deg)",
-                    },
-                    item: {
-                      "&[data-active]": {},
-                    },
-                  },
-                }}>
-                {accordionData3.map((item, index) => (
-                  <Accordion.Item key={index} value={item.value}>
-                    <Accordion.Control>
-                      <div className="font-semibold fontFAQ">
-                        {item.heading}
-                      </div>
-                    </Accordion.Control>
-                    <Accordion.Panel>
-                      <p className=" text-[--color-body]">{item.content}</p>
-                    </Accordion.Panel>
-                  </Accordion.Item>
-                ))}
-              </Accordion>
-            </div>
-          </div>
-          <div className=" lg:w-1/2 md:w-full w-full flex  justify-center items-center">
-            <div className=" w-full lg:w-[85%] md:w-full">
-              <Accordion
-                defaultValue="Kim NamJoon"
-                chevron={<AiOutlinePlus size="1rem" />}
-                styles={{
-                  chevron: {
-                    "&[data-rotate]": {
-                      transform: "rotate(45deg)",
-                    },
-                    item: {
-                      "&[data-active]": {},
-                    },
-                  },
-                }}>
-                {accordionData3.map((item, index) => (
-                  <Accordion.Item key={index} value={item.value}>
-                    <Accordion.Control>
-                      <div className="font-semibold fontFAQ">
-                        {item.heading}
-                      </div>
-                    </Accordion.Control>
-                    <Accordion.Panel>
-                      <p className=" text-[--color-body]">{item.content}</p>
-                    </Accordion.Panel>
-                  </Accordion.Item>
-                ))}
-              </Accordion>
+            <div
+              className={` ${
+                buttonSection != 2 ? "hidden" : ""
+              } h-96  w-full flex justify-between flex-wrap items-center container`}>
+              <div
+                className={`lg:w-1/2 md:w-full w-full   flex  justify-center items-center`}>
+                <div className="w-full lg:w-[85%] md:w-full">
+                  <Accordion
+                    defaultValue="Kim NamJoon"
+                    chevron={<AiOutlinePlus size="1rem" />}
+                    styles={{
+                      chevron: {
+                        "&[data-rotate]": {
+                          transform: "rotate(45deg)",
+                        },
+                        item: {
+                          "&[data-active]": {},
+                        },
+                      },
+                    }}>
+                    {accordionData3.map((item, index) => (
+                      <Accordion.Item key={index} value={item.value}>
+                        <Accordion.Control>
+                          <div className="font-semibold fontFAQ">
+                            {item.heading}
+                          </div>
+                        </Accordion.Control>
+                        <Accordion.Panel>
+                          <p className=" text-[--color-body]">{item.content}</p>
+                        </Accordion.Panel>
+                      </Accordion.Item>
+                    ))}
+                  </Accordion>
+                </div>
+              </div>
+              <div className=" lg:w-1/2 md:w-full w-full flex  justify-center items-center">
+                <div className=" w-full lg:w-[85%] md:w-full">
+                  <Accordion
+                    defaultValue="Kim NamJoon"
+                    chevron={<AiOutlinePlus size="1rem" />}
+                    styles={{
+                      chevron: {
+                        "&[data-rotate]": {
+                          transform: "rotate(45deg)",
+                        },
+                        item: {
+                          "&[data-active]": {},
+                        },
+                      },
+                    }}>
+                    {accordionData3.map((item, index) => (
+                      <Accordion.Item key={index} value={item.value}>
+                        <Accordion.Control>
+                          <div className="font-semibold fontFAQ">
+                            {item.heading}
+                          </div>
+                        </Accordion.Control>
+                        <Accordion.Panel>
+                          <p className=" text-[--color-body]">{item.content}</p>
+                        </Accordion.Panel>
+                      </Accordion.Item>
+                    ))}
+                  </Accordion>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <section>
-      <Footer/>
-    </section>
+      </section>
+
+    
     </>
   );
 };
