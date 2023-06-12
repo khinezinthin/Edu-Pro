@@ -2,26 +2,34 @@ import React from "react";
 import "../pages/BlogDetails.css";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
-const Banner = () => {
+const Banner = ({ title1, title2 }) => {
   return (
     <>
       <div className="image flex justify-center relative">
         <div className="w-[90%] my-14 flex flex-col gap-4">
-          <h1 className=" text-4xl max-lg:text-3xl font-bold text-gray-800 leading-[45px]">
-            Social Media Marketing MASTERY( A-Z ) Journey
-          </h1>
+          {title1 ? (
+            <h1 className=" text-4xl max-lg:text-3xl font-bold text-gray-800 leading-[45px]">
+              {title1}
+            </h1>
+          ) : null}
           <div className="flex flex-wrap items-center gap-1">
             <p className=" text-gray-500 font-medium cursor-pointer">Home</p>
-            <p>
-              <MdKeyboardArrowRight className="pt-1 text-lg text-gray-500" />
-            </p>
-            <p className="text-gray-500 font-medium">Branding</p>
-            <p>
-              <MdKeyboardArrowRight className="pt-1 text-lg text-gray-500" />
-            </p>
-            <p className="text-gray-500 font-medium">
-              Social Media Marketing MASTERY( A-Z ) Journey
-            </p>
+            {title2 ? (
+              <p>
+                <MdKeyboardArrowRight className="pt-1 text-lg text-gray-500" />
+              </p>
+            ) : null}
+            {title2 ? (
+              <p className="text-gray-500 font-medium">{title2}</p>
+            ) : null}
+            {title1 ? (
+              <p>
+                <MdKeyboardArrowRight className="pt-1 text-lg text-gray-500" />
+              </p>
+            ) : null}
+            {title1 ? (
+              <p className="text-gray-500 font-medium">{title1}</p>
+            ) : null}
           </div>
         </div>
         <div className=" absolute bottom-2 max-xl:hidden">
