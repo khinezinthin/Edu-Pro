@@ -6,6 +6,7 @@ import { Drawer, Modal, Group, Button, useMantineTheme } from "@mantine/core";
 import { GrClose } from "react-icons/gr";
 import { AiOutlinePlus } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
+import {Link} from "react-router-dom"
 
 const Navbar = () => {
   const [opened, { open, close }] = useDisclosure(false);
@@ -44,53 +45,57 @@ const Navbar = () => {
           <div className="hidden lg:flex  justify-between gap-44 items-center  w-2/5">
             <ul className="w-[90%] navbar-nav me-auto  mb-lg-0 flex justify-between ">
               <li className="nav-item flex justify-center underline-on-hover hover:text-[--color-primary] ">
-                <a
-                  className="nav-link NavComponents active "
-                  aria-current="page"
-                  href="#">
+                <Link to='/' className="nav-link NavComponents active ">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item underline-on-hover hover:text-[--color-primary]">
-                <a className="nav-link NavComponents" href="#">
+                <Link to='/aboutUs' className="nav-link NavComponents active ">
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item underline-on-hover hover:text-[--color-primary]">
-                <a className="nav-link NavComponents" href="#">
+                <Link to='/courses' className="nav-link NavComponents active ">
                   Courses
-                </a>
+                </Link>
               </li>
               <li className="nav-item underline-on-hover hover:text-[--color-primary]">
-                <a className="nav-link NavComponents" href="#">
-                  Pages
-                </a>
-              </li>
-              <li className="nav-item underline-on-hover hover:text-[--color-primary]">
-                <a className="nav-link NavComponents" href="#">
+                <Link to='/blog' className="nav-link NavComponents active ">
                   Blogs
-                </a>
+                </Link>
               </li>
               <li className="nav-item underline-on-hover hover:text-[--color-primary]">
-                <a className="nav-link NavComponents" href="#">
-                  Shops
-                </a>
+                <Link to='/contactUS' className="nav-link NavComponents active ">
+                  Contact Us
+                </Link>
+              </li>
+              <li className="nav-item underline-on-hover hover:text-[--color-primary]">
+                <Link to='/pricing' className="nav-link NavComponents active ">
+                  Pricing
+                </Link>
+              </li>
+              <li className="nav-item underline-on-hover hover:text-[--color-primary]">
+                <Link to='/FAQ' className="nav-link NavComponents active ">
+                  FAQ
+                </Link>
               </li>
             </ul>
           </div>
           <div className=" flex items-center justify-end px-5 w-3/5 lg:w-1/5 lg:gap-2 md:gap-2 gap-3 ">
             <div
               onClick={open}
-              className="text-[--color-primary] lg:w-[48px] lg:h-[45.4px] md:px-4 md:py-4 px-3  py-[7px]   rounded bg-white hover:bg-[--color-heading] searchHover shadow flex justify-center items-center flex-col"
+              className="text-[--color-primary] lg:w-[48px] lg:h-[45.4px] md:px-4 md:py-4 px-3  py-[7px] cursor-pointer   rounded bg-white hover:bg-[--color-heading] searchHover shadow flex justify-center items-center flex-col"
               type="button">
               <CiSearch className="search text-black lineheightNavIcon  IconSize text-[--color-primary]" />
             </div>
             <div className=" hidden md:block lg:block">
-              <button className="rounded px-3 lg:px-8 lineheightNavBtn text-white flex justify-center items-center  bg-[--color-primary] hover:bg-[--color-dark]">
-                <p className=" lg:NavComponents NavRegister NavRegister">
-                  Login / Register
-                </p>
+              <Link to='/register'>
+              <button
+                className="px-3 py-3 rounded  bg-white text-[--color-black] shadow"
+                type="button">
+                <BiUser className=" text-[--color-primary]" />
               </button>
+              </Link>
             </div>
             <button
               onClick={openSidebar}
