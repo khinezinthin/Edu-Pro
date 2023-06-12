@@ -20,7 +20,7 @@ const BlogDetails = () => {
   return (
     <>
       <section>
-        <Banner />
+        <Banner title1={"Social Media Marketing MASTERY( A-Z ) Journey"} title2={"Branding"} />
       </section>
       <div className=" flex justify-center">
         <div className="flex max-lg:flex-col max-lg:gap-16 justify-between w-[90%] gap-5 lg:my-32 my-20">
