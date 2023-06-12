@@ -17,7 +17,7 @@ const WhyChooseUs = () => {
           <div
             data-aos="fade-up"
             data-aos-once="true"
-            data-aos-duration="1000"
+            data-aos-duration="1500"
             className="flex flex-col gap-3"
           >
             <p className=" font-bold text-blue-600 tracking-wider text-start">
@@ -31,7 +31,7 @@ const WhyChooseUs = () => {
             <div
               data-aos="fade-up"
               data-aos-once="true"
-              data-aos-duration="1000"
+              data-aos-duration="1500"
               className=" w-[45%]  max-md:w-[100%] flex flex-col gap-7 mt-10"
             >
               <TbUsers className=" text-5xl text-orange-500" />
@@ -48,7 +48,7 @@ const WhyChooseUs = () => {
             <div
               data-aos="fade-up"
               data-aos-once="true"
-              data-aos-duration="1000"
+              data-aos-duration="1500"
               className=" w-[45%] max-md:w-[100%] flex flex-col gap-7 mt-10"
             >
               <TfiRulerAlt2 className=" text-5xl text-orange-500" />
@@ -65,7 +65,7 @@ const WhyChooseUs = () => {
             <div
               data-aos="fade-up"
               data-aos-once="true"
-              data-aos-duration="1000"
+              data-aos-duration="1500"
               className=" w-[45%] max-md:w-[100%] flex flex-col gap-7 mt-10"
             >
               <VscBook className=" text-5xl text-orange-500" />
@@ -82,7 +82,7 @@ const WhyChooseUs = () => {
             <div
               data-aos="fade-up"
               data-aos-once="true"
-              data-aos-duration="1000"
+              data-aos-duration="1500"
               className=" w-[45%] max-md:w-[100%] flex flex-col gap-7 mt-10"
             >
               <TfiAlarmClock className=" text-5xl text-orange-500" />
