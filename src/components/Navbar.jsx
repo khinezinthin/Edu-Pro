@@ -6,8 +6,9 @@ import { Drawer, Modal, Group, Button, useMantineTheme } from "@mantine/core";
 import { GrClose } from "react-icons/gr";
 import { AiOutlinePlus } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({bg,absolute}) => {
   const [opened, { open, close }] = useDisclosure(false);
   const [openedSideBar, { open: openSidebar, close: closeSideBar }] =
     useDisclosure(false);
@@ -27,7 +28,8 @@ const Navbar = () => {
     <>
       <nav
         onClick={handleOutsideClick}
-        className="absolute top-0 left-0 right-0   mt-7 py-5 z-50  bg-transparent">
+        className={`${absolute && "absolute"} top-0 left-0 right-0 px-16 py-8 z-50 ${bg ? "bg-transparent" : "bg-white shadow-md"}`}
+      >
         <div className="max-w-[1650px] sticky  items-center m-auto top-0 left-0  flex justify-between  ">
           <div className=" flex justify-start items-center  w-1/5">
             <a className="navbar-brand " href="#">
@@ -44,63 +46,74 @@ const Navbar = () => {
           <div className="hidden lg:flex  justify-between gap-44 items-center  w-2/5">
             <ul className="w-[90%] navbar-nav me-auto  mb-lg-0 flex justify-between ">
               <li className="nav-item flex justify-center underline-on-hover hover:text-[--color-primary] ">
-                <a
-                  className="nav-link NavComponents active "
-                  aria-current="page"
-                  href="#">
+                <Link to="/" className="nav-link NavComponents active ">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item underline-on-hover hover:text-[--color-primary]">
-                <a className="nav-link NavComponents" href="#">
+                <Link to="/aboutUs" className="nav-link NavComponents active ">
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item underline-on-hover hover:text-[--color-primary]">
-                <a className="nav-link NavComponents" href="#">
+                <Link to="/courses" className="nav-link NavComponents active ">
                   Courses
-                </a>
+                </Link>
               </li>
               <li className="nav-item underline-on-hover hover:text-[--color-primary]">
-                <a className="nav-link NavComponents" href="#">
-                  Pages
-                </a>
-              </li>
-              <li className="nav-item underline-on-hover hover:text-[--color-primary]">
-                <a className="nav-link NavComponents" href="#">
+                <Link to="/blog" className="nav-link NavComponents active ">
                   Blogs
-                </a>
+                </Link>
               </li>
               <li className="nav-item underline-on-hover hover:text-[--color-primary]">
-                <a className="nav-link NavComponents" href="#">
-                  Shops
-                </a>
+                <Link
+                  to="/contactUS"
+                  className="nav-link NavComponents active "
+                >
+                  Contact Us
+                </Link>
+              </li>
+              <li className="nav-item underline-on-hover hover:text-[--color-primary]">
+                <Link to="/pricing" className="nav-link NavComponents active ">
+                  Pricing
+                </Link>
+              </li>
+              <li className="nav-item underline-on-hover hover:text-[--color-primary]">
+                <Link to="/FAQ" className="nav-link NavComponents active ">
+                  FAQ
+                </Link>
               </li>
             </ul>
           </div>
-          <div className=" flex items-center justify-end px-5 w-3/5 lg:w-1/5 lg:gap-2 md:gap-2 gap-3 ">
+          <div className=" flex items-center justify-end w-3/5 lg:w-1/5 lg:gap-2 md:gap-2 gap-3 ">
             <div
               onClick={open}
-              className="text-[--color-primary] lg:w-[48px] lg:h-[45.4px] md:px-4 md:py-4 px-3  py-[7px]   rounded bg-white hover:bg-[--color-heading] searchHover shadow flex justify-center items-center flex-col"
-              type="button">
+              className="text-[--color-primary] lg:w-[48px] lg:h-[45.4px] md:px-4 md:py-4 px-3  py-[7px] cursor-pointer   rounded bg-white hover:bg-[--color-heading] searchHover shadow flex justify-center items-center flex-col"
+              type="button"
+            >
               <CiSearch className="search text-black lineheightNavIcon  IconSize text-[--color-primary]" />
             </div>
             <div className=" hidden md:block lg:block">
-              <button className="rounded px-3 lg:px-8 lineheightNavBtn text-white flex justify-center items-center  bg-[--color-primary] hover:bg-[--color-dark]">
-                <p className=" lg:NavComponents NavRegister NavRegister">
-                  Login / Register
-                </p>
-              </button>
+              <Link to="/register">
+                <button
+                  className="px-3 py-3 rounded  bg-white text-[--color-black] shadow"
+                  type="button"
+                >
+                  <BiUser className=" text-[--color-primary]" />
+                </button>
+              </Link>
             </div>
             <button
               onClick={openSidebar}
               className="lg:hidden  md:px-4 md:py-4 px-3  py-2 rounded  bg-white text-[--color-black] shadow"
-              type="button">
+              type="button"
+            >
               <GiHamburgerMenu className=" text-[--color-primary]" />
             </button>
             <button
               className="lg:hidden  md:hidden px-3  py-2 rounded  bg-white text-[--color-black] shadow"
-              type="button">
+              type="button"
+            >
               <BiUser className=" text-[--color-primary]" />
             </button>
           </div>
@@ -121,10 +134,12 @@ const Navbar = () => {
           color: "#231F41",
           opacity: 0.55,
         }}
-        centered>
+        centered
+      >
         <div
           onClick={close}
-          className=" bg-slate-50 p-3 rounded-[50%] absolute top-[31px] right-[31px]">
+          className=" bg-slate-50 p-3 rounded-[50%] absolute top-[31px] right-[31px]"
+        >
           <GrClose />
         </div>
         <form className="    flex justify-around  items-center bg-transparent">
@@ -140,7 +155,8 @@ const Navbar = () => {
       <Drawer
         opened={openedSideBar}
         onClose={closeSideBar}
-        withCloseButton={false}>
+        withCloseButton={false}
+      >
         <ul className=" me-auto flex flex-col gap-10  mb-lg-0  ">
           <li className=" justify-between flex items-center">
             <a className="navbar-brand " href="#">
@@ -154,62 +170,51 @@ const Navbar = () => {
             </a>
             <div
               onClick={closeSideBar}
-              className=" bg-slate-50 p-3 rounded-[50%] shadow">
+              className=" bg-slate-50 p-3 rounded-[50%] shadow"
+            >
               <GrClose />
             </div>
           </li>
           <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
-            <a
-              className="nav-link NavComponents active "
-              aria-current="page"
-              href="#">
+            <Link to="/" className="nav-link NavComponents active ">
               Home
-            </a>
+            </Link>
             <AiOutlinePlus />
           </li>
           <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
-            <a
-              className="nav-link NavComponents active "
-              aria-current="page"
-              href="#">
+            <Link to="/aboutUs" className="nav-link NavComponents active ">
               About
-            </a>
+            </Link>
             <AiOutlinePlus />
           </li>
           <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
-            <a
-              className="nav-link NavComponents active "
-              aria-current="page"
-              href="#">
+            <Link to="/courses" className="nav-link NavComponents active ">
               Courses
-            </a>
+            </Link>
             <AiOutlinePlus />
           </li>
           <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
-            <a
-              className="nav-link NavComponents active "
-              aria-current="page"
-              href="#">
-              Pages
-            </a>
-            <AiOutlinePlus />
-          </li>
-          <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
-            <a
-              className="nav-link NavComponents active "
-              aria-current="page"
-              href="#">
+            <Link to="/blog" className="nav-link NavComponents active ">
               Blogs
-            </a>
+            </Link>
             <AiOutlinePlus />
           </li>
           <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
-            <a
-              className="nav-link NavComponents active "
-              aria-current="page"
-              href="#">
-              Shops
-            </a>
+            <Link to="/contactUS" className="nav-link NavComponents active ">
+              Contact Us
+            </Link>
+            <AiOutlinePlus />
+          </li>
+          <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
+            <Link to="/pricing" className="nav-link NavComponents active ">
+              Pricing
+            </Link>
+            <AiOutlinePlus />
+          </li>
+          <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
+            <Link to="/FAQ" className="nav-link NavComponents active ">
+              FAQ
+            </Link>
             <AiOutlinePlus />
           </li>
         </ul>

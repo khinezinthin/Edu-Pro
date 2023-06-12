@@ -15,7 +15,7 @@ const PopularCourse = () => {
         <h2 className=" text-[16px] font-sans text-[#525fe1] font-semibold tracking-widest ">
           POPULAR COURSES
         </h2>
-        <h2 className=" text-[32px] lg:text-[40px] break-words w-[250px] md:w-auto lg:w-auto text-center flex justify-center items-center font-semibold font-sans text-slate-800 ">
+        <h2 className=" text-[32px] lg:text-[40px] break-words w-[250px] md:w-auto lg:w-auto text-center flex justify-center items-center font-bold font-sans text-slate-800 ">
           Featured On This Month
         </h2>
       </div>

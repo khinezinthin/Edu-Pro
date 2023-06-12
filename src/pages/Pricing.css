@@ -1,0 +1,35 @@
+.contact-card-shadow{
+    box-shadow: rgba(80, 79, 79, 0.1) 0px 5px 30px;
+}
+
+.my-div {
+    animation: slowChange 3s;
+  }
+
+.my-div-2 {
+    animation: slowChange2 3s;
+  }
+  
+@keyframes slowChange {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 50;
+    }
+    100% {
+      opacity: 100;
+    }
+  }
+
+  @keyframes slowChange2 {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 50;
+    }
+    100% {
+      opacity: 100;
+    }
+  }
