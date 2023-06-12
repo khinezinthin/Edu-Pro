@@ -6,7 +6,7 @@ const Banner = ({ title1, title2 }) => {
   return (
     <>
       <div className="image flex justify-center relative">
-        <div className="w-[90%] my-14 flex flex-col gap-4">
+        <div className="w-[90%] my-16 flex flex-col gap-4">
           {title1 ? (
             <h1 className=" text-4xl max-lg:text-3xl font-bold text-gray-800 leading-[45px]">
               {title1}

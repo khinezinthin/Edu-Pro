@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div className=" relative">
 
-      {/* <Path /> */}
+      <Path />
     
 
     </div>

@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "./FAQ.css";
 import { Accordion } from "@mantine/core";
 import { AiOutlinePlus } from "react-icons/ai";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
+import Banner from "../Banner";
 
 const FAQ = () => {
   const [activeItem, setActiveItem] = useState(0); // Set the active item index
@@ -93,7 +96,16 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="FAQ-background h-screen select-none flex justify-center w-full p-6    flex-col items-center ">
+    <>
+    <section>
+      <Navbar/>
+    </section>
+
+    <section>
+      <Banner title1={"Frequently Asked Questions"}/>
+    </section>
+
+    <div className=" py-20 select-none flex justify-center w-full px-6 flex-col items-center ">
       <div className=" flex justify-center w-full    flex-col items-center lg:gap-14 md:gap-6 gap-14">
         {/* title */}
         <div className="   w-full container flex justify-center items-center flex-col lg:gap-10 md:gap-6 gap-4">
@@ -342,6 +354,11 @@ const FAQ = () => {
         </div>
       </div>
     </div>
+
+    <section>
+      <Footer/>
+    </section>
+    </>
   );
 };
 

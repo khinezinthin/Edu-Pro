@@ -8,10 +8,15 @@ import TeamMember from "../components/HomeComponents/TeamMember";
 import WhyChooseUs from "../components/HomeComponents/WhyChooseUs";
 import NewsLetter from "../components/HomeComponents/NewsLetter";
 import BlogsAndNews from "../components/HomeComponents/BlogAndNew";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
     <>
+      <section>
+        <Navbar bg={true} absolute={true}/>
+      </section>
       <section className="">
         <Learning />
       </section>
@@ -48,7 +53,9 @@ const Home = () => {
       <section className=" overflow-hidden">
         <BlogsAndNews/>
       </section>
-
+      <section>
+        <Footer/>
+      </section>
     </>
   );
 };
