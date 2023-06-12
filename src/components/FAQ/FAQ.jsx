@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import "./FAQ.css";
 import { Accordion } from "@mantine/core";
 import { AiOutlinePlus } from "react-icons/ai";
+
 import Banner from "../Banner";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
+
+
 const FAQ = () => {
   const [activeItem, setActiveItem] = useState(0); // Set the active item index
   const [buttonSection, setButtonSection] = useState(0);
@@ -97,6 +100,7 @@ const FAQ = () => {
 
   return (
     <>
+
       <section>
         <Banner title1={"Blog"} title2={"Blog Page"} />
       </section>
@@ -150,6 +154,8 @@ const FAQ = () => {
                   </button>
                 </div>
               </div>
+
+  
             </div>
             {/* Question and answer */}
             <div
@@ -354,7 +360,10 @@ const FAQ = () => {
             </div>
           </div>
         </div>
+
       </section>
+
+    
     </>
   );
 };

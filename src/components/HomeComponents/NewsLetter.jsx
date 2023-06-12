@@ -11,7 +11,9 @@ AOS.init();
 const NewsLetter = () => {
   return (
     <div className=" bg-[#525FE1] overflow-hidden  w-full relative flex justify-center flex-col">
+
       <div className=" max-w[767px] h-[300px]     lg:h-[450px] md:h-[400px]  flex flex-col border-2 justify-center items-center">
+
         <div className=" w-[80%] flex flex-col gap-10 ">
           <div
             data-aos="fade-up"

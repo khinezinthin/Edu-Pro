@@ -18,6 +18,7 @@ const Skilled = () => {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}
+
       className="flex justify-center items-center overflow-hidden">
       <div className=" md:scale-[0.8] scale-100 lg:scale-100 overflow-hidden relative w-full flex flex-col gap-24 justify-center my-20 p-5">
         <div
@@ -25,6 +26,7 @@ const Skilled = () => {
           data-aos-once="true"
           data-aos-duration="1000"
           className="mx-auto flex gap-3 w-[90%] flex-col justify-center ">
+
           <h1 className=" text-blue-700 tracking-wider font-medium text-center">
             SKILLED INSTRUCTOR
           </h1>
@@ -46,6 +48,7 @@ const Skilled = () => {
 
               <div className="w-[230px] h-[230px] opacity-0 hoverImage   absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
               <div
+
                 className={`absolute  transitionCustom  lg:top-[5px] top-5px left-0 hoverMoveClass mouseEnter`}>
                 <img
                   src={circle}
@@ -79,11 +82,12 @@ const Skilled = () => {
           <div className="lg:w-1/5 md:w-1/3  w-full md:scale-[0.9] instructorShow flex  justify-center items-center flex-col gap-14">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%]  ">
-                <img src={instuctor1} alt="" className="  " />
+                <img src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/11/instructor-01-02-2.webp" alt="" className="  " />
               </div>
               <div className="w-[230px] h-[230px] opacity-0 hoverImage   absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
               <div
-                className={`absolute transitionCustom  top-[5px] left-0 hoverMoveClass mouseEnter`}>
+                className={`absolute transitionCustom  top-[5px] left-0 hoverMoveClass mouseEnter`}
+              >
                 <img
                   src={circle}
                   alt=""
@@ -105,10 +109,10 @@ const Skilled = () => {
             </div>
             <div className=" flex justify-center items-center flex-col">
               <p className=" text-2xl font-semibold text-gray-700 hover:text-[--color-primary]">
-                Mark R. Ronson
+                Miranda H. Leone
               </p>
               <p className=" text-[--color-body] hover:text-[--color-primary] ">
-                UI Designer
+                Web Developer
               </p>
             </div>
           </div>
@@ -116,11 +120,12 @@ const Skilled = () => {
           <div className="lg:w-1/5 md:w-1/3 w-full md:scale-[0.9] instructorShow flex  justify-center items-center flex-col gap-14">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%]  ">
-                <img src={instuctor1} alt="" className="  " />
+                <img src="	https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/11/instructor-01-03-2.webp" alt="" className="  " />
               </div>
               <div className="w-[230px] h-[230px] opacity-0 hoverImage   absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
               <div
-                className={`absolute transitionCustom  top-[5px] left-0 hoverMoveClass mouseEnter`}>
+                className={`absolute transitionCustom  top-[5px] left-0 hoverMoveClass mouseEnter`}
+              >
                 <img
                   src={circle}
                   alt=""
@@ -142,10 +147,10 @@ const Skilled = () => {
             </div>
             <div className=" flex justify-center items-center flex-col">
               <p className=" text-2xl font-semibold text-gray-700 hover:text-[--color-primary]">
-                Mark R. Ronson
+              Leone P. Xaviona
               </p>
               <p className=" text-[--color-body] hover:text-[--color-primary] ">
-                UI Designer
+              Digital Marketer
               </p>
             </div>
           </div>
@@ -153,11 +158,12 @@ const Skilled = () => {
           <div className="lg:w-1/5 md:w-1/3 w-full md:scale-[0.9] instructorShow flex  justify-center items-center flex-col gap-14">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%]  ">
-                <img src={instuctor1} alt="" className="  " />
+                <img src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/11/instructor-01-04-2.webp" alt="" className="  " />
               </div>
               <div className="w-[230px] h-[230px] opacity-0 hoverImage   absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
               <div
-                className={`absolute transitionCustom  top-[5px] left-0 hoverMoveClass mouseEnter`}>
+                className={`absolute transitionCustom  top-[5px] left-0 hoverMoveClass mouseEnter`}
+              >
                 <img
                   src={circle}
                   alt=""
@@ -179,10 +185,10 @@ const Skilled = () => {
             </div>
             <div className=" flex justify-center items-center flex-col">
               <p className=" text-2xl font-semibold text-gray-700 hover:text-[--color-primary]">
-                Mark R. Ronson
+              Yokollili V. Nauia
               </p>
               <p className=" text-[--color-body] hover:text-[--color-primary] ">
-                UI Designer
+              SEO Expert
               </p>
             </div>
           </div>
@@ -190,11 +196,12 @@ const Skilled = () => {
           <div className="lg:w-1/5 md:w-1/3 w-full md:scale-[0.9] instructorShow flex  justify-center items-center flex-col gap-14">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%]  ">
-                <img src={instuctor1} alt="" className="  " />
+                <img src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/11/instructor-01-05-2.webp" alt="" className="  " />
               </div>
               <div className="w-[230px] h-[230px] opacity-0 hoverImage  absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
               <div
-                className={`absolute transitionCustom  top-[5px] left-0 hoverMoveClass mouseEnter`}>
+                className={`absolute transitionCustom  top-[5px] left-0 hoverMoveClass mouseEnter`}
+              >
                 <img
                   src={circle}
                   alt=""
@@ -216,10 +223,10 @@ const Skilled = () => {
             </div>
             <div className=" flex justify-center items-center flex-col">
               <p className=" text-2xl font-semibold text-gray-700 hover:text-[--color-primary]">
-                Mark R. Ronson
+              Sasoti R. Chanvi
               </p>
               <p className=" text-[--color-body] hover:text-[--color-primary] ">
-                UI Designer
+              Digital Marketer
               </p>
             </div>
           </div>
@@ -227,11 +234,12 @@ const Skilled = () => {
           <div className="lg:w-1/5 md:w-1/3 w-full md:scale-[0.9] instructorShow flex  justify-center items-center flex-col gap-14">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%]  ">
-                <img src={instuctor1} alt="" className="  " />
+                <img src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/11/instructor-01-06-2.webp" alt="" className="  " />
               </div>
               <div className="w-[230px] h-[230px] opacity-0 hoverImage  absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
               <div
-                className={`absolute transitionCustom  top-[5px] left-0 hoverMoveClass mouseEnter`}>
+                className={`absolute transitionCustom  top-[5px] left-0 hoverMoveClass mouseEnter`}
+              >
                 <img
                   src={circle}
                   alt=""
@@ -253,10 +261,10 @@ const Skilled = () => {
             </div>
             <div className=" flex justify-center items-center flex-col">
               <p className=" text-2xl font-semibold text-gray-700 hover:text-[--color-primary]">
-                Mark R. Ronson
+              Hamna D. Viru
               </p>
               <p className=" text-[--color-body] hover:text-[--color-primary] ">
-                UI Designer
+              UX Expert
               </p>
             </div>
           </div>
@@ -264,11 +272,12 @@ const Skilled = () => {
           <div className="lg:w-1/5 md:w-1/3 w-full md:scale-[0.9] instructorShow flex  justify-center items-center flex-col gap-14">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%] ">
-                <img src={instuctor1} alt="" className="  " />
+                <img src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/11/instructor-01-07-2.webp" alt="" className="  " />
               </div>
               <div className="w-[230px] h-[230px] opacity-0 hoverImage  absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
               <div
-                className={`absolute transitionCustom  top-[5px] left-0 hoverMoveClass mouseEnter`}>
+                className={`absolute transitionCustom  top-[5px] left-0 hoverMoveClass mouseEnter`}
+              >
                 <img
                   src={circle}
                   alt=""
@@ -290,10 +299,10 @@ const Skilled = () => {
             </div>
             <div className=" flex justify-center items-center flex-col">
               <p className=" text-2xl font-semibold text-gray-700 hover:text-[--color-primary]">
-                Mark R. Ronson
+              Samuel D. Smith
               </p>
               <p className=" text-[--color-body] hover:text-[--color-primary] ">
-                UI Designer
+              UX Expert
               </p>
             </div>
           </div>
@@ -301,11 +310,12 @@ const Skilled = () => {
           <div className="lg:w-1/5 md:w-1/3 w-full md:scale-[0.9] instructorShow flex  justify-center items-center flex-col gap-14">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%]  ">
-                <img src={instuctor1} alt="" className="  " />
+                <img src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/11/instructor-01-08-2.webp" alt="" className="  " />
               </div>
               <div className="w-[230px] h-[230px] opacity-0 hoverImage   absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
               <div
-                className={`absolute transitionCustom  top-[5px] left-0 hoverMoveClass mouseEnter`}>
+                className={`absolute transitionCustom  top-[5px] left-0 hoverMoveClass mouseEnter`}
+              >
                 <img
                   src={circle}
                   alt=""
@@ -327,10 +337,10 @@ const Skilled = () => {
             </div>
             <div className=" flex justify-center items-center flex-col">
               <p className=" text-2xl font-semibold text-gray-700 hover:text-[--color-primary]">
-                Mark R. Ronson
+              Jhamina Y. Diva
               </p>
               <p className=" text-[--color-body] hover:text-[--color-primary] ">
-                UI Designer
+              UX Expert
               </p>
             </div>
           </div>

@@ -13,6 +13,8 @@ import { IoNewspaperOutline } from "react-icons/io5";
 import coursesData from "../components/coursesData.json";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 AOS.init();
 
 const Courses = () => {
@@ -36,6 +38,11 @@ const Courses = () => {
   );
 
   return (
+    <>
+    <section>
+      <Navbar/>
+    </section>
+    
     <div>
       {/* Banner */}
       <div className=" bg-[url(https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/10/home-one-testimonial-2.jpg)] bg-cover h-[215px] relative">
@@ -221,6 +228,11 @@ const Courses = () => {
         </button>
       </div>
     </div>
+
+    <section>
+      <Footer/>
+    </section>
+    </>
   );
 };
 

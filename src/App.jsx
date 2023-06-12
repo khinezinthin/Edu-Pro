@@ -6,7 +6,12 @@ import "./App.css";
 const App = () => {
   return (
     <div className=" relative">
+
+
       <Path />
+    
+
+
     </div>
   );
 };

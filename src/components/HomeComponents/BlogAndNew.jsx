@@ -45,7 +45,7 @@ const BlogAndNew = () => {
               data-aos-duration="1000"
               className="   flex justify-between flex-wrap gap-5 lg:gap-0 md:gap-0 ">
               <div className="  lg:w-1/2 md:w-1/2 min-[820px]:w-1/2 flex justify-center ">
-                <div className="shadow bg-[--color-white]  w-[95%] border-2 p-6  flex flex-col lg:gap-10 md:gap-8 gap-5 hoverCustom ">
+                <div className="shadow bg-[--color-white]  w-[95%] p-6  flex flex-col lg:gap-10 md:gap-8 gap-5 hoverCustom ">
                   <div className="content  flex flex-col lg:gap-10 md:gap-8 gap-5 hoverCustom ">
                     <div>
                       <p className="font-semibold hoverCustom text-[--color-primary] cursor-pointer">
@@ -81,7 +81,7 @@ const BlogAndNew = () => {
                 </div>
               </div>
               <div className=" lg:w-1/2 md:w-1/2 min-[820px]:w-1/2  flex  justify-center">
-                <div className="bg-[--color-white]  shadow w-[95%] border-2 p-6     flex flex-col lg:gap-10 md:gap-8 gap-5 hoverCustom ">
+                <div className="bg-[--color-white]  shadow w-[95%] p-6     flex flex-col lg:gap-10 md:gap-8 gap-5 hoverCustom ">
                   <div className="content flex flex-col lg:gap-10 md:gap-8 gap-5 hoverCustom ">
                     <div>
                       <p className="hoverCustom font-semibold text-[--color-primary] cursor-pointer">

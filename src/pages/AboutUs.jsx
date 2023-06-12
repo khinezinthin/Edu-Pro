@@ -5,10 +5,19 @@ import FreeWorkShop from "../components/AboutUsPagesComponent/FreeWorkShop"
 import Learners from '../components/AboutUsPagesComponent/Learners'
 import Skilled from "../components/AboutUsPagesComponent/Skilled"
 import Feedback from "../components/AboutUsPagesComponent/Feedback"
+import Banner from '../components/Banner'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const AboutUs = () => {
   return (
     <>
+        <section>
+            <Navbar/>
+        </section>
+        <section>
+            <Banner title1={"About Us"}/>
+        </section>
         <section>
             <Knowledge/>
         </section>
@@ -31,6 +40,9 @@ const AboutUs = () => {
 
         <section>
             <Feedback/>
+        </section>
+        <section>
+            <Footer/>
         </section>
     </>
   )
