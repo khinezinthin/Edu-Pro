@@ -8,16 +8,18 @@ import Courses from "../pages/Courses";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Navbar from "../components/Navbar.jsx";
+import CourseDetail from "../pages/CourseDetail";
 
 const Path = () => {
   return (
     <div>
       <BrowserRouter>
-        <Navbar/>
+        {/* <Navbar/> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contactUs" element={<ContactUs />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/courseDetail" element={<CourseDetail/>} />
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>
         </Routes>
