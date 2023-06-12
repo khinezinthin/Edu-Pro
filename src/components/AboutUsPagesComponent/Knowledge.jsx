@@ -17,7 +17,7 @@ const Knowledge = () => {
                         <div className='max-xl:hidden'>
                         <img src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/10/about-image-02-2.png"
                         className=' top-[260px] right-[100px] absolute circle-shadow3 z-30' alt="" />
-                        <div className="shape absolute top-[270px] right-[80px] z-20 "></div>
+                        <div className="shape absolute w-[270px] h-[270px] top-[270px] right-[80px] z-20 "></div>
                         </div>
                 </div>
 
