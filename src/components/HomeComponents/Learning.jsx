@@ -10,11 +10,11 @@ AOS.init();
 const Learning = () => {
   return (
     <div className="  learning-div lg:overflow-x-hidden">
-      <div className=" flex py-32 max-lg:pb-8 relative lg:flex-nowrap lg:flex-row md:flex-wrap md:flex-col-reverse  md:justify-center md:items-center max-md:flex-col-reverse max-md:justify-center max-md:items-center">
+      <div className=" flex py-20 max-lg:pb-8 relative lg:flex-nowrap lg:flex-row md:flex-wrap md:flex-col-reverse  md:justify-center md:items-center max-md:flex-col-reverse max-md:justify-center max-md:items-center">
         <img
           src="	https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/10/shape-circle-2.png"
           alt=""
-          className=" absolute left-[-230px] top-24 max-lg:hidden"
+          className=" absolute left-[-230px] top-[185px] max-lg:hidden"
         />
         <div
           className=" xl:pl-20 lg:pl-5 md:pl-0 md:pt-10 font-semibold xl:w-[50%] z-10 max-lg:relative left-[-70px]
@@ -28,8 +28,8 @@ const Learning = () => {
           </h5>
 
           <h1
-            className=" p-1 md:pt-2 xl:text-[60px] xl:w-[500px] lg:text-[55px] lg:w-[450px] md:text-[45px] md:w-[415px] max-md:text-[40px] max-md:w-[380px] max-[540px]:text-[33px] max-md:pt-2 xl:tracking-wider title text-gray-800 max-lg:leading-[60px] max-[540px]:leading-[45px] max-[540px]:pt-3 max-[440px]:text-[30px]
-                max-[440px]:w-[350px] max-[360px]:text-[29px] max-[360px]:w-[300px] "
+            className=" p-1 md:pt-2 xl:text-[65px] xl:w-[500px] lg:text-[55px] lg:w-[450px] md:text-[45px] md:w-[415px] max-md:text-[40px] max-md:w-[380px] max-[540px]:text-[33px] max-md:pt-2 xl:tracking-wide title text-gray-800 max-lg:leading-[60px] max-[540px]:leading-[45px] max-[540px]:pt-3 max-[440px]:text-[30px]
+            max-[440px]:w-[350px] max-[360px]:text-[29px] max-[360px]:w-[300px] "
             data-aos="fade-up"
             data-aos-duration="1500"
             data-aos-once="true">
@@ -63,11 +63,11 @@ const Learning = () => {
           </div>
         </div>
 
-        <div className=" lg:w-[50%] md:w-auto max-md:flex-wrap max-md:justify-center flex items-center relative lg:ml-20 md:ml-0 lg:justify-normal">
+        <div className=" pt-24 lg:w-[50%] md:w-auto max-md:flex-wrap max-md:justify-center flex items-center relative lg:ml-20 md:ml-0 lg:justify-normal">
           <img
             src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/10/shape-02-2.png"
             alt=""
-            className=" absolute top-[-24px] left-[-50px] max-lg:hidden"
+            className=" absolute top-[70px] left-[-60px] max-lg:hidden"
           />
           <div className=" flex flex-col lg:items-end md:items-start relative">
             <div
