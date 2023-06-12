@@ -1,12 +1,12 @@
 import React from "react";
-import './app.css'
-import "./App.css";
+import "./app.css";
 import Path from "./route/Path";
+import "./App.css";
 
 const App = () => {
   return (
     <div className=" relative">
-      <Path/>
+      <Path />
     </div>
   );
 };

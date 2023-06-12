@@ -4,6 +4,9 @@ import { FaStar } from "react-icons/fa";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -11,7 +14,12 @@ const Feedback = () => {
   return (
     <div className="bg-image flex justify-center">
       <div className="w-[90%] flex flex-col gap-16 justify-center my-20">
-        <div className="flex flex-col justify-center gap-1">
+        <div
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-duration="1000"
+          className="flex flex-col justify-center gap-1"
+        >
           <p className="tex-lg font-medium text-blue-600 tracking-widest text-center">
             TESTIMONIALS
           </p>
