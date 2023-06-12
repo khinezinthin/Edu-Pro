@@ -16,7 +16,7 @@ const Skilled = () => {
         backgroundPosition: "center",
       }}
       className="flex justify-center items-center overflow-hidden">
-      <div className=" overflow-hidden w-full flex flex-col gap-24 justify-center my-20 p-5">
+      <div className=" overflow-hidden relative w-full flex flex-col gap-24 justify-center my-20 p-5">
         <div className="mx-auto flex gap-3 w-[90%] flex-col justify-center ">
           <h1 className=" text-blue-700 tracking-wider font-medium text-center">
             SKILLED INSTRUCTOR
