@@ -5,7 +5,12 @@ AOS.init();
 
 const WhatweOffer = () => {
   return (
-    <div className="my-20" data-aos="fade-up">
+    <div
+      className=" mt-16 mb-32 "
+      data-aos="fade-up"
+      data-aos-once="true"
+      data-aos-duration="1000"
+    >
       <div className=" flex flex-col justify-center items-center relative ">
         <h2 className=" uppercase text-[16px] text-[#525fe1] font-bold">
           what we offer
@@ -21,7 +26,7 @@ const WhatweOffer = () => {
       </div>
 
       <div className=" flex items-center gap-[20px] flex-wrap justify-center mx-[1%] mt-10 relative ">
-        <div className=" group hover:shadow-md bg-[#EAF8F6] hover:shadow-[#84ded1] w-[270px] h-[310px] rounded-[5px] px-[30px] py-[40px] flex flex-col items-center gap-6 relative">
+        <div className=" group hover:shadow-md bg-[#EAF8F6] hover:shadow-[#84ded1] duration-500 w-[270px] h-[310px] rounded-[5px] px-[30px] py-[40px] flex flex-col items-center gap-6 relative">
           <img
             className=" absolute max-xl:hidden top-54  -left-24"
             src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/10/shape-04-03-2.png"
@@ -29,18 +34,18 @@ const WhatweOffer = () => {
           />
           <div className="  relative bg-white w-[80px] h-[80px] rounded-full flex items-center justify-center mt-3">
             <img
-              className=" absolute -bottom-5 opacity-0 group-hover:opacity-100 "
+              className=" absolute -bottom-5 opacity-0 group-hover:opacity-100 duration-500 "
               src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/service-icon-03.png"
               alt=""
             />
             <img
-              className=" absolute -left-6 top-5 opacity-0 group-hover:opacity-100"
+              className=" absolute -left-6 top-5 opacity-0 group-hover:opacity-100 duration-500"
               src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/service-icon-02.png"
               alt=""
             />
 
             <img
-              className=" absolute -right-4 opacity-0 group-hover:opacity-100"
+              className=" absolute -right-4 opacity-0 group-hover:opacity-100 duration-500"
               src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/service-icon-01.png"
               alt=""
             />
@@ -58,21 +63,21 @@ const WhatweOffer = () => {
             industry.
           </p>
         </div>
-        <div className=" group hover:shadow-md bg-[#fff3ee] hover:shadow-[#f4ddd3] w-[270px] h-[310px] rounded-[5px] px-[40px] py-[30px] flex flex-col items-center gap-6">
+        <div className=" group hover:shadow-md bg-[#fff3ee] hover:shadow-[#f4ddd3] duration-500 w-[270px] h-[310px] rounded-[5px] px-[40px] py-[30px] flex flex-col items-center gap-6">
           <div className=" bg-white relative w-[80px] h-[80px] rounded-full flex items-center justify-center mt-3">
             <img
-              className=" absolute -bottom-5 opacity-0 group-hover:opacity-100 "
+              className=" absolute -bottom-5 opacity-0 group-hover:opacity-100 duration-500 "
               src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/service-icon-03.png"
               alt=""
             />
             <img
-              className=" absolute -left-6 top-5 opacity-0 group-hover:opacity-100"
+              className=" absolute -left-6 top-5 opacity-0 group-hover:opacity-100 duration-500"
               src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/service-icon-02.png"
               alt=""
             />
 
             <img
-              className=" absolute -right-4 opacity-0 group-hover:opacity-100"
+              className=" absolute -right-4 opacity-0 group-hover:opacity-100 duration-500"
               src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/service-icon-01.png"
               alt=""
             />
@@ -89,21 +94,21 @@ const WhatweOffer = () => {
             industry.
           </p>
         </div>
-        <div className=" group hover:shadow-md  bg-[#EFF4FC] hover:shadow-[#cedef8] w-[270px] h-[310px] rounded-[5px] px-[40px] py-[30px] flex flex-col items-center gap-6">
+        <div className=" group hover:shadow-md  bg-[#EFF4FC] hover:shadow-[#cedef8] duration-500 w-[270px] h-[310px] rounded-[5px] px-[40px] py-[30px] flex flex-col items-center gap-6">
           <div className=" bg-white relative w-[80px] h-[80px] rounded-full flex items-center justify-center mt-3">
             <img
-              className=" absolute -bottom-5 opacity-0 group-hover:opacity-100 "
+              className=" absolute -bottom-5 opacity-0 group-hover:opacity-100 duration-500 "
               src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/service-icon-03.png"
               alt=""
             />
             <img
-              className=" absolute -left-6 top-5 opacity-0 group-hover:opacity-100"
+              className=" absolute -left-6 top-5 opacity-0 group-hover:opacity-100 duration-500"
               src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/service-icon-02.png"
               alt=""
             />
 
             <img
-              className=" absolute -right-4 opacity-0 group-hover:opacity-100"
+              className=" absolute -right-4 opacity-0 group-hover:opacity-100 duration-500"
               src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/service-icon-01.png"
               alt=""
             />
@@ -120,21 +125,21 @@ const WhatweOffer = () => {
             industry.
           </p>
         </div>
-        <div className=" group hover:shadow-md bg-[#FFF1F1] hover:shadow-[#f7d5d5] w-[270px] h-[310px] rounded-[5px] px-[40px] py-[30px] flex flex-col items-center gap-6 relative">
+        <div className=" group hover:shadow-md bg-[#FFF1F1] hover:shadow-[#f7d5d5] duration-500 w-[270px] h-[310px] rounded-[5px] px-[40px] py-[30px] flex flex-col items-center gap-6 relative">
           <div className=" bg-white relative w-[80px] h-[80px] rounded-full flex items-center justify-center mt-3">
             <img
-              className=" absolute -bottom-5 opacity-0 group-hover:opacity-100 "
+              className=" absolute -bottom-5 opacity-0 group-hover:opacity-100 duration-500 "
               src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/service-icon-03.png"
               alt=""
             />
             <img
-              className=" absolute -left-6 top-5 opacity-0 group-hover:opacity-100"
+              className=" absolute -left-6 top-5 opacity-0 group-hover:opacity-100 duration-500"
               src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/service-icon-02.png"
               alt=""
             />
 
             <img
-              className=" absolute -right-4 opacity-0 group-hover:opacity-100"
+              className=" absolute -right-4 opacity-0 group-hover:opacity-100 duration-500"
               src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/service-icon-01.png"
               alt=""
             />
