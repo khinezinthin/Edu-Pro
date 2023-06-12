@@ -9,27 +9,41 @@ import book from "../../assets/shape-17-2.png";
 import wave from "../../assets/shape-13-03-2.png";
 import star from "../../assets/shape-15-02-2.png";
 import "./BlogsAndNews.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 const BlogAndNew = () => {
   return (
     <section className="backgroundOfBlogsAndNews lg:h-[1100px] md:h-[1000px] h-auto  relative flex flex-col justify-center ">
       <div className=" p-3 pb-14">
-        <div className="  m-auto  FreshAnimationClass">
+        <div className="  m-auto  ">
           <div className="  m-auto flex flex-col  lg:gap-16 md:gap-10 gap-7 justify-center max-w-[1300px]">
-            <section className="p-3 FreshAnimationClass block md:flex lg:flex min-[820px]:block  justify-between flex-wrap ">
-              <div className=" flex flex-col justify-center pb-9 ">
+            <section className="p-3  block md:flex lg:flex min-[820px]:block  justify-between flex-wrap ">
+              <div
+                data-aos="fade-up"
+                data-aos-once="true"
+                data-aos-duration="1000"
+                className=" flex flex-col justify-center pb-9 ">
                 <p className=" font-semibold text-[--color-primary]">
                   BLOG & NEWS
                 </p>
                 <p className=" text-4xl font-bold">Trending on Our Blogs</p>
               </div>
-              <div>
+              <div
+                data-aos="fade-up"
+                data-aos-once="true"
+                data-aos-duration="1000">
                 <button className="rounded px-12 py-5 text-white flex justify-center items-center  bg-[--color-primary] hover:bg-[--color-dark]">
                   <p> Read More Blogs</p>
                   <AiOutlineArrowRight className=" inline-block" />
                 </button>
               </div>
             </section>
-            <div className="   flex justify-between flex-wrap gap-5 lg:gap-0 md:gap-0 ">
+            <div
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-duration="1000"
+              className="   flex justify-between flex-wrap gap-5 lg:gap-0 md:gap-0 ">
               <div className="  lg:w-1/2 md:w-1/2 min-[820px]:w-1/2 flex justify-center ">
                 <div className="shadow bg-[--color-white]  w-[95%] border-2 p-6  flex flex-col lg:gap-10 md:gap-8 gap-5 hoverCustom ">
                   <div className="content  flex flex-col lg:gap-10 md:gap-8 gap-5 hoverCustom ">

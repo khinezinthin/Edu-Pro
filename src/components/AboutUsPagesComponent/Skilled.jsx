@@ -6,6 +6,9 @@ import "./Skilled.css";
 import blur from "../../assets/shape-04-01-2.png";
 import ball from "../../assets/shape-24-02-2.png";
 import leaf from "../../assets/shape-08-02-2.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 const Skilled = () => {
   return (
     <div
@@ -16,8 +19,12 @@ const Skilled = () => {
         backgroundPosition: "center",
       }}
       className="flex justify-center items-center overflow-hidden">
-      <div className=" overflow-hidden relative w-full flex flex-col gap-24 justify-center my-20 p-5">
-        <div className="mx-auto flex gap-3 w-[90%] flex-col justify-center ">
+      <div className=" md:scale-[0.8] scale-100 lg:scale-100 overflow-hidden relative w-full flex flex-col gap-24 justify-center my-20 p-5">
+        <div
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-duration="1000"
+          className="mx-auto flex gap-3 w-[90%] flex-col justify-center ">
           <h1 className=" text-blue-700 tracking-wider font-medium text-center">
             SKILLED INSTRUCTOR
           </h1>
@@ -25,20 +32,25 @@ const Skilled = () => {
             Introduce Our Life Coaches
           </h1>
         </div>
-        <div className="flex gap-10  flex-wrap lg:gap-7 md:gap-10 lg:gap-y-20 md:gap-y-15  justify-center relative">
+        <div
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-duration="1000"
+          className="flex gap-10  flex-wrap lg:gap-7 md:gap-10 lg:gap-y-20 md:gap-y-15  justify-center relative">
           {/* instructorOne */}
-          <div className="lg:w-1/5 md:w-1/3 instructorShow flex  justify-center items-center flex-col gap-14">
+          <div className="lg:w-1/5 md:w-1/3  instructorShow flex  justify-center items-center flex-col gap-14 md:scale-[0.9]">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%]  ">
                 <img src={instuctor1} alt="" className="  " />
               </div>
-              <div className="w-[230px] h-[230px] opacity-0 hoverImage  lg:scale-[1.1] absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
+
+              <div className="w-[230px] h-[230px] opacity-0 hoverImage   absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
               <div
-                className={`absolute transitionCustom  top-[5px] left-0 hoverMoveClass mouseEnter`}>
+                className={`absolute  transitionCustom  lg:top-[5px] top-5px left-0 hoverMoveClass mouseEnter`}>
                 <img
                   src={circle}
                   alt=""
-                  className=" scale-[1.3] md:scale-[1.2] "
+                  className=" scale-[1.3] object-fill md:scale-[1.2] "
                 />
               </div>
               <div className=" absolute top-[47%] left-[25%] flex justify-center gap-4 ">
@@ -64,12 +76,12 @@ const Skilled = () => {
             </div>
           </div>
           {/*2*/}
-          <div className="lg:w-1/5 md:w-1/3 w-full instructorShow flex  justify-center items-center flex-col gap-14">
+          <div className="lg:w-1/5 md:w-1/3  w-full md:scale-[0.9] instructorShow flex  justify-center items-center flex-col gap-14">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%]  ">
                 <img src={instuctor1} alt="" className="  " />
               </div>
-              <div className="w-[230px] h-[230px] opacity-0 hoverImage  lg:scale-[1.1] absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
+              <div className="w-[230px] h-[230px] opacity-0 hoverImage   absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
               <div
                 className={`absolute transitionCustom  top-[5px] left-0 hoverMoveClass mouseEnter`}>
                 <img
@@ -101,12 +113,12 @@ const Skilled = () => {
             </div>
           </div>
           {/*3*/}
-          <div className="lg:w-1/5 md:w-1/3 w-full instructorShow flex  justify-center items-center flex-col gap-14">
+          <div className="lg:w-1/5 md:w-1/3 w-full md:scale-[0.9] instructorShow flex  justify-center items-center flex-col gap-14">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%]  ">
                 <img src={instuctor1} alt="" className="  " />
               </div>
-              <div className="w-[230px] h-[230px] opacity-0 hoverImage  lg:scale-[1.1] absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
+              <div className="w-[230px] h-[230px] opacity-0 hoverImage   absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
               <div
                 className={`absolute transitionCustom  top-[5px] left-0 hoverMoveClass mouseEnter`}>
                 <img
@@ -138,12 +150,12 @@ const Skilled = () => {
             </div>
           </div>
           {/*4*/}
-          <div className="lg:w-1/5 md:w-1/3 w-full instructorShow flex  justify-center items-center flex-col gap-14">
+          <div className="lg:w-1/5 md:w-1/3 w-full md:scale-[0.9] instructorShow flex  justify-center items-center flex-col gap-14">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%]  ">
                 <img src={instuctor1} alt="" className="  " />
               </div>
-              <div className="w-[230px] h-[230px] opacity-0 hoverImage  lg:scale-[1.1] absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
+              <div className="w-[230px] h-[230px] opacity-0 hoverImage   absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
               <div
                 className={`absolute transitionCustom  top-[5px] left-0 hoverMoveClass mouseEnter`}>
                 <img
@@ -175,12 +187,12 @@ const Skilled = () => {
             </div>
           </div>
           {/*5*/}
-          <div className="lg:w-1/5 md:w-1/3 w-full instructorShow flex  justify-center items-center flex-col gap-14">
+          <div className="lg:w-1/5 md:w-1/3 w-full md:scale-[0.9] instructorShow flex  justify-center items-center flex-col gap-14">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%]  ">
                 <img src={instuctor1} alt="" className="  " />
               </div>
-              <div className="w-[230px] h-[230px] opacity-0 hoverImage  lg:scale-[1.1] absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
+              <div className="w-[230px] h-[230px] opacity-0 hoverImage  absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
               <div
                 className={`absolute transitionCustom  top-[5px] left-0 hoverMoveClass mouseEnter`}>
                 <img
@@ -212,12 +224,12 @@ const Skilled = () => {
             </div>
           </div>
           {/*6*/}
-          <div className="lg:w-1/5 md:w-1/3 w-full instructorShow flex  justify-center items-center flex-col gap-14">
+          <div className="lg:w-1/5 md:w-1/3 w-full md:scale-[0.9] instructorShow flex  justify-center items-center flex-col gap-14">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%]  ">
                 <img src={instuctor1} alt="" className="  " />
               </div>
-              <div className="w-[230px] h-[230px] opacity-0 hoverImage  lg:scale-[1.1] absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
+              <div className="w-[230px] h-[230px] opacity-0 hoverImage  absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
               <div
                 className={`absolute transitionCustom  top-[5px] left-0 hoverMoveClass mouseEnter`}>
                 <img
@@ -249,12 +261,12 @@ const Skilled = () => {
             </div>
           </div>
           {/*7*/}
-          <div className="lg:w-1/5 md:w-1/3 w-full instructorShow flex  justify-center items-center flex-col gap-14">
+          <div className="lg:w-1/5 md:w-1/3 w-full md:scale-[0.9] instructorShow flex  justify-center items-center flex-col gap-14">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%] ">
                 <img src={instuctor1} alt="" className="  " />
               </div>
-              <div className="w-[230px] h-[230px] opacity-0 hoverImage  scale-[1.1] absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
+              <div className="w-[230px] h-[230px] opacity-0 hoverImage  absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
               <div
                 className={`absolute transitionCustom  top-[5px] left-0 hoverMoveClass mouseEnter`}>
                 <img
@@ -286,12 +298,12 @@ const Skilled = () => {
             </div>
           </div>
           {/*8*/}
-          <div className="lg:w-1/5 md:w-1/3 w-full instructorShow flex  justify-center items-center flex-col gap-14">
+          <div className="lg:w-1/5 md:w-1/3 w-full md:scale-[0.9] instructorShow flex  justify-center items-center flex-col gap-14">
             <div className="hoverImageContainer h-60 relative flex justify-center flex-col items-center">
               <div className=" overflow-hidden  rounded-[50%]  ">
                 <img src={instuctor1} alt="" className="  " />
               </div>
-              <div className="w-[230px] h-[230px] opacity-0 hoverImage  scale-[1.1] absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
+              <div className="w-[230px] h-[230px] opacity-0 hoverImage   absolute top-[5px] left-0 bg-[--color-dark] transition-all  rounded-[50%]"></div>
               <div
                 className={`absolute transitionCustom  top-[5px] left-0 hoverMoveClass mouseEnter`}>
                 <img

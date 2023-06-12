@@ -11,24 +11,26 @@ import Error from "../pages/Error";
 import AboutUs from "../pages/AboutUs";
 import Pricing from "../pages/Pricing";
 import BlogDetails from "../pages/BlogDetails";
+import Blog from "../pages/Blog";
+import FAQ from "../components/FAQ/FAQ";
 
 const Path = () => {
   return (
     <div>
       <BrowserRouter>
-        <Navbar/>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/aboutUs" element={<AboutUs/>}/>
+          <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/contactUs" element={<ContactUs />} />
-          <Route path="/pricing" element={<Pricing/>}/>
-          {/* <Route path="/FAQ" element={<FAQ/>}/> */}
-          {/* <Route path="/blog" element={<Blog/>}/> */}
-          <Route path="/blogDetail" element={<BlogDetails/>}/>
-          <Route path="/login" element={<Login/>}/>
-          <Route path="/register" element={<Register/>}/>
-          <Route path="*" element={<Error/>}/>
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/FAQ" element={<FAQ />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blogDetail" element={<BlogDetails />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
       </BrowserRouter>

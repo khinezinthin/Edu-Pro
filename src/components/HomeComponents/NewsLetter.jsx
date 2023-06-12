@@ -5,15 +5,19 @@ import rain from "../../assets/shape-03-04-2.png";
 import wave from "../../assets/shape-13-02-2.png";
 import spot from "../../assets/shape-04-06-2.png";
 import world from "../../assets/shape-16-2.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 const NewsLetter = () => {
   return (
-
     <div className=" bg-[#525FE1] overflow-hidden  w-full relative flex justify-center flex-col">
       <div className=" max-w[767px] h-[300px]     lg:h-[450px] md:h-[400px]  flex flex-col border-2 justify-center items-center">
-
-  
         <div className=" w-[80%] flex flex-col gap-10 ">
-          <div className="  flex justify-center flex-col items-center">
+          <div
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="1000"
+            className="  flex justify-center flex-col items-center">
             <p className=" text-white font-semibold">SUBSCRIBE NEWSLETTER</p>
             <p className=" text-4xl text-white tracking-wide font-bold">
               Get Every Latest News

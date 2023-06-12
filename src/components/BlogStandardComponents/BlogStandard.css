@@ -8,17 +8,7 @@
 .swiper-slide:nth-child(2n) {
   background-color: rgb(0, 140, 255);
 } */
-.swiper-slide {
-  display: absolute;
-  align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff;
-  transform: translate3d(calc(0px + -20%), calc(0px), calc(-400px))
-    rotateX(0deg) rotateY(0deg) rotateZ(-4deg) scale(1);
-}
+
 .swiper-slide-active {
   transform: translate3d(0, 0, 0);
   transition: 1s;
