@@ -1,5 +1,4 @@
 import React from "react";
-import "./BlogDetails.css";
 import { RiCalendar2Line } from "react-icons/ri";
 import { TiMessages } from "react-icons/ti";
 import { AiOutlineEye } from "react-icons/ai";
