@@ -1,0 +1,39 @@
+.FAQ-Navigate-Btn {
+  background-color: #eeeeee;
+}
+.FAQ-Navigate-Btn:hover {
+  background-color: hsl(247, 35%, 19%);
+  color: #eeeeee;
+}
+
+.FAQ-active::after {
+  content: "";
+  background-image: url("https://eduvibe.devsvibe.com/main/wp-content/plugins/eduvibe-core/assets/images/tab-shape-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* z-index: 100; */
+  opacity: 0.4;
+}
+
+.FAQ-active {
+  background-color: #525fe1;
+  color: #eeeeee;
+  z-index: 100;
+}
+
+.fontFAQ {
+  font-size: 20px;
+}
+
+.FAQ-background {
+  background-image: url("https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/10/about-us-one-team-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
