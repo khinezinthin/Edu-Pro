@@ -1,0 +1,64 @@
+.carouselTop {
+    /* Default styles for all screen sizes */
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Media query for large (lg) and medium (md) screen sizes */
+  @media (max-width: 1024px) {
+    .carouselTop {
+        flex-direction: column;
+    }
+  }
+  
+  /* Media query for small (sm) screen size */
+  @media (max-width: 640px) {
+    .carouselTop {
+      flex-direction: column;
+    }
+  }
+  
+  .carouselBottom {
+    /* Default styles for all screen sizes */
+    width: 500px; /* or your desired width */
+  }
+  
+  /* Media query for large (lg) and medium (md) screen sizes */
+  @media (max-width: 1024px) {
+    .carouselBottom {
+      width: 225px; /* or your desired width */
+    }
+  }
+  
+  /* Media query for small (sm) screen size */
+  @media (max-width: 640px) {
+    .carouselBottom {
+      width: 100%; /* or your desired width */
+    }
+  }
+
+  .carouselText {
+    width: auto;
+    font-size: 12px;
+  }
+
+  @media (max-width: 1024px) {
+    .carouselText {
+      width: 100%;
+      font-size: 14px; /* or your desired width */
+    }
+  }
+  @media (max-width: 690px) {
+    .carouselText {
+      width: 600px;
+      font-size: 12px; /* or your desired width */
+    }
+  }
+  
+  /* .slide {
+    width: 600px;
+    margin-left: 0%;
+    padding-left: 0%;
+  } */

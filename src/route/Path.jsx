@@ -17,7 +17,6 @@ import BlogDetails from "../pages/BlogDetails";
 import Blog from "../pages/Blog";
 import FAQ from "../components/FAQ/FAQ";
 
-
 const Path = () => {
   return (
     <div>
@@ -25,11 +24,13 @@ const Path = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutUs" element={<AboutUs />} />
+
           <Route path="/courses" element={<Courses />} />
 
-          <Route path="/courseDetail" element={<CourseDetail/>} />
+          <Route path="/courseDetail/:id" element={<CourseDetail />} />
 
           <Route path="/contactUs" element={<ContactUs />} />
+
 
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/FAQ" element={<FAQ />} />
@@ -40,6 +41,7 @@ const Path = () => {
           <Route path="*" element={<Error />} />
 
         
+
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "hour": "15 Week",
     "image": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-27-590x430.webp",
     "mainImage": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-27.webp",
@@ -15,7 +15,7 @@
     "prePrice": ""
   },
   {
-    "id": 2,
+    "id": "2",
     "hour": "17 Week",
     "image": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-32-590x430.webp",
     "mainImage": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-32.webp",
@@ -30,7 +30,7 @@
     "prePrice": "$59.00"
   },
   {
-    "id": 3,
+    "id": "3",
     "hour": "20 Hour",
     "image": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-38-590x430.webp",
     "mainImage": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-38.webp",
@@ -45,7 +45,7 @@
     "prePrice": ""
   },
   {
-    "id": 4,
+    "id": "4",
     "hour": "25 Hour",
     "image": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-30-590x430.webp",
     "mainImage": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-30.webp",
@@ -60,7 +60,7 @@
     "prePrice": ""
   },
   {
-    "id": 5,
+    "id": "5",
     "hour": "30 Hour",
     "image": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-39-590x430.webp",
     "mainImage": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-39.webp",
@@ -75,7 +75,7 @@
     "prePrice": "$99.00"
   },
   {
-    "id": 6,
+    "id": "6",
     "hour": "15 Hour",
     "image": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-33-590x430.webp",
     "mainImage": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-33.webp",
@@ -90,7 +90,7 @@
     "prePrice": "$39.00"
   },
   {
-    "id": 7,
+    "id": "7",
     "hour": "11 Week",
     "image": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/01/course-02-2-590x430.webp",
     "mainImage": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/01/course-02-2.webp",
@@ -105,7 +105,7 @@
     "prePrice": "$39.00"
   },
   {
-    "id": 8,
+    "id": "8",
     "hour": "25 Hour",
     "image": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-37-590x430.webp",
     "mainImage": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-37.webp",
@@ -120,7 +120,7 @@
     "prePrice": "$39.00"
   },
   {
-    "id": 9,
+    "id": "9",
     "hour": "30 Hour",
     "image": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-26-590x430.webp",
     "mainImage": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-26.webp",
@@ -135,7 +135,7 @@
     "prePrice": ""
   },
   {
-    "id": 10,
+    "id": "10",
     "hour": "22 Hour",
     "image": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-35-590x430.webp",
     "mainImage": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-35.webp",
@@ -150,7 +150,7 @@
     "prePrice": ""
   },
   {
-    "id": 11,
+    "id": "11",
     "hour": "22 Hour",
     "image": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-34-590x430.webp",
     "mainImage": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-34.webp",
@@ -165,7 +165,7 @@
     "prePrice": ""
   },
   {
-    "id": 12,
+    "id": "12",
     "hour": "14 Hour",
     "image": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-36-590x430.webp",
     "mainImage": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-36.webp",
@@ -180,7 +180,7 @@
     "prePrice": ""
   },
   {
-    "id": 13,
+    "id": "13",
     "hour": "18 Hour",
     "image": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-29-590x430.webp",
     "mainImage": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-29.webp",
@@ -195,7 +195,7 @@
     "prePrice": "$59.00"
   },
   {
-    "id": 14,
+    "id": "14",
     "hour": "35 Hour",
     "image": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-28-590x430.webp",
     "mainImage": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-28.webp",
@@ -210,7 +210,7 @@
     "prePrice": "$69.00"
   },
   {
-    "id": 15,
+    "id": "15",
     "hour": "15 Hour",
     "image": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-31-590x430.webp",
     "mainImage": "https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-31.webp",

@@ -1,7 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { IoIosArrowForward } from "react-icons/io";
+import React, { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
 import { IoNewspaperOutline } from "react-icons/io5";
+import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
+import { VscGraph } from "react-icons/vsc";
+import { HiOutlineTranslate } from "react-icons/hi";
+import { BiChalkboard, BiNotepad } from "react-icons/bi";
+import { GrCertificate } from "react-icons/gr";
+import { AiOutlinePercentage } from "react-icons/ai";
+import coursesData from "../components/coursesData.json";
+import "./courseDetail.css";
 
 import {
   BsStarFill,
@@ -20,86 +27,49 @@ import {
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Navbar from "../components/Navbar";
+import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 AOS.init();
 
 // data-aos="fade-up"
 
 const CourseDetail = () => {
+  const { id } = useParams();
+  const course = coursesData?.filter((data) => data?.id === id);
+  // console.log(course[0]);
   return (
     <div>
-      {/* Banner */}
-      <div className=" bg-[url(https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/10/home-one-testimonial-2.jpg)] bg-cover h-[215px] relative">
-        <img
-          className=" absolute w-[40px] h-[40px] top-3 left-5"
-          src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-11-07.png"
-          alt=""
-        />
-        <img
-          className=" absolute top-5 left-20"
-          src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-01-02.png"
-          alt=""
-        />
-        <img
-          className=" absolute top-10 left-40"
-          src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-03.png"
-          alt=""
-        />
-        <img
-          className=" absolute bottom-0 right-1/2"
-          src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-13-12.png"
-          alt=""
-        />
-        <img
-          className=" absolute top-1/2 left-2/3"
-          src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-36.png"
-          alt=""
-        />
-        <img
-          className=" absolute top-2/4 right-1/2"
-          src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-05-07.png"
-          alt=""
-        />
-        <div className=" flex flex-col gap-5 items-start ms-32 pt-14">
-          <div>
-            <h2 className=" text-[40px] font-bold text-[#231F40]">
-              Archives: Courses
-            </h2>
-          </div>
-          <div className=" flex flex-wrap items-baseline gap-5 text-[16px] text-[#6F6B80]">
-            <Link to={"/"}>
-              <button>Home</button>
-            </Link>
-            <p className=" text-xs">
-              <IoIosArrowForward />
-            </p>
-            <p>Courses</p>
-          </div>
-        </div>
-      </div>
+      <section>
+        <Navbar />
+      </section>
+      <section>
+        <Banner title1={"Course Detail"} />
+      </section>
       {/* main image  */}
       <div className=" w-full h-80 md:h-96 lg:h-[570px] relative mt-10  ">
         <img
           className=" object-cover w-full h-full px-4 lg:px-0 lg:rounded-none rounded-[2.5%]"
-          src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-27.webp"
+          src={course[0].mainImage}
           alt=""
         />
       </div>
       {/* left & right sides  */}
-      <div className=" flex flex-col md:flex-col lg:flex-wrap ">
+      <div className=" mainSide ">
         {/* left side  */}
         <div
           data-aos="fade-up"
-          className=" mt-14 w-[60%] ms-16 flex flex-col gap-4">
+          className=" mt-14 ms-16 flex flex-col gap-4 leftSide">
           {/* starfill & pfp icon & name  */}
           <div className=" flex gap-16 items-center ">
             <div className=" flex gap-3 items-center ">
               <img
                 className=" w-[34px] h-[34px] rounded-[100%]"
-                src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/11/instructor-03-02-2-100x100.webp"
+                src={course[0].pfpImage}
                 alt=""
               />
               <p className=" text-[16px] text-[#231f40] font-semibold">
-                By James Carlson
+                By {course[0].name}
               </p>
             </div>
             <div className=" flex gap-3 items-center">
@@ -127,7 +97,7 @@ const CourseDetail = () => {
           </div>
           {/* title  */}
           <p className=" text-[40px] text-[#231f40] font-bold">
-            Grow Personal Financial Security Thinking & Principles
+            {course[0].title}
           </p>
           <hr className=" border-1 border-[#333333] cursor-pointer px-1 me-5 mt-4" />
           {/* desc  */}
@@ -163,16 +133,16 @@ const CourseDetail = () => {
                 Instructor
               </p>
             </div>
-            <div className=" flex gap-10 mt-10">
+            <div className=" flex gap-10 mt-10  inster">
               <img
                 className=" w-[200px] h-[232px] rounded-md"
-                src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/11/instructor-03-02-2.webp"
+                src={course[0].instructor}
                 alt=""
               />
               <div className=" flex flex-col gap-4">
                 <div>
                   <p className=" text-[#333333] text-[24px] font-semibold">
-                    James Hall
+                    {course[0].name}
                   </p>
                   <p className=" text-[#525fe1] text-[16px] font-semibold">
                     Senior Developer
@@ -203,7 +173,7 @@ const CourseDetail = () => {
           </div>
         </div>
         {/* right side  */}
-        <div className=" absolute right-0 top-[750px] rounded-[8px] flex flex-col items-center w-[30%] bg-white shadow-lg me-5 ">
+        <div className=" rightSide rounded-[8px] flex flex-col items-center bg-white shadow-lg me-5 ">
           {/* YT link  */}
           <div className=" relative m-4">
             <img
@@ -228,75 +198,77 @@ const CourseDetail = () => {
               </div>
             </div>
             <hr />
-            <div className=" flex gap-40 py-5">
+            <div className=" flex gap-44 py-5">
               <div className=" flex gap-2 items-center text-[#6f6b80] text-[16px] font-semibold">
-                <BsClock className=" text-[#525fe1]  text-sm" /> Duration
+                <BsPeople className=" text-[#525fe1]  text-sm" /> Students
               </div>
               <div className=" text-[#6f6b80] text-[16px] font-semibold">
-                17 Weeks
+                189
+              </div>
+            </div>
+            <hr />
+            <div className=" flex gap-48 py-5">
+              <div className=" flex gap-2 items-center text-[#6f6b80] text-[16px] font-semibold">
+                <HiOutlineClipboardDocumentList className=" text-[#525fe1]  text-sm" />{" "}
+                Lessons
+              </div>
+              <div className=" text-[#6f6b80] text-[16px] font-semibold">
+                18
               </div>
             </div>
             <hr />
             <div className=" flex gap-40 py-5">
               <div className=" flex gap-2 items-center text-[#6f6b80] text-[16px] font-semibold">
-                <BsClock className=" text-[#525fe1]  text-sm" /> Duration
+                <VscGraph className=" text-[#525fe1]  text-sm" /> Skill level
               </div>
               <div className=" text-[#6f6b80] text-[16px] font-semibold">
-                17 Weeks
+                Expert
               </div>
             </div>
             <hr />
             <div className=" flex gap-40 py-5">
               <div className=" flex gap-2 items-center text-[#6f6b80] text-[16px] font-semibold">
-                <BsClock className=" text-[#525fe1]  text-sm" /> Duration
+                <HiOutlineTranslate className=" text-[#525fe1]  text-sm" />{" "}
+                Language
               </div>
               <div className=" text-[#6f6b80] text-[16px] font-semibold">
-                17 Weeks
+                English
+              </div>
+            </div>
+            <hr />
+            <div className=" flex gap-48 py-5">
+              <div className=" flex gap-2 items-center text-[#6f6b80] text-[16px] font-semibold">
+                <BiChalkboard className=" text-[#525fe1]  text-sm" /> Quizzes
+              </div>
+              <div className=" text-[#6f6b80] text-[16px] font-semibold">0</div>
+            </div>
+            <hr />
+            <div className=" flex gap-36 py-5">
+              <div className=" flex gap-2 items-center text-[#6f6b80] text-[16px] font-semibold">
+                <GrCertificate className=" text-[#525fe1]  text-sm" />{" "}
+                Certifications
+              </div>
+              <div className=" text-[#6f6b80] text-[16px] font-semibold">
+                Yes
+              </div>
+            </div>
+            <hr />
+            <div className=" flex gap-32 py-5">
+              <div className=" flex gap-2 items-center text-[#6f6b80] text-[16px] font-semibold">
+                <AiOutlinePercentage className=" text-[#525fe1]  text-sm" />{" "}
+                Pass Percentage
+              </div>
+              <div className=" text-[#6f6b80] text-[16px] font-semibold">
+                80%
               </div>
             </div>
             <hr />
             <div className=" flex gap-40 py-5">
               <div className=" flex gap-2 items-center text-[#6f6b80] text-[16px] font-semibold">
-                <BsClock className=" text-[#525fe1]  text-sm" /> Duration
+                <BiNotepad className=" text-[#525fe1]  text-sm" /> Deadline
               </div>
               <div className=" text-[#6f6b80] text-[16px] font-semibold">
-                17 Weeks
-              </div>
-            </div>
-            <hr />
-            <div className=" flex gap-40 py-5">
-              <div className=" flex gap-2 items-center text-[#6f6b80] text-[16px] font-semibold">
-                <BsClock className=" text-[#525fe1]  text-sm" /> Duration
-              </div>
-              <div className=" text-[#6f6b80] text-[16px] font-semibold">
-                17 Weeks
-              </div>
-            </div>
-            <hr />
-            <div className=" flex gap-40 py-5">
-              <div className=" flex gap-2 items-center text-[#6f6b80] text-[16px] font-semibold">
-                <BsClock className=" text-[#525fe1]  text-sm" /> Duration
-              </div>
-              <div className=" text-[#6f6b80] text-[16px] font-semibold">
-                17 Weeks
-              </div>
-            </div>
-            <hr />
-            <div className=" flex gap-40 py-5">
-              <div className=" flex gap-2 items-center text-[#6f6b80] text-[16px] font-semibold">
-                <BsClock className=" text-[#525fe1]  text-sm" /> Duration
-              </div>
-              <div className=" text-[#6f6b80] text-[16px] font-semibold">
-                17 Weeks
-              </div>
-            </div>
-            <hr />
-            <div className=" flex gap-40 py-5">
-              <div className=" flex gap-2 items-center text-[#6f6b80] text-[16px] font-semibold">
-                <BsClock className=" text-[#525fe1]  text-sm" /> Duration
-              </div>
-              <div className=" text-[#6f6b80] text-[16px] font-semibold">
-                17 Weeks
+                25 Dec, 2023
               </div>
             </div>
           </div>
@@ -330,10 +302,14 @@ const CourseDetail = () => {
         </div>
       </div>
       {/* more courses  */}
-      <div>
+      <div className=" my-10 mb-28">
         <div className=" mt-24 mb-10 ms-20">
-          <p className=" text-[16px] text-[#525fe1] font-bold">RELATED COURSES</p>
-          <p className=" text-[40px] text-[#231f40] font-bold">Courses You May Like</p>
+          <p className=" text-[16px] text-[#525fe1] font-bold">
+            RELATED COURSES
+          </p>
+          <p className=" text-[40px] text-[#231f40] font-bold">
+            Courses You May Like
+          </p>
         </div>
         <div className=" flex flex-wrap items-center justify-center gap-10">
           <div className=" flex justify-center items-center">
@@ -562,6 +538,9 @@ const CourseDetail = () => {
           </div>
         </div>
       </div>
+      <section>
+        <Footer />
+      </section>
     </div>
   );
 };
