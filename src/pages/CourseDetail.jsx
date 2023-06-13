@@ -59,6 +59,8 @@ const CourseDetail = () => {
         {/* left side  */}
         <div
           data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-duration="1200"
           className=" mt-14 ms-16 flex flex-col gap-4 leftSide">
           {/* starfill & pfp icon & name  */}
           <div className=" flex gap-16 items-center ">

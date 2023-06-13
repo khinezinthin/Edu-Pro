@@ -14,9 +14,13 @@ import "swiper/css/pagination";
 
 const Testimonial = () => {
   return (
-    <div data-aos="fade-up">
+    <div>
       <div className=" flex justify-center flex-col gap-2 bg-[url(https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/10/home-one-testimonial-2.jpg)] bg-no-repeat bg-cover relative pb-14 ">
-        <div className="  pt-20 flex justify-center items-center flex-col  ">
+        <div
+        data-aos="fade-up"
+        data-aos-duration="1200"
+        data-aos-once="true"
+        className="  pt-20 flex justify-center items-center flex-col  ">
           <h2 className=" uppercase text-[16px] tracking-wide text-[#525fe1] font-bold">
             Testimonial
           </h2>
@@ -27,6 +31,9 @@ const Testimonial = () => {
         <div className=" flex my-20 ms-10 items-center flex-wrap carouselTop relative ">
           <div className=" relative">
             <img
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-once="true"
               className=" w-[280px] md:w-[400px] lg:w-[90%]"
               src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/10/testimonial-01-2.jpg"
               alt=""

@@ -57,7 +57,7 @@ const BlogAndNew = () => {
                       <p className="font-semibold hoverCustom text-[--color-primary] cursor-pointer">
                         SOCIAL MEDIA
                       </p>
-                      <h1 className=" font-semibold hoverCustom transition-all text-4xl hover:text-[--color-primary] cursor-pointer">
+                      <h1 className=" font-semibold hoverCustom transition-all text-3xl hover:text-[--color-primary] cursor-pointer">
                         The Complete Web Developer Guideline 2023
                       </h1>
                     </div>
@@ -93,7 +93,7 @@ const BlogAndNew = () => {
                       <p className="hoverCustom font-semibold text-[--color-primary] cursor-pointer">
                         BRANDING
                       </p>
-                      <h1 className="font-semibold hoverCustom transition-all text-4xl hover:text-[--color-primary] cursor-pointer">
+                      <h1 className="font-semibold hoverCustom transition-all text-3xl hover:text-[--color-primary] cursor-pointer">
                         Social Media Marketing MASTERY( A-Z ) Journey
                       </h1>
                     </div>
