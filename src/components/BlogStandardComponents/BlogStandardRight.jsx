@@ -13,13 +13,13 @@ import { Link } from "react-router-dom";
 const BlogStandardRight = () => {
   return (
     <>
-      <div className=" w-full flex  justify-center flex-wrap flex-col lg:flex-row ">
-        <div className="lg:w-[75%]  md:w-[70%] w-full  m-auto flex flex-col gap-7 justify-center items-center pb-10">
+      <div className=" w-full flex justify-end flex-wrap flex-col lg:flex-row ">
+        <div className=" w-full  m-auto flex flex-col gap-7 justify-center items-center pb-10">
           <div
             id="1"
-            className="mx-auto  shadow w-full p-3 flex flex-col gap-4 lg:gap-7 md:gap-5   overflow-hidden bg-[--color-shape]">
+            className="mx-auto  shadow w-full  flex flex-col gap-4 lg:gap-7 md:gap-5   overflow-hidden bg-[--color-shape]">
             <div className="relative h-[100%] w-[100%]   flex justify-center items-center flex-col ">
-              <div className="w-full h-[70%] thumnail  relative">
+              <div className="w-full h-[70%] thumnail   relative">
                 <div className="hoverCustom h-full w-full overflow-hidden rounded">
                   <img
                     src={BlogImg1}
@@ -33,13 +33,13 @@ const BlogStandardRight = () => {
                   Social Media
                 </p>
               </div>
-              <div className="absolute z-50 bottom-[-11%] right-[5%] md:bottom-[-6%] md:right-[5%] lg:bottom-[-7%] lg:right-[5%] w-[47px] h-[47px] md:w-[50px] md:h-[50px] lg:w-[75px] lg:h-[75px] rounded-[50%] bg-[--color-primary] flex flex-col justify-center items-center">
+              <div className="absolute z-50 bottom-[-11%]  right-[5%] md:bottom-[-6%] md:right-[5%] lg:bottom-[-7%] lg:right-[5%] w-[47px] h-[47px] md:w-[50px] md:h-[50px] lg:w-[75px] lg:h-[75px] rounded-[50%] bg-[--color-primary] flex flex-col justify-center items-center">
                 <p className=" font-semibold lg:font-Size-h4 text-white">18</p>
                 <p className=" font-semibold lg:font-Size-h4 text-white">Feb</p>
               </div>
             </div>
 
-            <div className="flex flex-col  gap-5">
+            <div className="flex p-3 flex-col  gap-5">
               <div className=" flex justify-between items-center p-2 ">
                 <div className="  flex justify-between items-center gap-2 hoverBtn ">
                   <AiOutlineTags className=" text-[--color-extra01] hoverEl" />
@@ -67,7 +67,7 @@ const BlogStandardRight = () => {
                 </div>
               </div>
 
-              <div className=" flex items-center flex-col gap-4 md:gap-6  lg:gap-10">
+              <div className="p-3 flex items-center flex-col gap-4 md:gap-6  lg:gap-10">
                 <h1 className="   line-clamp-3 md:text-3xl text-xl lg:text-4xl font-bold text-[--color-heading] hover:text-[--color-primary]">
                   The Complete Web Developer Guideline 2023
                 </h1>
@@ -82,22 +82,22 @@ const BlogStandardRight = () => {
                   perferendis, eveniet quaerat provident deleniti minus debitis
                   cum soluta. Illum?
                 </p>
-                {/* <Link to=""> */}
-                <div className=" flex gap-2 hoverBtn">
-                  <p className=" text-2xl font-bold text-[--color-primary] hoverEl">
-                    More Info
-                  </p>
-                  <TbArrowBigRightLinesFilled className=" text-4xl text-[--color-primary] hoverEl" />
-                </div>
-                {/* </Link> */}
+                <Link to={`/courseDetail/${1}`}>
+                  <div className=" flex gap-2 hoverBtn">
+                    <p className=" text-2xl font-bold text-[--color-primary] hoverEl">
+                      More Info
+                    </p>
+                    <TbArrowBigRightLinesFilled className=" text-4xl text-[--color-primary] hoverEl" />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
           <div
             id="2"
-            className="mx-auto swiper-slide  shadow w-full p-3 flex flex-col gap-4 lg:gap-7 md:gap-5   overflow-hidden bg-[--color-shape]">
+            className="mx-auto  shadow w-full  flex flex-col gap-4 lg:gap-7 md:gap-5   overflow-hidden bg-[--color-shape]">
             <div className="relative h-[100%] w-[100%]   flex justify-center items-center flex-col ">
-              <div className="w-full h-[70%] thumnail  relative">
+              <div className="w-full h-[70%] thumnail   relative">
                 <div className="hoverCustom h-full w-full overflow-hidden rounded">
                   <img
                     src={BlogImg1}
@@ -111,13 +111,13 @@ const BlogStandardRight = () => {
                   Social Media
                 </p>
               </div>
-              <div className="absolute z-50 bottom-[-11%] right-[5%] md:bottom-[-6%] md:right-[5%] lg:bottom-[-7%] lg:right-[5%] w-[47px] h-[47px] md:w-[50px] md:h-[50px] lg:w-[75px] lg:h-[75px] rounded-[50%] bg-[--color-primary] flex flex-col justify-center items-center">
+              <div className="absolute z-50 bottom-[-11%]  right-[5%] md:bottom-[-6%] md:right-[5%] lg:bottom-[-7%] lg:right-[5%] w-[47px] h-[47px] md:w-[50px] md:h-[50px] lg:w-[75px] lg:h-[75px] rounded-[50%] bg-[--color-primary] flex flex-col justify-center items-center">
                 <p className=" font-semibold lg:font-Size-h4 text-white">18</p>
                 <p className=" font-semibold lg:font-Size-h4 text-white">Feb</p>
               </div>
             </div>
 
-            <div className="flex flex-col  gap-5">
+            <div className="flex p-3 flex-col  gap-5">
               <div className=" flex justify-between items-center p-2 ">
                 <div className="  flex justify-between items-center gap-2 hoverBtn ">
                   <AiOutlineTags className=" text-[--color-extra01] hoverEl" />
@@ -145,7 +145,7 @@ const BlogStandardRight = () => {
                 </div>
               </div>
 
-              <div className=" flex items-center flex-col gap-4 md:gap-6  lg:gap-10">
+              <div className="p-3 flex items-center flex-col gap-4 md:gap-6  lg:gap-10">
                 <h1 className="   line-clamp-3 md:text-3xl text-xl lg:text-4xl font-bold text-[--color-heading] hover:text-[--color-primary]">
                   The Complete Web Developer Guideline 2023
                 </h1>
@@ -160,22 +160,22 @@ const BlogStandardRight = () => {
                   perferendis, eveniet quaerat provident deleniti minus debitis
                   cum soluta. Illum?
                 </p>
-                {/* <Link to=""> */}
-                <div className=" flex gap-2 hoverBtn">
-                  <p className=" text-2xl font-bold text-[--color-primary] hoverEl">
-                    More Info
-                  </p>
-                  <TbArrowBigRightLinesFilled className=" text-4xl text-[--color-primary] hoverEl" />
-                </div>
-                {/* </Link> */}
+                <Link to={`/courseDetail/${2}`}>
+                  <div className=" flex gap-2 hoverBtn">
+                    <p className=" text-2xl font-bold text-[--color-primary] hoverEl">
+                      More Info
+                    </p>
+                    <TbArrowBigRightLinesFilled className=" text-4xl text-[--color-primary] hoverEl" />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
           <div
             id="3"
-            className="mx-auto swiper-slide   shadow w-full p-3 flex flex-col gap-4 lg:gap-7 md:gap-5   overflow-hidden bg-[--color-shape]">
+            className="mx-auto  shadow w-full  flex flex-col gap-4 lg:gap-7 md:gap-5   overflow-hidden bg-[--color-shape]">
             <div className="relative h-[100%] w-[100%]   flex justify-center items-center flex-col ">
-              <div className="w-full h-[70%] thumnail  relative">
+              <div className="w-full h-[70%] thumnail   relative">
                 <div className="hoverCustom h-full w-full overflow-hidden rounded">
                   <img
                     src={BlogImg1}
@@ -189,13 +189,13 @@ const BlogStandardRight = () => {
                   Social Media
                 </p>
               </div>
-              <div className="absolute z-50 bottom-[-11%] right-[5%] md:bottom-[-6%] md:right-[5%] lg:bottom-[-7%] lg:right-[5%] w-[47px] h-[47px] md:w-[50px] md:h-[50px] lg:w-[75px] lg:h-[75px] rounded-[50%] bg-[--color-primary] flex flex-col justify-center items-center">
+              <div className="absolute z-50 bottom-[-11%]  right-[5%] md:bottom-[-6%] md:right-[5%] lg:bottom-[-7%] lg:right-[5%] w-[47px] h-[47px] md:w-[50px] md:h-[50px] lg:w-[75px] lg:h-[75px] rounded-[50%] bg-[--color-primary] flex flex-col justify-center items-center">
                 <p className=" font-semibold lg:font-Size-h4 text-white">18</p>
                 <p className=" font-semibold lg:font-Size-h4 text-white">Feb</p>
               </div>
             </div>
 
-            <div className="flex flex-col  gap-5">
+            <div className="flex p-3 flex-col  gap-5">
               <div className=" flex justify-between items-center p-2 ">
                 <div className="  flex justify-between items-center gap-2 hoverBtn ">
                   <AiOutlineTags className=" text-[--color-extra01] hoverEl" />
@@ -223,7 +223,7 @@ const BlogStandardRight = () => {
                 </div>
               </div>
 
-              <div className=" flex items-center flex-col gap-4 md:gap-6  lg:gap-10">
+              <div className="p-3 flex items-center flex-col gap-4 md:gap-6  lg:gap-10">
                 <h1 className="   line-clamp-3 md:text-3xl text-xl lg:text-4xl font-bold text-[--color-heading] hover:text-[--color-primary]">
                   The Complete Web Developer Guideline 2023
                 </h1>
@@ -238,14 +238,14 @@ const BlogStandardRight = () => {
                   perferendis, eveniet quaerat provident deleniti minus debitis
                   cum soluta. Illum?
                 </p>
-                {/* <Link to=""> */}
-                <div className=" flex gap-2 hoverBtn">
-                  <p className=" text-2xl font-bold text-[--color-primary] hoverEl">
-                    More Info
-                  </p>
-                  <TbArrowBigRightLinesFilled className=" text-4xl text-[--color-primary] hoverEl" />
-                </div>
-                {/* </Link> */}
+                <Link to={`/courseDetail/${3}`}>
+                  <div className=" flex gap-2 hoverBtn">
+                    <p className=" text-2xl font-bold text-[--color-primary] hoverEl">
+                      More Info
+                    </p>
+                    <TbArrowBigRightLinesFilled className=" text-4xl text-[--color-primary] hoverEl" />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -271,7 +271,6 @@ const BlogStandardRight = () => {
             })}
           />
         </div>
-        <div className=" lg:w-[30%] md:w-[40%] w-full"></div>
       </div>
     </>
   );
