@@ -16,28 +16,27 @@ import BlogDetails from "../pages/BlogDetails";
 import FAQ from "../components/FAQ/FAQ";
 // import BlogStandardRight from "../components/BlogStandardComponents/BlogStandardRight";
 
-
 const Path = () => {
   return (
     <div>
       <BrowserRouter>
-
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/aboutUs" element={<AboutUs/>}/>
+          <Route path="/aboutUs" element={<AboutUs />} />
+
           <Route path="/courses" element={<Courses />} />
 
-          <Route path="/courseDetail" element={<CourseDetail/>} />
+          <Route path="/courseDetail/:id" element={<CourseDetail />} />
 
           <Route path="/contactUs" element={<ContactUs />} />
-          <Route path="/pricing" element={<Pricing/>}/>
-          <Route path="/FAQ" element={<FAQ/>}/>
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/FAQ" element={<FAQ />} />
           {/* <Route path="/blog" element={<BlogStandardRight/>}/> */}
-          <Route path="/blogDetail" element={<BlogDetails/>}/>
+          <Route path="/blogDetail" element={<BlogDetails />} />
 
-          <Route path="/login" element={<Login/>}/>
-          <Route path="/register" element={<Register/>}/>
-          <Route path="*" element={<Error/>}/>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -7,10 +7,15 @@ import {
   BsFillHeartFill,
 } from "react-icons/bs";
 import { IoNewspaperOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+import "./popular.css"
 
 const PopularCourse = () => {
   return (
-    <div className=" mt-14 mb-28">
+    <div data-aos="fade-up" className=" mt-14 mb-28">
       <div className=" flex flex-col gap-1 items-center py-10">
         <h2 className=" text-[16px] font-sans text-[#525fe1] font-semibold tracking-widest ">
           POPULAR COURSES
@@ -21,10 +26,10 @@ const PopularCourse = () => {
       </div>
       <div className=" flex flex-wrap items-center justify-center gap-10">
         <div className=" flex justify-center items-center">
-          <div className=" bg-slate-100 hover:bg-white hover:shadow-lg w-[330px] h-auto p-3 group">
+          <div className=" bg-slate-100 hover:bg-white hover:shadow-lg mainDiv h-auto p-3 group">
             <div className="">
               <div className=" overflow-hidden ">
-                <div className=" w-[310px] transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
+                <div className=" mainImg transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
                   <div className="  overflow-hidden relative">
                     <img
                       className=""
@@ -35,7 +40,7 @@ const PopularCourse = () => {
                 </div>
               </div>
               <div className=" flex py-4 justify-between relative">
-                <div className=" absolute flex gap-44 font-semibold pt-3 text-white top-[-230px] left-0">
+                <div className=" absolute flex gap-60 font-semibold pt-3 invisible lg:visible text-white top-[-230px] left-0">
                   <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                     <p className=" font-bold">
                       <BsClock />
@@ -96,10 +101,10 @@ const PopularCourse = () => {
         </div>
 
         <div className=" flex justify-center items-center">
-          <div className=" bg-slate-100 hover:bg-white hover:shadow-lg w-[330px] h-auto p-3 group">
+          <div className=" bg-slate-100 hover:bg-white hover:shadow-lg mainDiv h-auto p-3 group">
             <div className="">
               <div className=" overflow-hidden ">
-                <div className=" w-[310px] transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
+                <div className=" transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
                   <div className="  overflow-hidden relative">
                     <img
                       className=""
@@ -110,7 +115,7 @@ const PopularCourse = () => {
                 </div>
               </div>
               <div className=" flex py-4 justify-between relative">
-                <div className=" absolute flex gap-44 font-semibold pt-3 text-white top-[-230px] left-0">
+                <div className=" absolute flex gap-60 invisible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
                   <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                     <p className=" font-bold">
                       <BsClock />
@@ -171,10 +176,10 @@ const PopularCourse = () => {
         </div>
 
         <div className=" flex justify-center items-center">
-          <div className=" bg-slate-100 hover:bg-white hover:shadow-lg w-[330px] h-auto p-3 group">
+          <div className=" bg-slate-100 hover:bg-white hover:shadow-lg mainDiv h-auto p-3 group">
             <div className="">
               <div className=" overflow-hidden ">
-                <div className=" w-[310px] transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
+                <div className=" transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
                   <div className="  overflow-hidden relative">
                     <img
                       className=""
@@ -185,7 +190,7 @@ const PopularCourse = () => {
                 </div>
               </div>
               <div className=" flex py-4 justify-between relative">
-                <div className=" absolute flex gap-44 font-semibold pt-3 text-white top-[-230px] left-0">
+                <div className=" absolute flex gap-60 invisible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
                   <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                     <p className=" font-bold">
                       <BsClock />
@@ -246,10 +251,10 @@ const PopularCourse = () => {
         </div>
 
         <div className=" flex justify-center items-center">
-          <div className=" bg-slate-100 hover:bg-white hover:shadow-lg w-[330px] h-auto p-3 group">
+          <div className=" bg-slate-100 hover:bg-white hover:shadow-lg mainDiv h-auto p-3 group">
             <div className="">
               <div className=" overflow-hidden ">
-                <div className=" w-[310px] transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
+                <div className=" transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
                   <div className="  overflow-hidden relative">
                     <img
                       className=""
@@ -260,7 +265,7 @@ const PopularCourse = () => {
                 </div>
               </div>
               <div className=" flex py-4 justify-between relative">
-                <div className=" absolute flex gap-44 font-semibold pt-3 text-white top-[-230px] left-0">
+                <div className=" absolute flex gap-60 invisible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
                   <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                     <p className=" font-bold">
                       <BsClock />
@@ -321,10 +326,10 @@ const PopularCourse = () => {
         </div>
 
         <div className=" flex justify-center items-center">
-          <div className=" bg-slate-100 hover:bg-white hover:shadow-lg w-[330px] h-auto p-3 group">
+          <div className=" bg-slate-100 hover:bg-white hover:shadow-lg mainDiv h-auto p-3 group">
             <div className="">
               <div className=" overflow-hidden ">
-                <div className=" w-[310px] transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
+                <div className=" transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
                   <div className="  overflow-hidden relative">
                     <img
                       className=""
@@ -335,7 +340,7 @@ const PopularCourse = () => {
                 </div>
               </div>
               <div className=" flex py-4 justify-between relative">
-                <div className=" absolute flex gap-44 font-semibold pt-3 text-white top-[-230px] left-0">
+                <div className=" absolute flex gap-60 invisible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
                   <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                     <p className=" font-bold">
                       <BsClock />
@@ -396,10 +401,10 @@ const PopularCourse = () => {
         </div>
 
         <div className=" flex justify-center items-center">
-          <div className=" bg-slate-100 hover:bg-white hover:shadow-lg w-[330px] h-auto p-3 group">
+          <div className=" bg-slate-100 hover:bg-white hover:shadow-lg mainDiv h-auto p-3 group">
             <div className="">
               <div className=" overflow-hidden ">
-                <div className=" w-[310px] transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
+                <div className=" transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
                   <div className="  overflow-hidden relative">
                     <img
                       className=""
@@ -410,7 +415,7 @@ const PopularCourse = () => {
                 </div>
               </div>
               <div className=" flex py-4 justify-between relative">
-                <div className=" absolute flex gap-44 font-semibold pt-3 text-white top-[-230px] left-0">
+                <div className=" absolute flex gap-60 invisible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
                   <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                     <p className=" font-bold">
                       <BsClock />
@@ -472,10 +477,12 @@ const PopularCourse = () => {
       </div>
 
       <div className=" flex justify-center mb-3 mt-20">
-        <button className=" bg-[#525fe1] hover:bg-[#070c44] px-8 py-4 flex items-center gap-3 rounded-md text-white font-semibold text-xl">
-          View All Courses
-          <BsArrowRight />
-        </button>
+        <Link to={"/courses"}>
+          <button className=" bg-[#525fe1] hover:bg-[#070c44] px-8 py-4 flex items-center gap-3 rounded-md text-white font-semibold text-xl">
+            View All Courses
+            <BsArrowRight />
+          </button>
+        </Link>
       </div>
     </div>
   );

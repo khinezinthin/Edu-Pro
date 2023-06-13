@@ -1,0 +1,50 @@
+.mainSide {
+  display: flex;
+  flex-direction: wrap;
+}
+
+@media (max-width: 1000px) {
+  .mainSide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+}
+
+.rightSide {
+  width: 35%;
+  position: static;
+}
+
+@media (max-width: 1000px) {
+  .rightSide {
+    margin-top: 70px;
+    width: 50%;
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  .rightSide {
+    margin-top: 70px;
+    width: 80%;
+    position: static;
+  }
+}
+
+. inster {
+  display: flex;
+  flex-direction: wrap;
+}
+
+@media (max-width: 800px) {
+  .inster {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

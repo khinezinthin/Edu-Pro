@@ -1,0 +1,20 @@
+.mainDiv {
+    width: 380px;
+}
+
+@media (max-width: 800px) {
+    .mainDiv {
+      width: 360px; 
+    }
+  }
+
+  @media (max-width: 700px) {
+    .mainDiv {
+      width: 530px; 
+    }
+  }
+  @media (max-width: 600px) {
+    .mainDiv {
+      width: 420px; 
+    }
+  }

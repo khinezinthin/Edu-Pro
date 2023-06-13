@@ -3,6 +3,10 @@ import { GiTrophyCup } from "react-icons/gi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper";
 import "./swiper.css";
+import "./testimonial.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 import "swiper/swiper.min.css";
 import "swiper/css/pagination";
@@ -10,28 +14,37 @@ import "swiper/css/pagination";
 
 const Testimonial = () => {
   return (
-    <div>
-      <div className=" flex justify-center flex-col items-center gap-2 bg-[url(https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/10/home-one-testimonial-2.jpg)] bg-no-repeat bg-cover relative pb-14 ">
+    <div data-aos="fade-up">
+      <div className=" flex justify-center flex-col gap-2 bg-[url(https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/10/home-one-testimonial-2.jpg)] bg-no-repeat bg-cover relative pb-14 ">
         <div className="  pt-20 flex justify-center items-center flex-col  ">
           <h2 className=" uppercase text-[16px] tracking-wide text-[#525fe1] font-bold">
             Testimonial
           </h2>
-          <h2 className=" capitalize text-[40px] font-bold">
+          <h2 className=" capitalize text-[40px] text-center font-bold">
             what our student says
           </h2>
         </div>
-        <div className=" flex gap-14 md:gap-3 my-20 flex-wrap  relative  ">
-          <div className=" ">
+        <div className=" flex my-20 ms-10 items-center flex-wrap carouselTop relative ">
+          <div className=" relative">
             <img
               className=" w-[280px] md:w-[400px] lg:w-[90%]"
               src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/10/testimonial-01-2.jpg"
               alt=""
             />
           </div>
+          <div className=" flex items-center gap-2 lg:visible invisible bg-white px-4 py-3 absolute top-1/3 left-[7%] rounded-md animate-bounce">
+            <p className="">
+              <GiTrophyCup className=" text-4xl text-yellow-500" />
+            </p>
+            <div>
+              <p className=" font-bold text-lg">50K+</p>
+              <p className=" text-gray-800 ">Satisfied Learners</p>
+            </div>
+          </div>
 
           {/* Carousel */}
 
-          <div className=" w-[200px] lg:w-[500px] md:w-[225px] swiper-container ">
+          <div className="  w-[350px] md:w-[600px] lg:w-[380px] md:ms-28 sm:ms-20 swiper-container carouselBottom ">
             <Swiper
               autoplay={{
                 delay: 2000,
@@ -45,7 +58,7 @@ const Testimonial = () => {
                 clickable: true,
               }}
               modules={[Pagination, Autoplay]}
-              className=" mySwiper ">
+              className=" mySwiper pb-24">
               <SwiperSlide>
                 <div>
                   <img
@@ -134,15 +147,7 @@ const Testimonial = () => {
           </div>
           <div className=" swiper-pagination"></div>
 
-          <div className=" flex items-center gap-2 lg:visible md:visible invisible bg-white px-4 py-3 absolute top-1/3 -left-[12%] rounded-md animate-bounce">
-            <p className="">
-              <GiTrophyCup className=" text-4xl text-yellow-500" />
-            </p>
-            <div>
-              <p className=" font-bold text-lg">50K+</p>
-              <p className=" text-gray-800 ">Satisfied Learners</p>
-            </div>
-          </div>
+          
         </div>
         <img
           className=" absolute top-20 -left-[3px]"
