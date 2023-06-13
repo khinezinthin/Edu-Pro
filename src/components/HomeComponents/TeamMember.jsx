@@ -9,7 +9,7 @@ AOS.init();
 
 const TeamMember = () => {
   return (
-    <div className='teamMember-div flex flex-col justify-center items-center py-28 relative overflow-x-hidden'>
+    <div className='teamMember-div flex flex-col justify-center items-center py-28 relative overflow-hidden'>
 
         <div className=' text-center flex flex-col gap-1 ' data-aos="fade-up" data-aos-duration="1200" data-aos-once="true" >
             <h5 className=' text-[#fff] text-[20px] font-bold max-sm:text-[15px] max-[320px]:text-[10px] tracking-widest'>TEAM MEMBER</h5>

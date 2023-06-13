@@ -7,6 +7,10 @@ import "./AboutUs.css";
 import { SlBookOpen } from "react-icons/sl";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import "animate.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
+AOS.init();
 
 const AboutUs = () => {
   return (
@@ -60,9 +64,14 @@ const AboutUs = () => {
           </div>
 
           {/* right */}
-          <div className="w-full  min-[820px]:w-full   md:w-1/2   lg:w-1/2 overflow-hidden">
+          <div
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="1000"
+            className="w-full  min-[820px]:w-full   md:w-1/2   lg:w-1/2 overflow-hidden"
+          >
             <div className="w-full   flex flex-col lg:gap-10 md:gap-8 gap-5">
-              <div className=" animate__animated  animate__fadeInUp mb-3">
+              <div className="  mb-3">
                 <div>
                   <span className=" text-[#525FE1] ">ABOUT US</span>
                   <h1 className=" text-4xl font-bold tracking-[--h1-lineHeight] ">
@@ -71,12 +80,12 @@ const AboutUs = () => {
                 </div>
               </div>
 
-              <div className="animate__animated  animate__fadeInUp tracking-wide">
+              <div className=" tracking-wide">
                 Online learning has become increasingly popular in recent years,
                 offering a flexible and convenient way for individuals to pursue
                 education and training.
               </div>
-              <div className="animate__animated  animate__fadeInUp flex  items-center gap-5">
+              <div className=" flex  items-center gap-5">
                 <div className=" p-3 rounded-[100%] bg-[#F86F03] w-[50px]">
                   <SlBookOpen className=" text-2xl text-white" />
                 </div>
@@ -91,7 +100,7 @@ const AboutUs = () => {
                   </p>
                 </div>
               </div>
-              <div className="animate__animated  animate__fadeInUp flex  items-center gap-4">
+              <div className=" flex  items-center gap-4">
                 <div className=" p-3 rounded-[100%] bg-[#F86F03] w-[50px]">
                   <SlBookOpen className=" text-2xl text-white" />
                 </div>
@@ -105,11 +114,13 @@ const AboutUs = () => {
                   </p>
                 </div>
               </div>
-              <div className="animate__animated  animate__fadeInUp">
-                <button className="rounded px-12 py-5 text-white flex justify-center items-center  bg-[--color-primary] hover:bg-[--color-dark]">
-                  <p> Know About Us</p>
-                  <AiOutlineArrowRight className=" inline-block" />
-                </button>
+              <div className="">
+                <Link to={"/aboutUs"}>
+                  <button className="rounded px-12 py-5 text-white flex justify-center items-center  bg-[--color-primary] hover:bg-[--color-dark]">
+                    <p> Know About Us</p>
+                    <AiOutlineArrowRight className=" inline-block" />
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

@@ -3,13 +3,14 @@ import "./app.css";
 import Path from "./route/Path";
 import "./App.css";
 
-
 const App = () => {
   return (
     <div className=" relative">
 
+
       <Path />
     
+
 
     </div>
   );

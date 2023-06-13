@@ -7,6 +7,7 @@ import { TbPlayerPlayFilled } from "react-icons/tb";
 import "./whyChooseUs.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 AOS.init();
 
 const WhyChooseUs = () => {
@@ -17,7 +18,7 @@ const WhyChooseUs = () => {
           <div
             data-aos="fade-up"
             data-aos-once="true"
-            data-aos-duration="1000"
+            data-aos-duration="1500"
             className="flex flex-col gap-3"
           >
             <p className=" font-bold text-blue-600 tracking-wider text-start">
@@ -31,7 +32,7 @@ const WhyChooseUs = () => {
             <div
               data-aos="fade-up"
               data-aos-once="true"
-              data-aos-duration="1000"
+              data-aos-duration="1500"
               className=" w-[45%]  max-md:w-[100%] flex flex-col gap-7 mt-10"
             >
               <TbUsers className=" text-5xl text-orange-500" />
@@ -48,13 +49,13 @@ const WhyChooseUs = () => {
             <div
               data-aos="fade-up"
               data-aos-once="true"
-              data-aos-duration="1000"
+              data-aos-duration="1500"
               className=" w-[45%] max-md:w-[100%] flex flex-col gap-7 mt-10"
             >
               <TfiRulerAlt2 className=" text-5xl text-orange-500" />
               <div className="flex flex-col gap-3">
                 <h2 className=" text-xl text-gray-600 font-bold text-start">
-                  Virtual Classroom
+                  Remote Education
                 </h2>
                 <p className=" font-medium text-gray-400 text-start">
                   Students can access course materials, participate in debate &
@@ -65,13 +66,13 @@ const WhyChooseUs = () => {
             <div
               data-aos="fade-up"
               data-aos-once="true"
-              data-aos-duration="1000"
+              data-aos-duration="1500"
               className=" w-[45%] max-md:w-[100%] flex flex-col gap-7 mt-10"
             >
               <VscBook className=" text-5xl text-orange-500" />
               <div className="flex flex-col gap-3">
                 <h2 className=" text-xl text-gray-600 font-bold text-start">
-                  Virtual Classroom
+                  Digital Learning
                 </h2>
                 <p className=" font-medium text-gray-400 text-start">
                   Students can access course materials, participate in debate &
@@ -82,13 +83,13 @@ const WhyChooseUs = () => {
             <div
               data-aos="fade-up"
               data-aos-once="true"
-              data-aos-duration="1000"
+              data-aos-duration="1500"
               className=" w-[45%] max-md:w-[100%] flex flex-col gap-7 mt-10"
             >
               <TfiAlarmClock className=" text-5xl text-orange-500" />
               <div className="flex flex-col gap-3">
                 <h2 className=" text-xl text-gray-600 font-bold text-start">
-                  Virtual Classroom
+                  Educator Support
                 </h2>
                 <p className=" font-medium text-gray-400 text-start">
                   Students can access course materials, participate in debate &
@@ -104,9 +105,11 @@ const WhyChooseUs = () => {
               src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/10/choose-us-image-01-2.jpg"
               alt="Image"
             />
-            <button className="play-btn w-[60px] h-[60px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full">
-              <TbPlayerPlayFilled className="text-orange-500 text-2xl mx-auto" />
-            </button>
+            <Link to={"https://youtu.be/pNje3bWz7V8"}>
+              <button className="play-btn w-[60px] h-[60px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full">
+                <TbPlayerPlayFilled className="text-orange-500 text-2xl mx-auto" />
+              </button>
+            </Link>
           </div>
           <div className="shape absolute"></div>
           <div className="shape-two absolute"></div>
