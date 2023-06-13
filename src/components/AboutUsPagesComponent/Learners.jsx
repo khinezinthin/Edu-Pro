@@ -6,6 +6,7 @@ import { MdFlag } from "react-icons/md";
 import { BiRightArrowAlt } from "react-icons/bi";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 AOS.init();
 
 const Learners = () => {
@@ -109,12 +110,14 @@ const Learners = () => {
             data-aos-duration="1000"
             className="mt-3"
           >
-            <button className=" bg-blue-600 px-7 py-4 rounded gap-2 text-lg text-white font-medium flex items-center hover:bg-blue-950 duration-500">
-              Explore Courses
-              <span>
-                <BiRightArrowAlt className=" text-2xl font-bolder pt-1" />
-              </span>
-            </button>
+            <Link to={'/courses'}>
+              <button className=" bg-blue-600 px-7 py-4 rounded gap-2 text-lg text-white font-medium flex items-center hover:bg-blue-950 duration-500">
+                Explore Courses
+                <span>
+                  <BiRightArrowAlt className=" text-2xl font-bolder pt-1" />
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

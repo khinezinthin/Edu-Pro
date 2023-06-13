@@ -5,6 +5,7 @@ import { RiFileList3Line } from "react-icons/ri";
 import { LuClock3 } from "react-icons/lu";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 AOS.init();
 
 const Learning = () => {
@@ -18,12 +19,14 @@ const Learning = () => {
         />
         <div
           className=" xl:pl-20 lg:pl-5 md:pl-0 md:pt-10 font-semibold xl:w-[50%] z-10 max-lg:relative left-[-70px]
-             max-md:static max-[540px]:relative max-[540px]:left-0 max-[440px]:left-[18px] max-[360px]:left-[14px]">
+             max-md:static max-[540px]:relative max-[540px]:left-0 max-[440px]:left-[18px] max-[360px]:left-[14px]"
+        >
           <h5
             className=" text-[#525FE1] tracking-widest pl-1 "
             data-aos="fade-up"
             data-aos-duration="1200"
-            data-aos-once="true">
+            data-aos-once="true"
+          >
             EXCELLENCE IN EDUCATION
           </h5>
 
@@ -32,7 +35,8 @@ const Learning = () => {
             max-[440px]:w-[350px] max-[360px]:text-[29px] max-[360px]:w-[300px] "
             data-aos="fade-up"
             data-aos-duration="1500"
-            data-aos-once="true">
+            data-aos-once="true"
+          >
             Start Better Learning Future From Here
           </h1>
 
@@ -40,7 +44,8 @@ const Learning = () => {
             className=" border-l-2 border-l-[#525FE1] max-lg:h-12 max-[540px]:h-20 max-[440px]:h-28 tracking-wider h-10 flex items-center mt-7 mb-14 max-[540px]:mt-6 max-[540px]:mb-10 "
             data-aos="fade-up"
             data-aos-once="true"
-            data-aos-duration="1600">
+            data-aos-duration="1600"
+          >
             <p className=" pl-4 w-[500px] max-[540px]:w-[400px] max-[440px]:w-[300px] leading-7 text-gray-500 font-medium text-lg">
               Empower yourself with the knowledge and skills gained through
               online education! The key to your future!
@@ -51,15 +56,18 @@ const Learning = () => {
             className=" pb-10 "
             data-aos="fade-up"
             data-aos-once="true"
-            data-aos-duration="1700">
-            <button className=" hover:bg-[#231F40] duration-300 flex justify-center items-center gap-2 py-[15px] px-[31px] bg-[#525FE1] text-white tracking-wider rounded">
-              <span className=" text-base font-semibold">
-                Get Started Today
-              </span>
-              <span className="flex items-center font-bold">
-                <AiOutlineArrowRight className="ml-1" />
-              </span>
-            </button>
+            data-aos-duration="1700"
+          >
+            <Link to={"/contactUs"}>
+              <button className=" hover:bg-[#231F40] duration-300 flex justify-center items-center gap-2 py-[15px] px-[31px] bg-[#525FE1] text-white tracking-wider rounded">
+                <span className=" text-base font-semibold">
+                  Get Started Today
+                </span>
+                <span className="flex items-center font-bold">
+                  <AiOutlineArrowRight className="ml-1" />
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -75,7 +83,8 @@ const Learning = () => {
               data-aos="fade-up"
               data-aos-delay="100"
               data-aos-duration="2000"
-              data-aos-once="true">
+              data-aos-once="true"
+            >
               <div className=" cursor-pointer relative box-border overflow-hidden ">
                 <img
                   src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2023/03/course-33-590x430.webp"
@@ -116,7 +125,8 @@ const Learning = () => {
               className="bg-white p-5 w-[180px] rounded mt-8 second-card card-shadow"
               data-aos="fade-up"
               data-aos-duration="2000"
-              data-aos-once="true">
+              data-aos-once="true"
+            >
               <img
                 src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/10/workshop-2.png"
                 alt=""

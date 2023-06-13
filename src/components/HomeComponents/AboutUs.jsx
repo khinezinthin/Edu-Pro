@@ -9,6 +9,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import "animate.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 AOS.init();
 
 const AboutUs = () => {
@@ -67,7 +68,8 @@ const AboutUs = () => {
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-duration="1000"
-            className="w-full  min-[820px]:w-full   md:w-1/2   lg:w-1/2 overflow-hidden">
+            className="w-full  min-[820px]:w-full   md:w-1/2   lg:w-1/2 overflow-hidden"
+          >
             <div className="w-full   flex flex-col lg:gap-10 md:gap-8 gap-5">
               <div className="  mb-3">
                 <div>
@@ -113,10 +115,12 @@ const AboutUs = () => {
                 </div>
               </div>
               <div className="">
-                <button className="rounded px-12 py-5 text-white flex justify-center items-center  bg-[--color-primary] hover:bg-[--color-dark]">
-                  <p> Know About Us</p>
-                  <AiOutlineArrowRight className=" inline-block" />
-                </button>
+                <Link to={"/aboutUs"}>
+                  <button className="rounded px-12 py-5 text-white flex justify-center items-center  bg-[--color-primary] hover:bg-[--color-dark]">
+                    <p> Know About Us</p>
+                    <AiOutlineArrowRight className=" inline-block" />
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
