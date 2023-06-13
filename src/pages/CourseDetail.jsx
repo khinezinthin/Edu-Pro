@@ -59,6 +59,8 @@ const CourseDetail = () => {
         {/* left side  */}
         <div
           data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-duration="1200"
           className=" mt-14 ms-16 flex flex-col gap-4 leftSide">
           {/* starfill & pfp icon & name  */}
           <div className=" flex gap-16 items-center ">
@@ -188,8 +190,8 @@ const CourseDetail = () => {
             </button>
           </div>
           {/* Info  */}
-          <div>
-            <div className=" flex gap-40 py-5">
+          <div className=" px-5">
+            <div className=" flex gap-28 py-5">
               <div className=" flex gap-2 items-center text-[#6f6b80] text-[16px] font-semibold">
                 <BsClock className=" text-[#525fe1]  text-sm" /> Duration
               </div>
@@ -198,7 +200,7 @@ const CourseDetail = () => {
               </div>
             </div>
             <hr />
-            <div className=" flex gap-44 py-5">
+            <div className=" flex gap-36 py-5">
               <div className=" flex gap-2 items-center text-[#6f6b80] text-[16px] font-semibold">
                 <BsPeople className=" text-[#525fe1]  text-sm" /> Students
               </div>
@@ -207,7 +209,7 @@ const CourseDetail = () => {
               </div>
             </div>
             <hr />
-            <div className=" flex gap-48 py-5">
+            <div className=" flex gap-40 py-5">
               <div className=" flex gap-2 items-center text-[#6f6b80] text-[16px] font-semibold">
                 <HiOutlineClipboardDocumentList className=" text-[#525fe1]  text-sm" />{" "}
                 Lessons
@@ -217,7 +219,7 @@ const CourseDetail = () => {
               </div>
             </div>
             <hr />
-            <div className=" flex gap-40 py-5">
+            <div className=" flex gap-32 py-5">
               <div className=" flex gap-2 items-center text-[#6f6b80] text-[16px] font-semibold">
                 <VscGraph className=" text-[#525fe1]  text-sm" /> Skill level
               </div>
@@ -226,7 +228,7 @@ const CourseDetail = () => {
               </div>
             </div>
             <hr />
-            <div className=" flex gap-40 py-5">
+            <div className=" flex gap-32 py-5">
               <div className=" flex gap-2 items-center text-[#6f6b80] text-[16px] font-semibold">
                 <HiOutlineTranslate className=" text-[#525fe1]  text-sm" />{" "}
                 Language
@@ -236,14 +238,14 @@ const CourseDetail = () => {
               </div>
             </div>
             <hr />
-            <div className=" flex gap-48 py-5">
+            <div className=" flex gap-40 py-5">
               <div className=" flex gap-2 items-center text-[#6f6b80] text-[16px] font-semibold">
                 <BiChalkboard className=" text-[#525fe1]  text-sm" /> Quizzes
               </div>
               <div className=" text-[#6f6b80] text-[16px] font-semibold">0</div>
             </div>
             <hr />
-            <div className=" flex gap-36 py-5">
+            <div className=" flex gap-28 py-5">
               <div className=" flex gap-2 items-center text-[#6f6b80] text-[16px] font-semibold">
                 <GrCertificate className=" text-[#525fe1]  text-sm" />{" "}
                 Certifications
@@ -253,7 +255,7 @@ const CourseDetail = () => {
               </div>
             </div>
             <hr />
-            <div className=" flex gap-32 py-5">
+            <div className=" flex gap-24 py-5">
               <div className=" flex gap-2 items-center text-[#6f6b80] text-[16px] font-semibold">
                 <AiOutlinePercentage className=" text-[#525fe1]  text-sm" />{" "}
                 Pass Percentage
@@ -263,7 +265,7 @@ const CourseDetail = () => {
               </div>
             </div>
             <hr />
-            <div className=" flex gap-40 py-5">
+            <div className=" flex gap-24 py-5">
               <div className=" flex gap-2 items-center text-[#6f6b80] text-[16px] font-semibold">
                 <BiNotepad className=" text-[#525fe1]  text-sm" /> Deadline
               </div>

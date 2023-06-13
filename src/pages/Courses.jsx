@@ -71,6 +71,8 @@ const Courses = () => {
           {/* Courses */}
           <div
             data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="1200"
             className=" flex flex-wrap items-center justify-center gap-10 mt-10">
             {currentItems.map((data) => (
               <div key={data.id}>

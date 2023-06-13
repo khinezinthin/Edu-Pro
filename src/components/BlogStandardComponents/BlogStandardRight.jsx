@@ -17,15 +17,20 @@ const BlogStandardRight = () => {
         <div className=" w-full  m-auto flex flex-col gap-7 justify-center items-center pb-10">
           <div
             id="1"
+
             className="mx-auto  shadow w-full  flex flex-col gap-4 lg:gap-7 md:gap-5   overflow-hidden bg-[--color-shape]">
             <div className="relative h-[100%] w-[100%]   flex justify-center items-center flex-col ">
               <div className="w-full h-[70%] thumnail   relative">
+
+          
                 <div className="hoverCustom h-full w-full overflow-hidden rounded">
-                  <img
-                    src={BlogImg1}
-                    className="w-full h-full rounded transition-all   hoverItem overflow-hidden "
-                    alt=""
-                  />
+                  <Link to={"/blogDetail"}>
+                    <img
+                      src={BlogImg1}
+                      className="w-full h-full cursor-pointer rounded transition-all hoverItem overflow-hidden "
+                      alt=""
+                    />
+                  </Link>
                 </div>
               </div>
               <div className="absolute top-0 left-0    lg:top-[5%] lg:left-[27px]  rounded lg:py-2 lg:px-6 md:py-2 md:px-4 px-[2px] py-1 bg-[--color-primary] flex flex-col justify-center items-center">
@@ -71,6 +76,7 @@ const BlogStandardRight = () => {
                 <h1 className="   line-clamp-3 md:text-3xl text-xl lg:text-4xl font-bold text-[--color-heading] hover:text-[--color-primary]">
                   The Complete Web Developer Guideline 2023
                 </h1>
+
                 <p className=" line-clamp-3">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
                   pariatur quae quasi, consequatur ullam maxime consequuntur
@@ -95,15 +101,19 @@ const BlogStandardRight = () => {
           </div>
           <div
             id="2"
+
             className="mx-auto  shadow w-full  flex flex-col gap-4 lg:gap-7 md:gap-5   overflow-hidden bg-[--color-shape]">
+
             <div className="relative h-[100%] w-[100%]   flex justify-center items-center flex-col ">
               <div className="w-full h-[70%] thumnail   relative">
                 <div className="hoverCustom h-full w-full overflow-hidden rounded">
-                  <img
-                    src={BlogImg1}
-                    className="w-full h-full rounded transition-all   hoverItem overflow-hidden "
-                    alt=""
-                  />
+                  <Link to={"/blogDetail"}>
+                    <img
+                      src={BlogImg1}
+                      className="w-full h-full cursor-pointer rounded transition-all   hoverItem overflow-hidden "
+                      alt=""
+                    />
+                  </Link>
                 </div>
               </div>
               <div className="absolute top-0 left-0    lg:top-[5%] lg:left-[27px]  rounded lg:py-2 lg:px-6 md:py-2 md:px-4 px-[2px] py-1 bg-[--color-primary] flex flex-col justify-center items-center">
@@ -144,6 +154,7 @@ const BlogStandardRight = () => {
                   </p>
                 </div>
               </div>
+
 
               <div className="p-3 flex items-center flex-col gap-4 md:gap-6  lg:gap-10">
                 <h1 className="   line-clamp-3 md:text-3xl text-xl lg:text-4xl font-bold text-[--color-heading] hover:text-[--color-primary]">
@@ -173,15 +184,19 @@ const BlogStandardRight = () => {
           </div>
           <div
             id="3"
+
             className="mx-auto  shadow w-full  flex flex-col gap-4 lg:gap-7 md:gap-5   overflow-hidden bg-[--color-shape]">
+
             <div className="relative h-[100%] w-[100%]   flex justify-center items-center flex-col ">
               <div className="w-full h-[70%] thumnail   relative">
                 <div className="hoverCustom h-full w-full overflow-hidden rounded">
-                  <img
-                    src={BlogImg1}
-                    className="w-full h-full rounded transition-all   hoverItem overflow-hidden "
-                    alt=""
-                  />
+                  <Link to={"/blogDetail"}>
+                    <img
+                      src={BlogImg1}
+                      className="w-full h-full cursor-pointer rounded transition-all   hoverItem overflow-hidden "
+                      alt=""
+                    />
+                  </Link>
                 </div>
               </div>
               <div className="absolute top-0 left-0    lg:top-[5%] lg:left-[27px]  rounded lg:py-2 lg:px-6 md:py-2 md:px-4 px-[2px] py-1 bg-[--color-primary] flex flex-col justify-center items-center">
@@ -222,6 +237,7 @@ const BlogStandardRight = () => {
                   </p>
                 </div>
               </div>
+
 
               <div className="p-3 flex items-center flex-col gap-4 md:gap-6  lg:gap-10">
                 <h1 className="   line-clamp-3 md:text-3xl text-xl lg:text-4xl font-bold text-[--color-heading] hover:text-[--color-primary]">

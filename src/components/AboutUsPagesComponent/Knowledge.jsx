@@ -3,8 +3,8 @@ import "./Knowledge.css"
 import {AiOutlineArrowRight} from "react-icons/ai"
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Link } from 'react-router-dom';
 AOS.init();
+import { Link } from 'react-router-dom';
 
 const Knowledge = () => {
   return (
