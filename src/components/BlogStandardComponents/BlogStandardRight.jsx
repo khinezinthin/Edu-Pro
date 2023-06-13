@@ -14,7 +14,7 @@ const BlogStandardRight = () => {
   return (
     <>
       <div className=" w-full flex  justify-center flex-wrap flex-col lg:flex-row ">
-        <div className="lg:w-[50%]  md:w-[70%] w-full  m-auto flex flex-col gap-7 justify-center items-center pb-10">
+        <div className="lg:w-[75%]  md:w-[70%] w-full  m-auto flex flex-col gap-7 justify-center items-center pb-10">
           <div
             id="1"
             className="mx-auto  shadow w-full p-3 flex flex-col gap-4 lg:gap-7 md:gap-5   overflow-hidden bg-[--color-shape]">

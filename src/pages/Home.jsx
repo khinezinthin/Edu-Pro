@@ -14,9 +14,8 @@ import Footer from "../components/Footer";
 const Home = () => {
   return (
     <>
-      <section>
-        <Navbar bg={true} absolute={true}/>
-      </section>
+      <Navbar value={2} bg={true} initial={false} />
+
       <section className="">
         <Learning />
       </section>
@@ -24,7 +23,6 @@ const Home = () => {
       <section className=" overflow-hidden">
         <AboutUs />
       </section>
-
 
       <section className=" overflow-hidden">
         <CourseCategories />
@@ -51,14 +49,13 @@ const Home = () => {
       </section>
 
       <section className=" overflow-hidden">
-        <BlogsAndNews/>
+        <BlogsAndNews />
       </section>
       <section>
-        <Footer/>
+        <Footer />
       </section>
     </>
   );
 };
-
 
 export default Home;

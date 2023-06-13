@@ -17,20 +17,16 @@ import BlogDetails from "../pages/BlogDetails";
 import Blog from "../pages/Blog";
 import FAQ from "../components/FAQ/FAQ";
 
-
 const Path = () => {
   return (
     <div>
       <BrowserRouter>
-
-
- master
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/courses" element={<Courses />} />
 
-          <Route path="/courseDetail" element={<CourseDetail/>} />
+          <Route path="/courseDetail" element={<CourseDetail />} />
 
           <Route path="/contactUs" element={<ContactUs />} />
 
@@ -41,8 +37,6 @@ const Path = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="*" element={<Error />} />
-
-        
         </Routes>
       </BrowserRouter>
     </div>

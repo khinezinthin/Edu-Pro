@@ -39,199 +39,205 @@ const Courses = () => {
 
   return (
     <>
-    <section>
-      <Navbar/>
-    </section>
-    
-    <div>
-      {/* Banner */}
-      <div className=" bg-[url(https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/10/home-one-testimonial-2.jpg)] bg-cover h-[215px] relative">
-        <img
-          className=" absolute w-[40px] h-[40px] top-3 left-5"
-          src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-11-07.png"
-          alt=""
-        />
-        <img
-          className=" absolute top-5 left-20"
-          src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-01-02.png"
-          alt=""
-        />
-        <img
-          className=" absolute top-10 left-40"
-          src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-03.png"
-          alt=""
-        />
-        <img
-          className=" absolute bottom-0 right-1/2"
-          src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-13-12.png"
-          alt=""
-        />
-        <img
-          className=" absolute top-1/2 left-2/3"
-          src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-36.png"
-          alt=""
-        />
-        <img
-          className=" absolute top-2/4 right-1/2"
-          src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-05-07.png"
-          alt=""
-        />
-        <div className=" flex flex-col gap-5 items-start ms-32 pt-14">
-          <div>
-            <h2 className=" text-[40px] font-bold text-[#231F40]">Archives: Courses</h2>
-          </div>
-          <div className=" flex flex-wrap items-baseline gap-5 text-[16px] text-[#6F6B80]">
-            <Link to={"/"}>
-              <button>Home</button>
-            </Link>
-            <p className=" text-xs">
-              <IoIosArrowForward />
-            </p>
-            <p>Courses</p>
-          </div>
-        </div>
-      </div>
+      <section>
+        <Navbar value={7} />
+      </section>
 
-      <div className=" flex flex-col justify-center mt-10">
-        {/* search */}
-
-        <div className=" flex justify-between mx-28 mt-28">
-          <p className=" text-lg">
-            Showing <span className=" font-bold">{currentPage}</span> Of{" "}
-            <span className=" font-bold">{totalPages} </span> pages
-          </p>
-          <div className=" bg-slate-200 flex rounded-md items-center gap-3">
-            <input
-              placeholder="Search ..."
-              type="text"
-              className=" bg-slate-200 px-6 py-3 rounded-md outline-none"
-            />
-            <p className=" px-3 py-1 text-2xl cursor-pointer">
-              <BiSearch />
-            </p>
+      <div>
+        {/* Banner */}
+        <div className=" bg-[url(https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/10/home-one-testimonial-2.jpg)] bg-cover h-[215px] relative">
+          <img
+            className=" absolute w-[40px] h-[40px] top-3 left-5"
+            src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-11-07.png"
+            alt=""
+          />
+          <img
+            className=" absolute top-5 left-20"
+            src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-01-02.png"
+            alt=""
+          />
+          <img
+            className=" absolute top-10 left-40"
+            src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-03.png"
+            alt=""
+          />
+          <img
+            className=" absolute bottom-0 right-1/2"
+            src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-13-12.png"
+            alt=""
+          />
+          <img
+            className=" absolute top-1/2 left-2/3"
+            src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-36.png"
+            alt=""
+          />
+          <img
+            className=" absolute top-2/4 right-1/2"
+            src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-05-07.png"
+            alt=""
+          />
+          <div className=" flex flex-col gap-5 items-start ms-32 pt-14">
+            <div>
+              <h2 className=" text-[40px] font-bold text-[#231F40]">
+                Archives: Courses
+              </h2>
+            </div>
+            <div className=" flex flex-wrap items-baseline gap-5 text-[16px] text-[#6F6B80]">
+              <Link to={"/"}>
+                <button>Home</button>
+              </Link>
+              <p className=" text-xs">
+                <IoIosArrowForward />
+              </p>
+              <p>Courses</p>
+            </div>
           </div>
         </div>
 
-        {/* Courses */}
-        <div
-          data-aos="fade-up"
-          className=" flex flex-wrap items-center justify-center gap-10 mt-10">
-          {currentItems.map((data) => (
-            <div key={data.id}>
-              <div className=" flex justify-center items-center">
-                <div className=" bg-slate-100 hover:bg-white hover:shadow-lg w-[330px] h-auto p-3 group">
-                  <div className="">
-                    <div className=" overflow-hidden ">
-                      <div className=" w-[310px] transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
-                        <div className="  overflow-hidden relative">
-                          <img className="" src={data.image} alt="course-27" />
+        <div className=" flex flex-col justify-center mt-10">
+          {/* search */}
+
+          <div className=" flex justify-between mx-28 mt-28">
+            <p className=" text-lg">
+              Showing <span className=" font-bold">{currentPage}</span> Of{" "}
+              <span className=" font-bold">{totalPages} </span> pages
+            </p>
+            <div className=" bg-slate-200 flex rounded-md items-center gap-3">
+              <input
+                placeholder="Search ..."
+                type="text"
+                className=" bg-slate-200 px-6 py-3 rounded-md outline-none"
+              />
+              <p className=" px-3 py-1 text-2xl cursor-pointer">
+                <BiSearch />
+              </p>
+            </div>
+          </div>
+
+          {/* Courses */}
+          <div
+            data-aos="fade-up"
+            className=" flex flex-wrap items-center justify-center gap-10 mt-10">
+            {currentItems.map((data) => (
+              <div key={data.id}>
+                <div className=" flex justify-center items-center">
+                  <div className=" bg-slate-100 hover:bg-white hover:shadow-lg w-[330px] h-auto p-3 group">
+                    <div className="">
+                      <div className=" overflow-hidden ">
+                        <div className=" w-[310px] transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
+                          <div className="  overflow-hidden relative">
+                            <img
+                              className=""
+                              src={data.image}
+                              alt="course-27"
+                            />
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className=" flex py-4 justify-between relative">
-                      <div className=" absolute flex gap-44 font-semibold pt-3 text-white top-[-230px] left-0">
-                        <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
-                          <p className=" font-bold">
-                            <BsClock />
-                          </p>
-                          <p>{data.hour}</p>
-                        </div>
-                        <div className=" bg-slate-500 w-8 h-8 flex justify-center rounded-full ">
-                          <button className=" text-lg ">
-                            <BsFillHeartFill />
-                          </button>
-                        </div>
-                      </div>
-                      <div className=" flex items-center gap-3">
-                        <img
-                          className=" w-[34px] h-[34px] rounded-[100%]"
-                          src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/11/instructor-03-02-2-100x100.webp"
-                          alt=""
-                        />
-                        <h2> {data.name} </h2>
-                      </div>
-                      <div className=" flex items-center gap-5">
-                        <p className=" text-yellow-500">
-                          <BsStarFill />
-                        </p>
-                        <span>{data.rate}</span>
-                      </div>
-                    </div>
-                    <div>
-                      <a
-                        className=" cursor-pointer font-semibold tracking-wide inline-block leading-6 text-[20px]"
-                        href="#">
-                        {data.title}
-                      </a>
-                      <div className=" flex items-center gap-9 pt-5">
-                        <div className=" flex items-center gap-3">
-                          <p className=" text-gray-500 text-lg ">
-                            <BsPeople />
-                          </p>
-                          <p className=" text-[16px] text-gray-500">
-                            {data.noStudent} Students
-                          </p>
+                      <div className=" flex py-4 justify-between relative">
+                        <div className=" absolute flex gap-44 font-semibold pt-3 text-white top-[-230px] left-0">
+                          <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
+                            <p className=" font-bold">
+                              <BsClock />
+                            </p>
+                            <p>{data.hour}</p>
+                          </div>
+                          <div className=" bg-slate-500 w-8 h-8 flex justify-center rounded-full ">
+                            <button className=" text-lg ">
+                              <BsFillHeartFill />
+                            </button>
+                          </div>
                         </div>
                         <div className=" flex items-center gap-3">
-                          <p className=" text-gray-500 text-lg ">
-                            <IoNewspaperOutline />
+                          <img
+                            className=" w-[34px] h-[34px] rounded-[100%]"
+                            src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/11/instructor-03-02-2-100x100.webp"
+                            alt=""
+                          />
+                          <h2> {data.name} </h2>
+                        </div>
+                        <div className=" flex items-center gap-5">
+                          <p className=" text-yellow-500">
+                            <BsStarFill />
                           </p>
-                          <p className=" text-[16px] text-gray-500">
-                            {data.noLesson} Lessons
-                          </p>
+                          <span>{data.rate}</span>
+                        </div>
+                      </div>
+                      <div>
+                        <a
+                          className=" cursor-pointer font-semibold tracking-wide inline-block leading-6 text-[20px]"
+                          href="#">
+                          {data.title}
+                        </a>
+                        <div className=" flex items-center gap-9 pt-5">
+                          <div className=" flex items-center gap-3">
+                            <p className=" text-gray-500 text-lg ">
+                              <BsPeople />
+                            </p>
+                            <p className=" text-[16px] text-gray-500">
+                              {data.noStudent} Students
+                            </p>
+                          </div>
+                          <div className=" flex items-center gap-3">
+                            <p className=" text-gray-500 text-lg ">
+                              <IoNewspaperOutline />
+                            </p>
+                            <p className=" text-[16px] text-gray-500">
+                              {data.noLesson} Lessons
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <hr className=" mt-4" />
-                  <div className=" flex items-center gap-3 mt-4">
-                    <button className=" bg-[#525fe1] text-[16px] text-white px-4 py-1 rounded">
-                      {data.price}
-                    </button>
-                    <p className="text-gray-500 line-through text-[16px]">
-                      {data.prePrice}
-                    </p>
+                    <hr className=" mt-4" />
+                    <div className=" flex items-center gap-3 mt-4">
+                      <button className=" bg-[#525fe1] text-[16px] text-white px-4 py-1 rounded">
+                        {data.price}
+                      </button>
+                      <p className="text-gray-500 line-through text-[16px]">
+                        {data.prePrice}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Pagination */}
+        <div className=" flex justify-center gap-5 my-20 text-lg ">
+          <button
+            className="  w-10 h-10 flex items-center justify-center rounded-full border border-gray-100 bg-[#eeeff9] text-gray-700 focus:bg-blue-500 focus:text-white hover:bg-[#525fe1] hover:text-white"
+            disabled={currentPage === 1}
+            onClick={() => setCurrentPage(currentPage - 1)}>
+            <IoIosArrowBack />
+          </button>
+
+          {/* Render three pagination buttons */}
+          {pageNumbers.map((number) => (
+            <button
+              className=" w-10 h-10 rounded-full border border-gray-100 bg-[#eeeff9] text-center leading-8 text-gray-700 focus:bg-blue-500 focus:text-white hover:bg-[#525fe1] hover:text-white"
+              key={number}
+              onClick={() => setCurrentPage(number)}
+              disabled={number === currentPage}>
+              {number}
+            </button>
           ))}
+
+          {/* Next page button */}
+          <button
+            className="  w-10 h-10 flex items-center justify-center rounded-full border border-gray-100 bg-[#eeeff9] text-gray-700 focus:bg-blue-500 focus:text-white hover:bg-[#525fe1] hover:text-white"
+            disabled={indexOfLastItem >= data.length}
+            onClick={() => setCurrentPage(currentPage + 1)}>
+            <IoIosArrowForward />
+          </button>
         </div>
       </div>
 
-      {/* Pagination */}
-      <div className=" flex justify-center gap-5 my-20 text-lg ">
-        <button
-          className="  w-10 h-10 flex items-center justify-center rounded-full border border-gray-100 bg-[#eeeff9] text-gray-700 focus:bg-blue-500 focus:text-white hover:bg-[#525fe1] hover:text-white"
-          disabled={currentPage === 1}
-          onClick={() => setCurrentPage(currentPage - 1)}>
-          <IoIosArrowBack />
-        </button>
-
-        {/* Render three pagination buttons */}
-        {pageNumbers.map((number) => (
-          <button
-            className=" w-10 h-10 rounded-full border border-gray-100 bg-[#eeeff9] text-center leading-8 text-gray-700 focus:bg-blue-500 focus:text-white hover:bg-[#525fe1] hover:text-white"
-            key={number}
-            onClick={() => setCurrentPage(number)}
-            disabled={number === currentPage}>
-            {number}
-          </button>
-        ))}
-
-        {/* Next page button */}
-        <button
-          className="  w-10 h-10 flex items-center justify-center rounded-full border border-gray-100 bg-[#eeeff9] text-gray-700 focus:bg-blue-500 focus:text-white hover:bg-[#525fe1] hover:text-white"
-          disabled={indexOfLastItem >= data.length}
-          onClick={() => setCurrentPage(currentPage + 1)}>
-          <IoIosArrowForward />
-        </button>
-      </div>
-    </div>
-
-    <section>
-      <Footer/>
-    </section>
+      <section>
+        <Footer />
+      </section>
     </>
   );
 };

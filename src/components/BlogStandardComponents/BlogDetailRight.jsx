@@ -4,7 +4,7 @@ import { Input } from "@mantine/core";
 
 const BlogDetailRight = () => {
   return (
-    <div className="w-[35%] max-lg:w-[100%] flex flex-col gap-8">
+    <div className=" flex flex-col gap-8">
       <div className="flex flex-col gap-7">
         <h1 className="text-[#231f40] font-bold text-2xl">Search Here</h1>
         <div className="relative">
