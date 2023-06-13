@@ -35,7 +35,11 @@ const Navbar = ({ value,absolute }) => {
     <>
       <nav
         onClick={handleOutsideClick}
-        className={`px-16 transition-all  z-50 top-0 left-0 right-0 ${absolute && stick < value ? "absolute bg-transparent py-8" :"bg-white shadow-md py-7"} fixed z-50` }>
+        className={`${
+          stick > value
+            ? "fixed bg-white shadow-md z-50"
+            : ""
+        } px-16 transition-all py-8 z-50 top-0 left-0 right-0 ${absolute && stick < value ? "absolute bg-transparent" :"bg-white"}` }>
         <div className="max-w-[1650px] sticky  items-center m-auto top-0 left-0  flex justify-between  ">
           <div className=" flex justify-start items-center  w-1/5">
             <a className="navbar-brand " href="#">
