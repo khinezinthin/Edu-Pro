@@ -14,8 +14,7 @@ import Footer from "../components/Footer";
 const Home = () => {
   return (
     <>
-      <Navbar value={2} absolute={true} initial={false} />
-
+      <Navbar value={2} absolute={true} />
       <section className="">
         <Learning />
       </section>

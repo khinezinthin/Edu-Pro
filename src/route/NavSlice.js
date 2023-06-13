@@ -10,9 +10,6 @@ export const navSlice = createSlice({
     setScrollValueG: (state, { payload }) => {
       state.value = payload;
     },
-    setScrollHeightG: (state, { payload }) => {
-      state.value = payload;
-    },
   },
 });
 
