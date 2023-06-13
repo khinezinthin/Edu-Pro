@@ -41,7 +41,7 @@ const Courses = () => {
   return (
     <>
       <section>
-        <Navbar value={7} />
+        <Navbar value={2} />
       </section>
       <div>
         {/* Banner */}

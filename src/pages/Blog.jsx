@@ -11,7 +11,7 @@ const Blog = () => {
   return (
     <section>
       <div className=" ">
-        <Navbar value={7} />
+        <Navbar value={2} />
       </div>
 
       <section>

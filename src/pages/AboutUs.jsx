@@ -13,7 +13,7 @@ const AboutUs = () => {
   return (
     <>
         <section>
-            <Navbar/>
+            <Navbar value={2}/>
         </section>
         <section>
             <Banner title1={"About Us"}/>

@@ -18,7 +18,7 @@ const ContactUs = () => {
   return (
     <>
       <section>
-        <Navbar/>
+        <Navbar value={2}/>
       </section>
 
       <section>
