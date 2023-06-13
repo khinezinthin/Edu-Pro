@@ -14,10 +14,15 @@ import { Input } from "@mantine/core";
 import { Textarea } from "@mantine/core";
 import { Checkbox } from "@mantine/core";
 import Banner from "../components/Banner";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const BlogDetails = () => {
   return (
     <>
+      <section>
+        <Navbar value={2}/>
+      </section>
       <section>
         <Banner title1={"Social Media Marketing MASTERY( A-Z ) Journey"} title2={"Branding"} />
       </section>
@@ -400,6 +405,9 @@ const BlogDetails = () => {
           </div>
         </div>
       </div>
+      <section>
+        <Footer/>
+      </section>
     </>
   );
 };
