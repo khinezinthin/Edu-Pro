@@ -21,8 +21,6 @@ const BackToTop = () => {
     setScrollTop(scrollTop);
     setScrollValue(scrollValue);
     dispatch(setScrollValueG(scrollValue));
-    console.log(scrollTop);
-    // dispatch(setScrollHeightG(scrollTop));
   };
   const scrollHandler = () => {
     document.documentElement.scrollTop = 0;
