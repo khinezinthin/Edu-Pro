@@ -15,6 +15,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Banner from "../components/Banner";
 AOS.init();
 
 const Courses = () => {
@@ -42,61 +43,14 @@ const Courses = () => {
       <section>
         <Navbar value={7} />
       </section>
-
       <div>
         {/* Banner */}
-        <div className=" bg-[url(https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/10/home-one-testimonial-2.jpg)] bg-cover h-[215px] relative">
-          <img
-            className=" absolute w-[40px] h-[40px] top-3 left-5"
-            src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-11-07.png"
-            alt=""
-          />
-          <img
-            className=" absolute top-5 left-20"
-            src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-01-02.png"
-            alt=""
-          />
-          <img
-            className=" absolute top-10 left-40"
-            src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-03.png"
-            alt=""
-          />
-          <img
-            className=" absolute bottom-0 right-1/2"
-            src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-13-12.png"
-            alt=""
-          />
-          <img
-            className=" absolute top-1/2 left-2/3"
-            src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-36.png"
-            alt=""
-          />
-          <img
-            className=" absolute top-2/4 right-1/2"
-            src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/shapes/shape-05-07.png"
-            alt=""
-          />
-          <div className=" flex flex-col gap-5 items-start ms-32 pt-14">
-            <div>
-              <h2 className=" text-[40px] font-bold text-[#231F40]">
-                Archives: Courses
-              </h2>
-            </div>
-            <div className=" flex flex-wrap items-baseline gap-5 text-[16px] text-[#6F6B80]">
-              <Link to={"/"}>
-                <button>Home</button>
-              </Link>
-              <p className=" text-xs">
-                <IoIosArrowForward />
-              </p>
-              <p>Courses</p>
-            </div>
-          </div>
-        </div>
+        <section>
+          <Banner title1={"Courses"} />
+        </section>
 
         <div className=" flex flex-col justify-center mt-10">
           {/* search */}
-
           <div className=" flex justify-between mx-28 mt-28">
             <p className=" text-lg">
               Showing <span className=" font-bold">{currentPage}</span> Of{" "}
@@ -151,7 +105,7 @@ const Courses = () => {
                         <div className=" flex items-center gap-3">
                           <img
                             className=" w-[34px] h-[34px] rounded-[100%]"
-                            src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/11/instructor-03-02-2-100x100.webp"
+                            src={data.pfpImage}
                             alt=""
                           />
                           <h2> {data.name} </h2>
@@ -164,11 +118,14 @@ const Courses = () => {
                         </div>
                       </div>
                       <div>
-                        <a
-                          className=" cursor-pointer font-semibold tracking-wide inline-block leading-6 text-[20px]"
-                          href="#">
-                          {data.title}
-                        </a>
+                        <Link to={`/courseDetail/${data.id}`}>
+                          <btn
+                            key={data.id}
+                            className=" linkBtn cursor-pointer font-semibold tracking-wide inline-block leading-6 text-[20px]"
+                            href="#">
+                            {data.title}
+                          </btn>
+                        </Link>
                         <div className=" flex items-center gap-9 pt-5">
                           <div className=" flex items-center gap-3">
                             <p className=" text-gray-500 text-lg ">

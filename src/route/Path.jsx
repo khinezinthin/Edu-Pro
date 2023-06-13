@@ -25,11 +25,8 @@ const Path = () => {
           <Route path="/" element={<Home />} />
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/courses" element={<Courses />} />
-
-          <Route path="/courseDetail" element={<CourseDetail />} />
-
+          <Route path="/courseDetail/:id" element={<CourseDetail />} />
           <Route path="/contactUs" element={<ContactUs />} />
-
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/FAQ" element={<FAQ />} />
           <Route path="/blog" element={<Blog />} />

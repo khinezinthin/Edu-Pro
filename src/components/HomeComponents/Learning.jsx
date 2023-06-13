@@ -10,7 +10,7 @@ AOS.init();
 
 const Learning = () => {
   return (
-    <div className="  learning-div lg:overflow-x-hidden">
+    <div className="  learning-div lg:overflow-hidden">
       <div className=" flex py-20 max-lg:pb-8 relative lg:flex-nowrap lg:flex-row md:flex-wrap md:flex-col-reverse  md:justify-center md:items-center max-md:flex-col-reverse max-md:justify-center max-md:items-center">
         <img
           src="	https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/10/shape-circle-2.png"
