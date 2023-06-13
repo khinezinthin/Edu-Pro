@@ -6,6 +6,8 @@ import { AiOutlinePlus } from "react-icons/ai";
 import Banner from "../Banner";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 AOS.init();
 
 
@@ -100,7 +102,9 @@ const FAQ = () => {
 
   return (
     <>
-
+      <section>
+        <Navbar value={2}/>
+      </section>
       <section>
         <Banner title1={"Frequently Asked Questions"} />
       </section>
@@ -362,7 +366,9 @@ const FAQ = () => {
         </div>
 
       </section>
-
+      <section>
+        <Footer/>
+      </section>
     
     </>
   );

@@ -9,7 +9,7 @@ import { BiUser } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-const Navbar = ({ value }) => {
+const Navbar = ({ value,absolute }) => {
   const [opened, { open, close }] = useDisclosure(false);
   const stick = useSelector((state) => state.navSlice.value);
   const [openedSideBar, { open: openSidebar, close: closeSideBar }] =
@@ -37,9 +37,9 @@ const Navbar = ({ value }) => {
         onClick={handleOutsideClick}
         className={`${
           stick > value
-            ? "fixed bg-white shadow-md z-50 top-0 left-0 right-0 "
-            : "absolute bg-transparent top-0 left-0 right-0"
-        } px-16 transition-all py-8 z-50 `}>
+            ? "fixed bg-white shadow-md z-50"
+            : ""
+        } px-16 transition-all py-8 z-50 top-0 left-0 right-0 ${absolute && stick < value ? "absolute bg-transparent" :"bg-white"}` }>
         <div className="max-w-[1650px] sticky  items-center m-auto top-0 left-0  flex justify-between  ">
           <div className=" flex justify-start items-center  w-1/5">
             <a className="navbar-brand " href="#">
