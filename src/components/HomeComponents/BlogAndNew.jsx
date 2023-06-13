@@ -11,6 +11,7 @@ import star from "../../assets/shape-15-02-2.png";
 import "./BlogsAndNews.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 AOS.init();
 const BlogAndNew = () => {
   return (
@@ -23,7 +24,8 @@ const BlogAndNew = () => {
                 data-aos="fade-up"
                 data-aos-once="true"
                 data-aos-duration="1000"
-                className=" flex flex-col justify-center pb-9 ">
+                className=" flex flex-col justify-center pb-9 "
+              >
                 <p className=" font-semibold text-[--color-primary]">
                   BLOG & NEWS
                 </p>
@@ -32,18 +34,22 @@ const BlogAndNew = () => {
               <div
                 data-aos="fade-up"
                 data-aos-once="true"
-                data-aos-duration="1000">
-                <button className="rounded px-12 py-5 text-white flex justify-center items-center  bg-[--color-primary] hover:bg-[--color-dark]">
-                  <p> Read More Blogs</p>
-                  <AiOutlineArrowRight className=" inline-block" />
-                </button>
+                data-aos-duration="1000"
+              >
+                <Link to={'/blog'}>
+                  <button className="rounded px-12 py-5 text-white flex justify-center items-center  bg-[--color-primary] hover:bg-[--color-dark]">
+                    <p> Read More Blogs</p>
+                    <AiOutlineArrowRight className=" inline-block" />
+                  </button>
+                </Link>
               </div>
             </section>
             <div
               data-aos="fade-up"
               data-aos-once="true"
               data-aos-duration="1000"
-              className="   flex justify-between flex-wrap gap-5 lg:gap-0 md:gap-0 ">
+              className="   flex justify-between flex-wrap gap-5 lg:gap-0 md:gap-0 "
+            >
               <div className="  lg:w-1/2 md:w-1/2 min-[820px]:w-1/2 flex justify-center ">
                 <div className="shadow bg-[--color-white]  w-[95%] p-6  flex flex-col lg:gap-10 md:gap-8 gap-5 hoverCustom ">
                   <div className="content  flex flex-col lg:gap-10 md:gap-8 gap-5 hoverCustom ">

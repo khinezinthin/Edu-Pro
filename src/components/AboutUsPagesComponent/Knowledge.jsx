@@ -3,6 +3,7 @@ import "./Knowledge.css"
 import {AiOutlineArrowRight} from "react-icons/ai"
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from 'react-router-dom';
 AOS.init();
 
 const Knowledge = () => {
@@ -72,12 +73,14 @@ const Knowledge = () => {
                 </div>
 
                 <div className=' pb-10 'data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" >
+                    <Link to={'/aboutUs'}>
                     <button className=" hover:bg-[#231F40] duration-300 flex justify-center items-center gap-2 py-[18px] px-[31px] bg-[#525FE1] text-white tracking-wider rounded">
                     <span className=" text-base font-semibold">Learn More</span>
                     <span className="flex items-center font-bold">
                         <AiOutlineArrowRight className="ml-1" />
                     </span>
                     </button>
+                    </Link>
                 </div>
             </div>
         </div>

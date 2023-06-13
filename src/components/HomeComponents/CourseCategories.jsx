@@ -3,6 +3,7 @@ import { BiRightArrowAlt } from "react-icons/bi";
 import "./courseCategories.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 AOS.init();
 
 const CourseCategories = () => {
@@ -106,12 +107,14 @@ const CourseCategories = () => {
           data-aos-duration="1000"
           className=" mx-auto"
         >
-          <button className=" bg-blue-600 px-7 py-4 rounded gap-2 text-lg text-white font-medium flex items-center hover:bg-blue-950 duration-500">
-            Creative Courses
-            <span>
-              <BiRightArrowAlt className=" text-2xl font-bolder pt-1" />
-            </span>
-          </button>
+          <Link to={"/courses"}>
+            <button className=" bg-blue-600 px-7 py-4 rounded gap-2 text-lg text-white font-medium flex items-center hover:bg-blue-950 duration-500">
+              Creative Courses
+              <span>
+                <BiRightArrowAlt className=" text-2xl font-bolder pt-1" />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

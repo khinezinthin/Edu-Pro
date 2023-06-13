@@ -9,6 +9,7 @@ import {
 import { IoNewspaperOutline } from "react-icons/io5";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 AOS.init();
 
 const PopularCourse = () => {
@@ -491,10 +492,12 @@ const PopularCourse = () => {
       </div>
 
       <div className=" flex justify-center mb-3 mt-20">
-        <button className=" bg-[#525fe1] hover:bg-[#070c44] px-8 py-4 flex items-center gap-3 rounded-md text-white font-semibold text-xl">
-          View All Courses
-          <BsArrowRight />
-        </button>
+        <Link to={'/courses'}>
+          <button className=" bg-[#525fe1] hover:bg-[#070c44] px-8 py-4 flex items-center gap-3 rounded-md text-white font-semibold text-xl">
+            View All Courses
+            <BsArrowRight />
+          </button>
+        </Link>
       </div>
     </div>
   );

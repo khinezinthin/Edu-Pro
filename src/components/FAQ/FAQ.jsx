@@ -102,7 +102,7 @@ const FAQ = () => {
     <>
 
       <section>
-        <Banner title1={"Blog"} title2={"Blog Page"} />
+        <Banner title1={"Frequently Asked Questions"} />
       </section>
       <section
         data-aos="fade-up"
