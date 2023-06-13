@@ -7,9 +7,11 @@ import { GrClose } from "react-icons/gr";
 import { AiOutlinePlus } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
-const Navbar = ({bg,absolute}) => {
+const Navbar = ({ value }) => {
   const [opened, { open, close }] = useDisclosure(false);
+  const stick = useSelector((state) => state.navSlice.value);
   const [openedSideBar, { open: openSidebar, close: closeSideBar }] =
     useDisclosure(false);
   const theme = useMantineTheme();
@@ -24,12 +26,20 @@ const Navbar = ({bg,absolute}) => {
       setIsOpen(false);
     }
   };
+  const stickyState = () => {
+    const fixedState = "fixed bg-white shadow-md z-50";
+    const absoluteState = "absolute bg-transparent";
+    stick > value ? fixedState : absoluteState;
+  };
   return (
     <>
       <nav
         onClick={handleOutsideClick}
-        className={`${absolute && "absolute"} top-0 left-0 right-0 px-16 py-8 z-50 ${bg ? "bg-transparent" : "bg-white shadow-md"}`}
-      >
+        className={`${
+          stick > value
+            ? "fixed bg-white shadow-md z-50 top-0 left-0 right-0 "
+            : "absolute bg-transparent top-0 left-0 right-0"
+        } px-16 transition-all py-8 z-50 `}>
         <div className="max-w-[1650px] sticky  items-center m-auto top-0 left-0  flex justify-between  ">
           <div className=" flex justify-start items-center  w-1/5">
             <a className="navbar-brand " href="#">
@@ -68,8 +78,7 @@ const Navbar = ({bg,absolute}) => {
               <li className="nav-item underline-on-hover hover:text-[--color-primary]">
                 <Link
                   to="/contactUS"
-                  className="nav-link NavComponents active "
-                >
+                  className="nav-link NavComponents active ">
                   Contact Us
                 </Link>
               </li>
@@ -89,16 +98,14 @@ const Navbar = ({bg,absolute}) => {
             <div
               onClick={open}
               className="text-[--color-primary] lg:w-[48px] lg:h-[45.4px] md:px-4 md:py-4 px-3  py-[7px] cursor-pointer   rounded bg-white hover:bg-[--color-heading] searchHover shadow flex justify-center items-center flex-col"
-              type="button"
-            >
+              type="button">
               <CiSearch className="search text-black lineheightNavIcon  IconSize text-[--color-primary]" />
             </div>
             <div className=" hidden md:block lg:block">
               <Link to="/register">
                 <button
                   className="px-3 py-3 rounded  bg-white text-[--color-black] shadow"
-                  type="button"
-                >
+                  type="button">
                   <BiUser className=" text-[--color-primary]" />
                 </button>
               </Link>
@@ -106,14 +113,12 @@ const Navbar = ({bg,absolute}) => {
             <button
               onClick={openSidebar}
               className="lg:hidden  md:px-4 md:py-4 px-3  py-2 rounded  bg-white text-[--color-black] shadow"
-              type="button"
-            >
+              type="button">
               <GiHamburgerMenu className=" text-[--color-primary]" />
             </button>
             <button
               className="lg:hidden  md:hidden px-3  py-2 rounded  bg-white text-[--color-black] shadow"
-              type="button"
-            >
+              type="button">
               <BiUser className=" text-[--color-primary]" />
             </button>
           </div>
@@ -134,12 +139,10 @@ const Navbar = ({bg,absolute}) => {
           color: "#231F41",
           opacity: 0.55,
         }}
-        centered
-      >
+        centered>
         <div
           onClick={close}
-          className=" bg-slate-50 p-3 rounded-[50%] absolute top-[31px] right-[31px]"
-        >
+          className=" bg-slate-50 p-3 rounded-[50%] absolute top-[31px] right-[31px]">
           <GrClose />
         </div>
         <form className="    flex justify-around  items-center bg-transparent">
@@ -155,8 +158,7 @@ const Navbar = ({bg,absolute}) => {
       <Drawer
         opened={openedSideBar}
         onClose={closeSideBar}
-        withCloseButton={false}
-      >
+        withCloseButton={false}>
         <ul className=" me-auto flex flex-col gap-10  mb-lg-0  ">
           <li className=" justify-between flex items-center">
             <a className="navbar-brand " href="#">
@@ -170,8 +172,7 @@ const Navbar = ({bg,absolute}) => {
             </a>
             <div
               onClick={closeSideBar}
-              className=" bg-slate-50 p-3 rounded-[50%] shadow"
-            >
+              className=" bg-slate-50 p-3 rounded-[50%] shadow">
               <GrClose />
             </div>
           </li>

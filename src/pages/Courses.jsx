@@ -41,9 +41,8 @@ const Courses = () => {
   return (
     <>
       <section>
-        <Navbar />
+        <Navbar value={7} />
       </section>
-
       <div>
         {/* Banner */}
         <section>
@@ -52,7 +51,6 @@ const Courses = () => {
 
         <div className=" flex flex-col justify-center mt-10">
           {/* search */}
-
           <div className=" flex justify-between mx-28 mt-28">
             <p className=" text-lg">
               Showing <span className=" font-bold">{currentPage}</span> Of{" "}

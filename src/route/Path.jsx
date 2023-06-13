@@ -24,14 +24,9 @@ const Path = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutUs" element={<AboutUs />} />
-
           <Route path="/courses" element={<Courses />} />
-
           <Route path="/courseDetail/:id" element={<CourseDetail />} />
-
           <Route path="/contactUs" element={<ContactUs />} />
-
-
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/FAQ" element={<FAQ />} />
           <Route path="/blog" element={<Blog />} />
@@ -39,9 +34,6 @@ const Path = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="*" element={<Error />} />
-
-        
-
         </Routes>
       </BrowserRouter>
     </div>
