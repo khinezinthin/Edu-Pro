@@ -25,7 +25,7 @@ const WhatweOffer = () => {
         />
       </div>
 
-      <div className=" flex items-center gap-[20px] flex-wrap justify-center mx-[1%] mt-10 relative ">
+      <div className=" flex items-center gap-[20px] overflow-hidden flex-wrap justify-center mx-[1%] mt-10 relative ">
         <div className=" group hover:shadow-md bg-[#EAF8F6] hover:shadow-[#84ded1] duration-500 w-[270px] h-[310px] rounded-[5px] px-[30px] py-[40px] flex flex-col items-center gap-6 relative">
           <img
             className=" absolute max-xl:hidden top-54  -left-24"
