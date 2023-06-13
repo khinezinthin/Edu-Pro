@@ -1,5 +1,4 @@
 import React from "react";
-import "./app.css";
 import Path from "./route/Path";
 import "./App.css";
 
