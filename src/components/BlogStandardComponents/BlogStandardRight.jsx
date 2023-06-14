@@ -88,7 +88,7 @@ const BlogStandardRight = () => {
                   perferendis, eveniet quaerat provident deleniti minus debitis
                   cum soluta. Illum?
                 </p>
-                <Link to={`/courseDetail/${1}`}>
+                <Link to={`/blogDetail`}>
                   <div className=" flex gap-2 hoverBtn">
                     <p className=" text-2xl font-bold text-[--color-primary] hoverEl">
                       More Info
@@ -171,7 +171,7 @@ const BlogStandardRight = () => {
                   perferendis, eveniet quaerat provident deleniti minus debitis
                   cum soluta. Illum?
                 </p>
-                <Link to={`/courseDetail/${2}`}>
+                <Link to={`/blogDetail`}>
                   <div className=" flex gap-2 hoverBtn">
                     <p className=" text-2xl font-bold text-[--color-primary] hoverEl">
                       More Info
@@ -254,7 +254,7 @@ const BlogStandardRight = () => {
                   perferendis, eveniet quaerat provident deleniti minus debitis
                   cum soluta. Illum?
                 </p>
-                <Link to={`/courseDetail/${3}`}>
+                <Link to={`/blogDetail`}>
                   <div className=" flex gap-2 hoverBtn">
                     <p className=" text-2xl font-bold text-[--color-primary] hoverEl">
                       More Info
