@@ -24,8 +24,7 @@ const BlogAndNew = () => {
                 data-aos="fade-up"
                 data-aos-once="true"
                 data-aos-duration="1000"
-                className=" flex flex-col justify-center pb-9 "
-              >
+                className=" flex flex-col justify-center pb-9 ">
                 <p className=" font-semibold text-[--color-primary]">
                   BLOG & NEWS
                 </p>
@@ -34,9 +33,8 @@ const BlogAndNew = () => {
               <div
                 data-aos="fade-up"
                 data-aos-once="true"
-                data-aos-duration="1000"
-              >
-                <Link to={'/blog'}>
+                data-aos-duration="1000">
+                <Link to={"/blog"}>
                   <button className="rounded px-12 py-5 text-white flex justify-center items-center  bg-[--color-primary] hover:bg-[--color-dark]">
                     <p> Read More Blogs</p>
                     <AiOutlineArrowRight className=" inline-block" />
@@ -48,8 +46,7 @@ const BlogAndNew = () => {
               data-aos="fade-up"
               data-aos-once="true"
               data-aos-duration="1000"
-              className="   flex justify-between flex-wrap gap-5 lg:gap-0 md:gap-0 "
-            >
+              className="   flex justify-between flex-wrap gap-5 lg:gap-0 md:gap-0 ">
               <div className="  lg:w-1/2 md:w-1/2 min-[820px]:w-1/2 flex justify-center ">
                 <div className="shadow bg-[--color-white]  w-[95%] p-6  flex flex-col lg:gap-10 md:gap-8 gap-5 hoverCustom ">
                   <div className="content  flex flex-col lg:gap-10 md:gap-8 gap-5 hoverCustom ">
@@ -122,7 +119,7 @@ const BlogAndNew = () => {
                   </div>
                 </div>
               </div>
-              <div className=" hidden lg:block md:block min-[820px]:hidden absolute left-[-60px] top-[182px] ">
+              <div className=" hidden lg:block md:block min-[820px]:hidden absolute left-[-180px] top-[50px] ">
                 <div className=" ">
                   <img
                     src={blur}
@@ -131,13 +128,13 @@ const BlogAndNew = () => {
                   />
                 </div>
               </div>
-              <div className=" hidden lg:block md:block min-[820px]:hidden  absolute left-[-60px] bottom-[-60px] z-30">
+              <div className=" hidden lg:block md:block min-[820px]:hidden  absolute left-[-180px] bottom-[-60px] z-30">
                 <img src={book} alt="" />
               </div>
-              <div className=" hidden lg:block md:block min-[820px]:hidden absolute right-0 bottom-[-60px] z-30">
+              <div className=" hidden lg:block md:block min-[820px]:hidden absolute right-[-145px] bottom-[-60px] z-30">
                 <img src={wave} alt="" />
               </div>
-              <div className=" hidden lg:block md:block min-[820px]:hidden absolute right-0 top-[0px] z-30">
+              <div className=" hidden lg:block md:block min-[820px]:hidden absolute right-[-145px] top-[0px] z-30">
                 <img src={star} alt="" />
               </div>
             </div>
