@@ -49,12 +49,12 @@ const PopularCourse = () => {
                 </div>
               </div>
               <div className=" flex py-4 justify-between relative">
-                <div className=" absolute flex gap-60 font-semibold pt-3 invisible md:visible lg:visible  text-white top-[-230px] left-0">
+                <div className=" absolute flex gap-56 font-semibold pt-3 invisible md:visible lg:visible  text-white top-[-230px] left-0">
                   <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                     <p className=" font-bold">
                       <BsClock />
                     </p>
-                    <p> 15 Week</p>
+                    <p className="whitespace-nowrap"> 15 Week</p>
                   </div>
                   <div className=" bg-slate-500 w-8 h-8 flex justify-center rounded-full ">
                     <button className=" text-lg ">
@@ -124,12 +124,12 @@ const PopularCourse = () => {
                 </div>
               </div>
               <div className=" flex py-4 justify-between relative">
-                <div className=" absolute flex gap-60 invisible md:visible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
+                <div className=" absolute flex gap-56 invisible md:visible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
                   <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                     <p className=" font-bold">
                       <BsClock />
                     </p>
-                    <p> 17 Week</p>
+                    <p className="whitespace-nowrap"> 17 Week</p>
                   </div>
                   <div className=" bg-slate-500 w-8 h-8 flex justify-center rounded-full ">
                     <button className=" text-lg ">
@@ -199,12 +199,12 @@ const PopularCourse = () => {
                 </div>
               </div>
               <div className=" flex py-4 justify-between relative">
-                <div className=" absolute flex gap-60 invisible md:visible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
+                <div className=" absolute flex gap-56 invisible md:visible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
                   <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                     <p className=" font-bold">
                       <BsClock />
                     </p>
-                    <p> 20 Hour</p>
+                    <p className=" whitespace-nowrap"> 20 Hour</p>
                   </div>
                   <div className=" bg-slate-500 w-8 h-8 flex justify-center rounded-full ">
                     <button className=" text-lg ">
@@ -274,12 +274,12 @@ const PopularCourse = () => {
                 </div>
               </div>
               <div className=" flex py-4 justify-between relative">
-                <div className=" absolute flex gap-60 invisible md:visible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
+                <div className=" absolute flex gap-56 invisible md:visible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
                   <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                     <p className=" font-bold">
                       <BsClock />
                     </p>
-                    <p> 25 Hour</p>
+                    <p className="whitespace-nowrap"> 25 Hour</p>
                   </div>
                   <div className=" bg-slate-500 w-8 h-8 flex justify-center rounded-full ">
                     <button className=" text-lg ">
@@ -349,12 +349,12 @@ const PopularCourse = () => {
                 </div>
               </div>
               <div className=" flex py-4 justify-between relative">
-                <div className=" absolute flex gap-60 invisible md:visible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
+                <div className=" absolute flex gap-56 invisible md:visible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
                   <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                     <p className=" font-bold">
                       <BsClock />
                     </p>
-                    <p> 30 Hour</p>
+                    <p className="whitespace-nowrap"> 30 Hour</p>
                   </div>
                   <div className=" bg-slate-500 w-8 h-8 flex justify-center rounded-full ">
                     <button className=" text-lg ">
@@ -424,12 +424,12 @@ const PopularCourse = () => {
                 </div>
               </div>
               <div className=" flex py-4 justify-between relative">
-                <div className=" absolute flex gap-60 invisible md:visible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
+                <div className=" absolute flex gap-56 invisible md:visible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
                   <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                     <p className=" font-bold">
                       <BsClock />
                     </p>
-                    <p> 15 Hour</p>
+                    <p className="whitespace-nowrap"> 15 Hour</p>
                   </div>
                   <div className=" bg-slate-500 w-8 h-8 flex justify-center rounded-full ">
                     <button className=" text-lg ">

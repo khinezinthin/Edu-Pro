@@ -334,7 +334,7 @@ const CourseDetail = () => {
                       <p className=" font-bold">
                         <BsClock />
                       </p>
-                      <p> 15 Week</p>
+                      <p className=" whitespace-nowrap"> 15 Week</p>
                     </div>
                     <div className=" bg-slate-500 w-8 h-8 flex justify-center rounded-full ">
                       <button className=" text-lg ">
@@ -409,7 +409,7 @@ const CourseDetail = () => {
                       <p className=" font-bold">
                         <BsClock />
                       </p>
-                      <p> 17 Week</p>
+                      <p className="whitespace-nowrap"> 17 Week</p>
                     </div>
                     <div className=" bg-slate-500 w-8 h-8 flex justify-center rounded-full ">
                       <button className=" text-lg ">
@@ -484,7 +484,7 @@ const CourseDetail = () => {
                       <p className=" font-bold">
                         <BsClock />
                       </p>
-                      <p> 20 Hour</p>
+                      <p className="whitespace-nowrap"> 20 Hour</p>
                     </div>
                     <div className=" bg-slate-500 w-8 h-8 flex justify-center rounded-full ">
                       <button className=" text-lg ">
