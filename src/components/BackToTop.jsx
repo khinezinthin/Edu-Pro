@@ -16,7 +16,7 @@ const BackToTop = () => {
       document.documentElement.clientHeight;
 
     let scrollValue = Math.round((scrollTop * 100) / scrollHeight);
-    console.log(scrollValue);
+    // console.log(scrollValue);
 
     setScrollTop(scrollTop);
     setScrollValue(scrollValue);
