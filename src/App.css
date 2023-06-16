@@ -4,6 +4,12 @@
   font-family: "Urbanist", sans-serif;
 }
 
+.active{
+  color: #525fe1;
+  padding-bottom: 1px;
+  border-bottom: 2px solid black;
+}
+
 :root {
   --color-primary: #525fe1;
   --color-secondary: #f86f03;
