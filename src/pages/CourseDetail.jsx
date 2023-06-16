@@ -74,7 +74,7 @@ const CourseDetail = () => {
                 By {course[0].name}
               </p>
             </div>
-            <div className=" flex gap-3 items-center">
+            <div className=" flex star gap-3 items-center">
               <div className=" flex gap-2">
                 <p className=" text-[#ffa41b]">
                   <BsStarFill />

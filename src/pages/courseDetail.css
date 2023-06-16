@@ -48,3 +48,16 @@
     align-items: center;
   }
 }
+
+.star {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 600px) {
+  .star {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+  }
+}
