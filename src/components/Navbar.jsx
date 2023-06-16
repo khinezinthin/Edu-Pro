@@ -6,7 +6,7 @@ import { Drawer, Modal, Group, Button, useMantineTheme } from "@mantine/core";
 import { GrClose } from "react-icons/gr";
 import { AiOutlinePlus } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
-import { Link,NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const Navbar = ({ value, absolute }) => {
@@ -32,7 +32,9 @@ const Navbar = ({ value, absolute }) => {
       <nav
         onClick={handleOutsideClick}
         className={` lg:px-16 max-lg:px-8 max-sm:px-5 animationNavbar py-8 z-50 top-0 left-0 right-0 fixed ${
-          absolute && stick < value ? "absolute bg-transparent " : "bg-white shadow-md "
+          absolute && stick < value
+            ? "absolute bg-transparent "
+            : "bg-white shadow-md "
         }`}>
         <div className="max-w-[1650px] sticky  items-center m-auto top-0 left-0  flex justify-between  ">
           <div className=" flex justify-start items-center  w-[150px] max-[350px]:w-[100px]">
@@ -70,9 +72,7 @@ const Navbar = ({ value, absolute }) => {
                 </NavLink>
               </li>
               <li className="nav-item underline-on-hover hover:text-[--color-primary]">
-                <NavLink
-                  to="/contactUS"
-                  className="nav-link NavComponents ">
+                <NavLink to="/contactUS" className="nav-link NavComponents ">
                   Contact Us
                 </NavLink>
               </li>
@@ -170,43 +170,43 @@ const Navbar = ({ value, absolute }) => {
               <GrClose />
             </div>
           </li>
-          <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
+          <li className="  hover:text-[--color-primary] flex justify-between items-center">
             <NavLink to="/" className="nav-link NavComponents ">
               Home
             </NavLink>
             <AiOutlinePlus />
           </li>
-          <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
+          <li className="  hover:text-[--color-primary] flex justify-between items-center">
             <NavLink to="/aboutUs" className="nav-link NavComponents ">
               About
             </NavLink>
             <AiOutlinePlus />
           </li>
-          <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
+          <li className="  hover:text-[--color-primary] flex justify-between items-center">
             <NavLink to="/courses" className="nav-link NavComponents ">
               Courses
             </NavLink>
             <AiOutlinePlus />
           </li>
-          <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
+          <li className="  hover:text-[--color-primary] flex justify-between items-center">
             <NavLink to="/blog" className="nav-link NavComponents ">
               Blogs
             </NavLink>
             <AiOutlinePlus />
           </li>
-          <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
+          <li className="  hover:text-[--color-primary] flex justify-between items-center">
             <NavLink to="/contactUS" className="nav-link NavComponents ">
               Contact Us
             </NavLink>
             <AiOutlinePlus />
           </li>
-          <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
+          <li className="  hover:text-[--color-primary] flex justify-between items-center">
             <NavLink to="/pricing" className="nav-link NavComponents ">
               Pricing
             </NavLink>
             <AiOutlinePlus />
           </li>
-          <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
+          <li className="  hover:text-[--color-primary] flex justify-between items-center">
             <NavLink to="/FAQ" className="nav-link NavComponents ">
               FAQ
             </NavLink>
