@@ -22,10 +22,10 @@ const Blog = () => {
           data-aos-once="true"
           data-aos-duration="1000"
           className="containerPro flex flex-wrap gap-7 flex-col lg:flex-row justify-center pt-6 ">
-          <section className=" md:w-full w-full lg:w-[50%] ">
+          <section className=" md:w-full w-full lg:w-[60%] lg:mb-10">
             <BlogStandardRight />
           </section>
-          <section className="md:w-full w-full lg:w-[25%] flex justify-start flex-col">
+          <section className="md:w-full w-full lg:w-[30%] flex justify-start flex-col max-lg:mb-20">
             <BlogDetailRight />
           </section>
         </section>

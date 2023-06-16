@@ -6,7 +6,7 @@ import { Drawer, Modal, Group, Button, useMantineTheme } from "@mantine/core";
 import { GrClose } from "react-icons/gr";
 import { AiOutlinePlus } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const Navbar = ({ value, absolute }) => {
@@ -31,11 +31,11 @@ const Navbar = ({ value, absolute }) => {
     <>
       <nav
         onClick={handleOutsideClick}
-        className={` lg:px-16  animationNavbar py-8 z-50 top-0 left-0 right-0 fixed ${
+        className={` lg:px-16 max-lg:px-8 max-sm:px-5 animationNavbar py-8 z-50 top-0 left-0 right-0 fixed ${
           absolute && stick < value ? "absolute bg-transparent " : "bg-white shadow-md "
         }`}>
         <div className="max-w-[1650px] sticky  items-center m-auto top-0 left-0  flex justify-between  ">
-          <div className=" flex justify-start items-center  w-1/5">
+          <div className=" flex justify-start items-center  w-[150px] max-[350px]:w-[100px]">
             <a className="navbar-brand " href="#">
               <img
                 src={
@@ -48,43 +48,43 @@ const Navbar = ({ value, absolute }) => {
           </div>
 
           <div className="hidden lg:flex  justify-between  items-center  w-2/5 ">
-            <ul className="w-[100%] navbar-nav me-auto  mb-lg-0 flex justify-between ">
+            <ul className="w-[100%] navbar-nav me-auto mb-lg-0 flex justify-between ">
               <li className="nav-item flex justify-center underline-on-hover hover:text-[--color-primary] ">
-                <Link to="/" className="nav-link NavComponents active ">
+                <NavLink to="/" className="nav-link NavComponents ">
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item underline-on-hover hover:text-[--color-primary]">
-                <Link to="/aboutUs" className="nav-link NavComponents active ">
+                <NavLink to="/aboutUs" className="nav-link NavComponents ">
                   About
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item underline-on-hover hover:text-[--color-primary]">
-                <Link to="/courses" className="nav-link NavComponents active ">
+                <NavLink to="/courses" className="nav-link NavComponents ">
                   Courses
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item underline-on-hover hover:text-[--color-primary]">
-                <Link to="/blog" className="nav-link NavComponents active ">
+                <NavLink to="/blog" className="nav-link NavComponents ">
                   Blogs
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item underline-on-hover hover:text-[--color-primary]">
-                <Link
+                <NavLink
                   to="/contactUS"
-                  className="nav-link NavComponents active ">
+                  className="nav-link NavComponents ">
                   Contact Us
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item underline-on-hover hover:text-[--color-primary]">
-                <Link to="/pricing" className="nav-link NavComponents active ">
+                <NavLink to="/pricing" className="nav-link NavComponents ">
                   Pricing
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item underline-on-hover hover:text-[--color-primary]">
-                <Link to="/FAQ" className="nav-link NavComponents active ">
+                <NavLink to="/FAQ" className="nav-link NavComponents ">
                   FAQ
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -171,45 +171,45 @@ const Navbar = ({ value, absolute }) => {
             </div>
           </li>
           <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
-            <Link to="/" className="nav-link NavComponents active ">
+            <NavLink to="/" className="nav-link NavComponents ">
               Home
-            </Link>
+            </NavLink>
             <AiOutlinePlus />
           </li>
           <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
-            <Link to="/aboutUs" className="nav-link NavComponents active ">
+            <NavLink to="/aboutUs" className="nav-link NavComponents ">
               About
-            </Link>
+            </NavLink>
             <AiOutlinePlus />
           </li>
           <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
-            <Link to="/courses" className="nav-link NavComponents active ">
+            <NavLink to="/courses" className="nav-link NavComponents ">
               Courses
-            </Link>
+            </NavLink>
             <AiOutlinePlus />
           </li>
           <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
-            <Link to="/blog" className="nav-link NavComponents active ">
+            <NavLink to="/blog" className="nav-link NavComponents ">
               Blogs
-            </Link>
+            </NavLink>
             <AiOutlinePlus />
           </li>
           <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
-            <Link to="/contactUS" className="nav-link NavComponents active ">
+            <NavLink to="/contactUS" className="nav-link NavComponents ">
               Contact Us
-            </Link>
+            </NavLink>
             <AiOutlinePlus />
           </li>
           <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
-            <Link to="/pricing" className="nav-link NavComponents active ">
+            <NavLink to="/pricing" className="nav-link NavComponents ">
               Pricing
-            </Link>
+            </NavLink>
             <AiOutlinePlus />
           </li>
           <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
-            <Link to="/FAQ" className="nav-link NavComponents active ">
+            <NavLink to="/FAQ" className="nav-link NavComponents ">
               FAQ
-            </Link>
+            </NavLink>
             <AiOutlinePlus />
           </li>
         </ul>
