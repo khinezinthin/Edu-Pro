@@ -10,8 +10,7 @@ import {
   BsFillHeartFill,
 } from "react-icons/bs";
 import { IoNewspaperOutline } from "react-icons/io5";
-import './courses.css'
-
+import "./courses.css";
 
 import coursesData from "../components/coursesData.json";
 import AOS from "aos";
@@ -94,7 +93,7 @@ const Courses = () => {
                         </div>
                       </div>
                       <div className=" flex py-4 justify-between relative">
-                        <div className="  max-[760px]:top-[-400px] pe-5 w-full invisible lg:visible absolute flex justify-between font-semibold pt-3 text-white top-[-230px] left-0">
+                        <div className="  max-[760px]:top-[-400px] pe-5 w-full invisible lg:visible absolute flex justify-between font-semibold pt-3 text-white top-[-230px] left-0 whitespace-nowrap">
                           <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                             <p className=" font-bold">
                               <BsClock />
