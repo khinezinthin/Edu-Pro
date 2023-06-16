@@ -14,11 +14,11 @@ AOS.init();
 
 const AboutUs = () => {
   return (
-    <div className="lg:h-screen md:h-screen flex h-auto  lg:scale-[1.1] mt-24 mb-24">
-      <div className="   lg:m-auto md:m-auto mt-5 min-[820px]:my-5  min-[820px]:mx-2 flex  justify-center  lg:p-[15px]">
-        <div className="w-full  flex flex-wrap  justify-center items-center max-w-[1200px]  ">
+    <div className="lg:h-screen md:h-auto flex h-auto  lg:scale-[1.1] mt-24 mb-24">
+      <div className="   lg:m-auto md:m-auto mt-5 min-[820px]:my-5  min-[820px]:mx-2 flex   justify-center  lg:p-[15px]">
+        <div className="w-full  flex flex-wrap  justify-center items-center max-w-[1200px] p-5 lg:p-0 md:p-7 ">
           {/* Left */}
-          <div className=" w-full  md:w-1/2   lg:w-1/2  min-[820px]:w-full">
+          <div className=" w-full  md:wfull   lg:w-1/2  min-[820px]:w-full ">
             <div className="  relative ">
               <div className="lg:p-[15px] md:p-[10px] flex flex-wrap justify-end ">
                 {/* spinImages */}
@@ -68,9 +68,8 @@ const AboutUs = () => {
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-duration="1000"
-            className="w-full  min-[820px]:w-full   md:w-1/2   lg:w-1/2 overflow-hidden"
-          >
-            <div className="w-full   flex flex-col lg:gap-10 md:gap-8 gap-5">
+            className="w-full  min-[820px]:w-full   md:w-full   lg:w-1/2 overflow-hidden  ">
+            <div className="w-full   flex flex-col lg:gap-10 md:gap-8 gap-5 ">
               <div className="  mb-3">
                 <div>
                   <span className=" text-[#525FE1] ">ABOUT US</span>
