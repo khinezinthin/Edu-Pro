@@ -10,7 +10,6 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 AOS.init();
 
-
 const FAQ = () => {
   const [activeItem, setActiveItem] = useState(0); // Set the active item index
   const [buttonSection, setButtonSection] = useState(0);
@@ -103,7 +102,7 @@ const FAQ = () => {
   return (
     <>
       <section>
-        <Navbar value={2}/>
+        <Navbar value={2} />
       </section>
       <section>
         <Banner title1={"Frequently Asked Questions"} />
@@ -158,14 +157,12 @@ const FAQ = () => {
                   </button>
                 </div>
               </div>
-
-  
             </div>
             {/* Question and answer */}
             <div
               className={` ${
                 buttonSection != 0 ? "hidden" : ""
-              } h-96  w-full flex   justify-between flex-wrap items-center container`}>
+              } lg:h-96  w-full flex   justify-between flex-wrap items-center container`}>
               <div
                 className={`lg:w-1/2 md:w-full w-full   flex  justify-center items-center`}>
                 <div className="w-full lg:w-[85%] md:w-full">
@@ -299,7 +296,7 @@ const FAQ = () => {
             <div
               className={` ${
                 buttonSection != 2 ? "hidden" : ""
-              } h-96  w-full flex justify-between flex-wrap items-center container`}>
+              } lg:h-96  w-full flex justify-between flex-wrap items-center container`}>
               <div
                 className={`lg:w-1/2 md:w-full w-full   flex  justify-center items-center`}>
                 <div className="w-full lg:w-[85%] md:w-full">
@@ -364,12 +361,10 @@ const FAQ = () => {
             </div>
           </div>
         </div>
-
       </section>
       <section>
-        <Footer/>
+        <Footer />
       </section>
-    
     </>
   );
 };
