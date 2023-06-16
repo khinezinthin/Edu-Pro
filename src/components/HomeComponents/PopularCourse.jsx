@@ -12,8 +12,7 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
-import "./popular.css"
-
+import "./popular.css";
 
 const PopularCourse = () => {
   return (
@@ -22,9 +21,7 @@ const PopularCourse = () => {
         data-aos="fade-up"
         data-aos-once="true"
         data-aos-duration="1500"
-        className=" flex flex-col gap-1 items-center py-10"
-      >
-
+        className=" flex flex-col gap-1 items-center py-10">
         <h2 className=" text-[16px] font-sans text-[#525fe1] font-semibold tracking-widest ">
           POPULAR COURSES
         </h2>
@@ -36,9 +33,8 @@ const PopularCourse = () => {
         data-aos="fade-up"
         data-aos-once="true"
         data-aos-duration="2000"
-        className=" flex flex-wrap items-center justify-center gap-10"
-      >
-        <div className=" flex justify-center items-center">
+        className=" flex flex-wrap items-center justify-center gap-10">
+        <div className=" flex justify-center items-center item ">
           <div className=" bg-slate-100 hover:bg-white hover:shadow-lg mainDiv h-auto p-3 group">
             <div className="">
               <div className=" overflow-hidden ">
@@ -84,8 +80,7 @@ const PopularCourse = () => {
               <div>
                 <a
                   className=" cursor-pointer font-semibold tracking-wide inline-block leading-6 text-[20px]"
-                  href="#"
-                >
+                  href="#">
                   The Complete HTML & CSS Bootcamp 2023 Edition
                 </a>
                 <div className=" flex items-center gap-9 pt-5">
@@ -114,7 +109,7 @@ const PopularCourse = () => {
           </div>
         </div>
 
-        <div className=" flex justify-center items-center">
+        <div className=" flex justify-center items-center item">
           <div className=" bg-slate-100 hover:bg-white hover:shadow-lg mainDiv h-auto p-3 group">
             <div className="">
               <div className=" overflow-hidden ">
@@ -160,8 +155,7 @@ const PopularCourse = () => {
               <div>
                 <a
                   className=" cursor-pointer font-semibold tracking-wide inline-block leading-6 text-[20px]"
-                  href="#"
-                >
+                  href="#">
                   Grow Personal Financial Security Thinking & Principles
                 </a>
                 <div className=" flex items-center gap-9 pt-5">
@@ -190,7 +184,7 @@ const PopularCourse = () => {
           </div>
         </div>
 
-        <div className=" flex justify-center items-center">
+        <div className=" flex justify-center items-center item">
           <div className=" bg-slate-100 hover:bg-white hover:shadow-lg mainDiv h-auto p-3 group">
             <div className="">
               <div className=" overflow-hidden ">
@@ -236,8 +230,7 @@ const PopularCourse = () => {
               <div>
                 <a
                   className=" cursor-pointer font-semibold tracking-wide inline-block leading-6 text-[20px]"
-                  href="#"
-                >
+                  href="#">
                   The Complete Guide to Build RESTful API Application
                 </a>
                 <div className=" flex items-center gap-9 pt-5">
@@ -266,7 +259,7 @@ const PopularCourse = () => {
           </div>
         </div>
 
-        <div className=" flex justify-center items-center">
+        <div className=" flex justify-center items-center item">
           <div className=" bg-slate-100 hover:bg-white hover:shadow-lg mainDiv h-auto p-3 group">
             <div className="">
               <div className=" overflow-hidden ">
@@ -312,8 +305,7 @@ const PopularCourse = () => {
               <div>
                 <a
                   className=" cursor-pointer font-semibold tracking-wide inline-block leading-6 text-[20px]"
-                  href="#"
-                >
+                  href="#">
                   Competitive Strategy Law for Management Consultants
                 </a>
                 <div className=" flex items-center gap-9 pt-5">
@@ -342,7 +334,7 @@ const PopularCourse = () => {
           </div>
         </div>
 
-        <div className=" flex justify-center items-center">
+        <div className=" flex justify-center items-center item">
           <div className=" bg-slate-100 hover:bg-white hover:shadow-lg mainDiv h-auto p-3 group">
             <div className="">
               <div className=" overflow-hidden ">
@@ -388,8 +380,7 @@ const PopularCourse = () => {
               <div>
                 <a
                   className=" cursor-pointer font-semibold tracking-wide inline-block leading-6 text-[20px]"
-                  href="#"
-                >
+                  href="#">
                   Machine Learning A-Z : Hands-On Python and java
                 </a>
                 <div className=" flex items-center gap-9 pt-5">
@@ -418,7 +409,7 @@ const PopularCourse = () => {
           </div>
         </div>
 
-        <div className=" flex justify-center items-center">
+        <div className=" flex justify-center items-center item">
           <div className=" bg-slate-100 hover:bg-white hover:shadow-lg mainDiv h-auto p-3 group">
             <div className="">
               <div className=" overflow-hidden ">
@@ -464,8 +455,7 @@ const PopularCourse = () => {
               <div>
                 <a
                   className=" cursor-pointer font-semibold tracking-wide inline-block leading-6 text-[20px]"
-                  href="#"
-                >
+                  href="#">
                   Learning How To Write As A Professional Author
                 </a>
                 <div className=" flex items-center gap-9 pt-5">
@@ -496,10 +486,7 @@ const PopularCourse = () => {
       </div>
 
       <div className=" flex justify-center mb-3 mt-20">
-
-
-        <Link to={'/courses'}>
-
+        <Link to={"/courses"}>
           <button className=" bg-[#525fe1] hover:bg-[#070c44] px-8 py-4 flex items-center gap-3 rounded-md text-white font-semibold text-xl">
             View All Courses
             <BsArrowRight />

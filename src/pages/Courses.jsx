@@ -10,6 +10,9 @@ import {
   BsFillHeartFill,
 } from "react-icons/bs";
 import { IoNewspaperOutline } from "react-icons/io5";
+import './courses.css'
+
+
 import coursesData from "../components/coursesData.json";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -49,9 +52,9 @@ const Courses = () => {
           <Banner title1={"Courses"} />
         </section>
 
-        <div className=" flex flex-col justify-center mt-10">
+        <div className=" flex flex-col justify-center mx-5 mt-10">
           {/* search */}
-          <div className=" flex justify-between mx-28 mt-28">
+          <div className=" flex  justify-between items-center mt-28 search">
             <p className=" text-lg">
               Showing <span className=" font-bold">{currentPage}</span> Of{" "}
               <span className=" font-bold">{totalPages} </span> pages
@@ -73,14 +76,14 @@ const Courses = () => {
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-duration="1200"
-            className=" flex flex-wrap items-center justify-center gap-10 mt-10">
+            className=" flex flex-wrap items-center justify-center gap-10  mt-10 ">
             {currentItems.map((data) => (
               <div key={data.id}>
-                <div className=" flex justify-center items-center">
-                  <div className=" max-[760px]:w-[100%] bg-slate-100 hover:bg-white hover:shadow-lg w-[330px] h-auto p-3 group">
+                <div className=" flex justify-center items-center courses">
+                  <div className=" bg-slate-100 hover:bg-white hover:shadow-lg mainDiv h-auto p-3 group">
                     <div className="">
                       <div className=" overflow-hidden ">
-                        <div className=" max-[760px]:w-[100%]  w-[310px] transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
+                        <div className=" transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
                           <div className="  overflow-hidden relative">
                             <img
                               className=""
@@ -91,7 +94,7 @@ const Courses = () => {
                         </div>
                       </div>
                       <div className=" flex py-4 justify-between relative">
-                        <div className="  max-[760px]:top-[-400px] absolute flex gap-44 font-semibold pt-3 text-white top-[-230px] left-0">
+                        <div className="  max-[760px]:top-[-400px] pe-5 w-full invisible lg:visible absolute flex justify-between font-semibold pt-3 text-white top-[-230px] left-0">
                           <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                             <p className=" font-bold">
                               <BsClock />
