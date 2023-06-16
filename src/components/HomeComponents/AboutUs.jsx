@@ -64,13 +64,13 @@ const AboutUs = () => {
           </div>
 
           {/* right */}
-          <div
-            data-aos="fade-up"
-            data-aos-once="true"
-            data-aos-duration="1000"
-            className="w-full  min-[820px]:w-full   md:w-full   lg:w-1/2 overflow-hidden  ">
+          <div className="w-full  min-[820px]:w-full   md:w-full   lg:w-1/2 overflow-hidden  ">
             <div className="w-full   flex flex-col lg:gap-10 md:gap-8 gap-5 ">
-              <div className="  mb-3">
+              <div
+                data-aos="fade-up"
+                data-aos-once="true"
+                data-aos-duration="1000"
+                className="  mb-3">
                 <div>
                   <span className=" text-[#525FE1] ">ABOUT US</span>
                   <h1 className=" text-4xl font-bold tracking-[--h1-lineHeight] ">
@@ -79,12 +79,20 @@ const AboutUs = () => {
                 </div>
               </div>
 
-              <div className=" tracking-wide">
+              <div
+                data-aos="fade-up"
+                data-aos-once="true"
+                data-aos-duration="1300"
+                className=" tracking-wide">
                 Online learning has become increasingly popular in recent years,
                 offering a flexible and convenient way for individuals to pursue
                 education and training.
               </div>
-              <div className=" flex  items-center gap-5">
+              <div
+                data-aos="fade-up"
+                data-aos-once="true"
+                data-aos-duration="1400"
+                className=" flex  items-center gap-5">
                 <div className=" p-3 rounded-[100%] bg-[#F86F03] w-[50px]">
                   <SlBookOpen className=" text-2xl text-white" />
                 </div>
@@ -99,7 +107,11 @@ const AboutUs = () => {
                   </p>
                 </div>
               </div>
-              <div className=" flex  items-center gap-4">
+              <div
+                data-aos="fade-up"
+                data-aos-once="true"
+                data-aos-duration="1500"
+                className=" flex  items-center gap-4">
                 <div className=" p-3 rounded-[100%] bg-[#F86F03] w-[50px]">
                   <SlBookOpen className=" text-2xl text-white" />
                 </div>
@@ -113,7 +125,11 @@ const AboutUs = () => {
                   </p>
                 </div>
               </div>
-              <div className="">
+              <div
+                data-aos="fade-up"
+                data-aos-once="true"
+                data-aos-duration="1700"
+                className="">
                 <Link to={"/aboutUs"}>
                   <button className="rounded px-12 py-5 text-white flex justify-center items-center  bg-[--color-primary] hover:bg-[--color-dark]">
                     <p> Know About Us</p>
