@@ -28,8 +28,8 @@ const Testimonial = () => {
             what our student says
           </h2>
         </div>
-        <div className=" flex my-20 ms-10 items-center flex-wrap carouselTop relative ">
-          <div className=" relative">
+        <div className=" flex my-20 mx-3 items-center flex-wrap carouselTop relative ">
+          <div className=" relative carouselImage">
             <img
             data-aos="fade-up"
             data-aos-duration="1200"
@@ -73,7 +73,7 @@ const Testimonial = () => {
                     src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/testimonial-4-quote.png"
                     alt=""
                   />
-                  <p className=" text-[24px] text-gray-500">
+                  <p className=" text-[24px] text-gray-500 innerText">
                     " I had an amazing experience at EduVibe. The instructors
                     were knowledgeable and passionate, and the coursework was
                     challenging and relevant to my future career. I feel
@@ -101,7 +101,7 @@ const Testimonial = () => {
                     src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/testimonial-4-quote.png"
                     alt=""
                   />
-                  <p className=" text-[24px] text-gray-500">
+                  <p className=" text-[24px] text-gray-500 innerText">
                     " The online courses at EduVibe were the perfect fit for my
                     busy schedule. I was able to work full-time while pursuing
                     my degree, thanks to the flexibility and convenience of
@@ -129,7 +129,7 @@ const Testimonial = () => {
                     src="https://eduvibe.devsvibe.com/main/wp-content/themes/eduvibe/assets/images/testimonial-4-quote.png"
                     alt=""
                   />
-                  <p className=" text-[24px] text-gray-500">
+                  <p className=" text-[24px] text-gray-500 innerText">
                     " Attending EduVibe School of Business was one of the best
                     decisions I've ever made. The curriculum was practical and
                     industry-focused, and I was able to apply what I learned in

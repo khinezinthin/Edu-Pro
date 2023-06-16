@@ -93,7 +93,7 @@ const Courses = () => {
                         </div>
                       </div>
                       <div className=" flex py-4 justify-between relative">
-                        <div className="  max-[760px]:top-[-400px] pe-5 w-full invisible lg:visible absolute flex justify-between font-semibold pt-3 text-white top-[-230px] left-0 whitespace-nowrap">
+                        <div className="  max-[350px]:top-[-200px] pe-5 w-full absolute flex justify-between font-semibold pt-3 text-white top-[-230px] left-0 whitespace-nowrap">
                           <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                             <p className=" font-bold">
                               <BsClock />

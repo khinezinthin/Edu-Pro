@@ -49,7 +49,7 @@ const PopularCourse = () => {
                 </div>
               </div>
               <div className=" flex py-4 justify-between relative">
-                <div className=" absolute flex gap-60 font-semibold pt-3 invisible lg:visible text-white top-[-230px] left-0">
+                <div className=" absolute flex gap-60 font-semibold pt-3 invisible md:visible lg:visible  text-white top-[-230px] left-0">
                   <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                     <p className=" font-bold">
                       <BsClock />
@@ -124,7 +124,7 @@ const PopularCourse = () => {
                 </div>
               </div>
               <div className=" flex py-4 justify-between relative">
-                <div className=" absolute flex gap-60 invisible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
+                <div className=" absolute flex gap-60 invisible md:visible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
                   <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                     <p className=" font-bold">
                       <BsClock />
@@ -199,7 +199,7 @@ const PopularCourse = () => {
                 </div>
               </div>
               <div className=" flex py-4 justify-between relative">
-                <div className=" absolute flex gap-60 invisible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
+                <div className=" absolute flex gap-60 invisible md:visible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
                   <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                     <p className=" font-bold">
                       <BsClock />
@@ -274,7 +274,7 @@ const PopularCourse = () => {
                 </div>
               </div>
               <div className=" flex py-4 justify-between relative">
-                <div className=" absolute flex gap-60 invisible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
+                <div className=" absolute flex gap-60 invisible md:visible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
                   <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                     <p className=" font-bold">
                       <BsClock />
@@ -349,7 +349,7 @@ const PopularCourse = () => {
                 </div>
               </div>
               <div className=" flex py-4 justify-between relative">
-                <div className=" absolute flex gap-60 invisible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
+                <div className=" absolute flex gap-60 invisible md:visible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
                   <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                     <p className=" font-bold">
                       <BsClock />
@@ -424,7 +424,7 @@ const PopularCourse = () => {
                 </div>
               </div>
               <div className=" flex py-4 justify-between relative">
-                <div className=" absolute flex gap-60 invisible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
+                <div className=" absolute flex gap-60 invisible md:visible lg:visible font-semibold pt-3 text-white top-[-230px] left-0">
                   <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                     <p className=" font-bold">
                       <BsClock />
