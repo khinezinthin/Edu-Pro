@@ -111,9 +111,9 @@ const FAQ = () => {
         data-aos="fade-up"
         data-aos-once="true"
         data-aos-duration="1000"
-        className=" lg:min-h-[900px] flex flex-col justify-center ">
-        <div className="   select-none flex justify-center w-full p-6 flex-col items-center ">
-          <div className=" flex justify-center w-full  py-20  flex-col items-center lg:gap-14 md:gap-6 gap-14">
+        className=" lg:min-h-[900px] flex flex-col justify-center  md:h-auto ">
+        <div className="   select-none flex justify-center w-full p-6    flex-col items-center ">
+          <div className=" flex justify-center w-full    flex-col items-center lg:gap-14 md:gap-6 gap-14">
             {/* title */}
             <div className="   w-full container flex justify-center items-center flex-col lg:gap-14 md:gap-6 gap-4">
               <div className=" flex flex-wrap gap-5 justify-center flex-col items-center">
