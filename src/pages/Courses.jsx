@@ -77,10 +77,10 @@ const Courses = () => {
             {currentItems.map((data) => (
               <div key={data.id}>
                 <div className=" flex justify-center items-center">
-                  <div className=" bg-slate-100 hover:bg-white hover:shadow-lg w-[330px] h-auto p-3 group">
+                  <div className=" max-[760px]:w-[100%] bg-slate-100 hover:bg-white hover:shadow-lg w-[330px] h-auto p-3 group">
                     <div className="">
                       <div className=" overflow-hidden ">
-                        <div className=" w-[310px] transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
+                        <div className=" max-[760px]:w-[100%]  w-[310px] transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
                           <div className="  overflow-hidden relative">
                             <img
                               className=""
@@ -91,12 +91,12 @@ const Courses = () => {
                         </div>
                       </div>
                       <div className=" flex py-4 justify-between relative">
-                        <div className=" absolute flex gap-44 font-semibold pt-3 text-white top-[-230px] left-0">
+                        <div className="  max-[760px]:top-[-400px] absolute flex gap-44 font-semibold pt-3 text-white top-[-230px] left-0">
                           <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                             <p className=" font-bold">
                               <BsClock />
                             </p>
-                            <p>{data.hour}</p>
+                            <p className=" whitespace-nowrap">{data.hour}</p>
                           </div>
                           <div className=" bg-slate-500 w-8 h-8 flex justify-center rounded-full ">
                             <button className=" text-lg ">
