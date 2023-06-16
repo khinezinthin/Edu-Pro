@@ -33,6 +33,13 @@
     position: static;
   }
 }
+@media (max-width: 350px) {
+  .rightSide {
+    margin-top: 70px;
+    width: 90%;
+    position: static;
+  }
+}
 
 . inster {
   display: flex;
@@ -46,5 +53,44 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+
+.star {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 600px) {
+  .star {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .iconName {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+  }
+}
+
+.item {
+  width: 330px;
+}
+@media (max-width: 500px) {
+  .item {
+    width: 360px;
+    margin-left: 2px; 
+    margin-right: 2px;
+  }
+}
+@media (max-width: 350px) {
+  .item {
+    width: 300px;
+    margin-left: 2px; 
+    margin-right: 2px;
   }
 }

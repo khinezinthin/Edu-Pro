@@ -8,6 +8,7 @@ import { AiOutlinePlus } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
 import { Link, NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
+import {BiSearch} from "react-icons/bi";
 
 const Navbar = ({ value, absolute }) => {
   const [opened, { open, close }] = useDisclosure(false);
@@ -91,9 +92,11 @@ const Navbar = ({ value, absolute }) => {
           <div className=" flex items-center justify-end w-3/5 lg:w-1/5 lg:gap-2 md:gap-2 gap-3 ">
             <div
               onClick={open}
+
               className="text-[--color-primary] lg:w-[48px] lg:h-[45.4px] md:px-4 md:py-4 px-3  py-2 cursor-pointer   rounded bg-white hover:bg-[--color-heading] searchHover shadow flex justify-center items-center flex-col"
               type="button">
               <BiSearch className="search text-[--color-primary] w-full h-full" />
+
             </div>
             <button
               onClick={openSidebar}

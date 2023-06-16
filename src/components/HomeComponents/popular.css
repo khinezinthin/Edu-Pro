@@ -18,3 +18,23 @@
       width: 420px; 
     }
   }
+
+  .item {
+    width: 380px;
+  }
+  @media (max-width: 500px) {
+    .item {
+      width: 360px;
+      margin-left: 2px; 
+      margin-right: 2px;
+    }
+  }
+  @media (max-width: 350px) {
+    .item {
+      width: 300px;
+      margin-left: 2px; 
+      margin-right: 2px;
+    }
+  }
+
+  

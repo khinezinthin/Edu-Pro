@@ -63,8 +63,8 @@ const CourseDetail = () => {
           data-aos-duration="1200"
           className=" mt-14 ms-16 flex flex-col gap-4 leftSide">
           {/* starfill & pfp icon & name  */}
-          <div className=" flex gap-16 items-center ">
-            <div className=" flex gap-3 items-center ">
+          <div className=" flex gap-16 items-center ms-4 ">
+            <div className=" flex gap-3 items-center iconName ">
               <img
                 className=" w-[34px] h-[34px] rounded-[100%]"
                 src={course[0].pfpImage}
@@ -74,7 +74,7 @@ const CourseDetail = () => {
                 By {course[0].name}
               </p>
             </div>
-            <div className=" flex gap-3 items-center">
+            <div className=" flex star gap-3 items-center">
               <div className=" flex gap-2">
                 <p className=" text-[#ffa41b]">
                   <BsStarFill />
@@ -305,20 +305,20 @@ const CourseDetail = () => {
       </div>
       {/* more courses  */}
       <div className=" my-10 mb-28">
-        <div className=" mt-24 mb-10 ms-20">
+        <div className=" mt-24 mb-10 flex flex-col items-center">
           <p className=" text-[16px] text-[#525fe1] font-bold">
             RELATED COURSES
           </p>
-          <p className=" text-[40px] text-[#231f40] font-bold">
+          <p className=" text-[40px] text-[#231f40] font-bold text-center">
             Courses You May Like
           </p>
         </div>
         <div className=" flex flex-wrap items-center justify-center gap-10">
-          <div className=" flex justify-center items-center">
-            <div className=" bg-slate-100 hover:bg-white hover:shadow-lg w-[330px] h-auto p-3 group">
+          <div className=" flex justify-center items-center item">
+            <div className=" bg-slate-100 hover:bg-white hover:shadow-lg h-auto p-3 group">
               <div className="">
                 <div className=" overflow-hidden ">
-                  <div className=" w-[310px] transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
+                  <div className=" transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
                     <div className="  overflow-hidden relative">
                       <img
                         className=""
@@ -329,12 +329,12 @@ const CourseDetail = () => {
                   </div>
                 </div>
                 <div className=" flex py-4 justify-between relative">
-                  <div className=" absolute flex gap-44 font-semibold pt-3 text-white top-[-230px] left-0">
+                  <div className=" max-[350px]:top-[-200px] pe-5 w-full whitespace-nowrap absolute flex justify-between font-semibold pt-3 text-white top-[-230px] left-0">
                     <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                       <p className=" font-bold">
                         <BsClock />
                       </p>
-                      <p> 15 Week</p>
+                      <p className=" whitespace-nowrap"> 15 Week</p>
                     </div>
                     <div className=" bg-slate-500 w-8 h-8 flex justify-center rounded-full ">
                       <button className=" text-lg ">
@@ -389,11 +389,11 @@ const CourseDetail = () => {
             </div>
           </div>
 
-          <div className=" flex justify-center items-center">
-            <div className=" bg-slate-100 hover:bg-white hover:shadow-lg w-[330px] h-auto p-3 group">
+          <div className=" flex justify-center items-center item">
+            <div className=" bg-slate-100 hover:bg-white hover:shadow-lg h-auto p-3 group">
               <div className="">
                 <div className=" overflow-hidden ">
-                  <div className=" w-[310px] transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
+                  <div className=" transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
                     <div className="  overflow-hidden relative">
                       <img
                         className=""
@@ -404,12 +404,12 @@ const CourseDetail = () => {
                   </div>
                 </div>
                 <div className=" flex py-4 justify-between relative">
-                  <div className=" absolute flex gap-44 font-semibold pt-3 text-white top-[-230px] left-0">
+                  <div className=" max-[350px]:top-[-200px] pe-5 w-full whitespace-nowrap absolute flex justify-between font-semibold pt-3 text-white top-[-230px] left-0">
                     <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                       <p className=" font-bold">
                         <BsClock />
                       </p>
-                      <p> 17 Week</p>
+                      <p className="whitespace-nowrap"> 17 Week</p>
                     </div>
                     <div className=" bg-slate-500 w-8 h-8 flex justify-center rounded-full ">
                       <button className=" text-lg ">
@@ -464,11 +464,11 @@ const CourseDetail = () => {
             </div>
           </div>
 
-          <div className=" flex justify-center items-center">
-            <div className=" bg-slate-100 hover:bg-white hover:shadow-lg w-[330px] h-auto p-3 group">
+          <div className=" flex justify-center items-center item">
+            <div className=" bg-slate-100 hover:bg-white hover:shadow-lg h-auto p-3 group">
               <div className="">
                 <div className=" overflow-hidden ">
-                  <div className=" w-[310px] transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
+                  <div className=" transition-transform duration-500 ease-in-out hover:transform-gpu group-hover:scale-110 ">
                     <div className="  overflow-hidden relative">
                       <img
                         className=""
@@ -479,12 +479,12 @@ const CourseDetail = () => {
                   </div>
                 </div>
                 <div className=" flex py-4 justify-between relative">
-                  <div className=" absolute flex gap-44 font-semibold pt-3 text-white top-[-230px] left-0">
+                  <div className=" max-[350px]:top-[-200px] pe-5 w-full whitespace-nowrap absolute flex justify-between font-semibold pt-3 text-white top-[-230px] left-0">
                     <div className=" static flex items-center gap-1 bg-orange-500 px-3 py-1">
                       <p className=" font-bold">
                         <BsClock />
                       </p>
-                      <p> 20 Hour</p>
+                      <p className="whitespace-nowrap"> 20 Hour</p>
                     </div>
                     <div className=" bg-slate-500 w-8 h-8 flex justify-center rounded-full ">
                       <button className=" text-lg ">
