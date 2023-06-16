@@ -14,7 +14,7 @@ AOS.init();
 
 const AboutUs = () => {
   return (
-    <div className="lg:h-screen md:h-auto flex h-auto  lg:scale-[1.1] mt-24 mb-24">
+    <div className="lg:h-screen  md:h-auto flex h-auto  lg:scale-[1.1] mt-24 mb-24">
       <div className="   lg:m-auto md:m-auto mt-5 min-[820px]:my-5  min-[820px]:mx-2 flex   justify-center  lg:p-[15px]">
         <div className="w-full  flex flex-wrap  justify-center items-center max-w-[1200px] p-5 lg:p-0 md:p-7 ">
           {/* Left */}
