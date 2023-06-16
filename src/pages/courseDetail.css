@@ -61,3 +61,12 @@
     padding-right: 5px;
   }
 }
+
+
+@media (max-width: 400px) {
+  .iconName {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+  }
+}

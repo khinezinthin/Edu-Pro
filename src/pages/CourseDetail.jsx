@@ -64,7 +64,7 @@ const CourseDetail = () => {
           className=" mt-14 ms-16 flex flex-col gap-4 leftSide">
           {/* starfill & pfp icon & name  */}
           <div className=" flex gap-16 items-center ">
-            <div className=" flex gap-3 items-center ">
+            <div className=" flex gap-3 items-center iconName ">
               <img
                 className=" w-[34px] h-[34px] rounded-[100%]"
                 src={course[0].pfpImage}
