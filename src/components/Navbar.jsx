@@ -8,7 +8,6 @@ import { AiOutlinePlus } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
 import { Link, NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
-import {BiSearch} from "react-icons/bi";
 
 const Navbar = ({ value, absolute }) => {
   const [opened, { open, close }] = useDisclosure(false);
