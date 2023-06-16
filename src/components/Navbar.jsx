@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { CiSearch } from "react-icons/ci";
+import { BiSearch } from "react-icons/bi";
 import { useDisclosure } from "@mantine/hooks";
 import { Drawer, Modal, Group, Button, useMantineTheme } from "@mantine/core";
 import { GrClose } from "react-icons/gr";
 import { AiOutlinePlus } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
-import { Link,NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import {BiSearch} from "react-icons/bi";
 
@@ -33,7 +33,9 @@ const Navbar = ({ value, absolute }) => {
       <nav
         onClick={handleOutsideClick}
         className={` lg:px-16 max-lg:px-8 max-sm:px-5 animationNavbar py-8 z-50 top-0 left-0 right-0 fixed ${
-          absolute && stick < value ? "absolute bg-transparent " : "bg-white shadow-md "
+          absolute && stick < value
+            ? "absolute bg-transparent "
+            : "bg-white shadow-md "
         }`}>
         <div className="max-w-[1650px] sticky  items-center m-auto top-0 left-0  flex justify-between  ">
           <div className=" flex justify-start items-center  w-[150px] max-[350px]:w-[100px]">
@@ -71,9 +73,7 @@ const Navbar = ({ value, absolute }) => {
                 </NavLink>
               </li>
               <li className="nav-item underline-on-hover hover:text-[--color-primary]">
-                <NavLink
-                  to="/contactUS"
-                  className="nav-link NavComponents ">
+                <NavLink to="/contactUS" className="nav-link NavComponents ">
                   Contact Us
                 </NavLink>
               </li>
@@ -92,30 +92,25 @@ const Navbar = ({ value, absolute }) => {
           <div className=" flex items-center justify-end w-3/5 lg:w-1/5 lg:gap-2 md:gap-2 gap-3 ">
             <div
               onClick={open}
-              className="text-[--color-primary] lg:w-[48px] lg:h-[45.4px] md:px-4 md:py-4 px-3  py-2 cursor-pointer   rounded bg-white hover:bg-[--color-heading] searchHover shadow flex justify-center items-center flex-col duration-300"
+
+              className="text-[--color-primary] lg:w-[48px] lg:h-[45.4px] md:px-4 md:py-4 px-3  py-2 cursor-pointer   rounded bg-white hover:bg-[--color-heading] searchHover shadow flex justify-center items-center flex-col"
               type="button">
-              <BiSearch className="search text-black" />
-            </div>
-            <div className=" hidden md:block lg:block">
-              <Link to="/register">
-                <button
-                  className="px-3 py-3 rounded  bg-white text-[--color-black] shadow"
-                  type="button">
-                  <BiUser className=" text-[--color-primary]" />
-                </button>
-              </Link>
+              <BiSearch className="search text-[--color-primary] w-full h-full" />
+
             </div>
             <button
               onClick={openSidebar}
-              className="lg:hidden  md:px-4 md:py-4 px-3  py-2 rounded  bg-white text-[--color-black] shadow"
+              className="lg:hidden  md:px-4 md:py-4 px-3 searchHover  py-2 rounded hover:bg-[--color-heading]   bg-white text-[--color-black] shadow"
               type="button">
-              <GiHamburgerMenu className=" text-[--color-primary]" />
+              <GiHamburgerMenu className="search text-[--color-primary] " />
             </button>
-            <button
-              className="lg:hidden  md:hidden px-3  py-2 rounded  bg-white text-[--color-black] shadow"
-              type="button">
-              <BiUser className=" text-[--color-primary]" />
-            </button>
+            <Link to="/register">
+              <button
+                className=" lg:w-[48px] lg:h-[45.4px] md:px-4 searchHover md:py-4 px-3  py-2 cursor-pointer rounded hover:bg-[--color-heading]  bg-white text-[--color-black] shadow"
+                type="button">
+                <BiUser className="search text-[--color-primary] " />
+              </button>
+            </Link>
           </div>
         </div>
       </nav>
@@ -146,7 +141,7 @@ const Navbar = ({ value, absolute }) => {
             className=" w-[90%] py-2 outline-none text-lg"
             placeholder=" Search Here..."
           />
-          <CiSearch />
+          <BiSearch />
         </form>
       </Modal>
 
