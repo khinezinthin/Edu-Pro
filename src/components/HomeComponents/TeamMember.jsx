@@ -17,7 +17,7 @@ const TeamMember = () => {
         </div>
 
         <div className=' mt-10 flex justify-center items-center gap-8  max-lg:flex-wrap '  data-aos="fade-up" data-aos-duration="1600" data-aos-once="true" data-aos-delay="500" >
-            <div className='team-img-card relative duration-300 z-10 max-lg:w-[45%] max-[575px]:w-[95%]' >
+            <div className='team-img-card relative duration-300 z-10 max-lg:w-[45%] max-[575px]:w-[90%]' >
                     <img src="	https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/11/instructor-03-01-2.webp" alt="" className=' rounded w-full' />
 
                     <div className={`bg-[#fff] w-[100%] py-[25px] px-[30px] rounded absolute bottom-[-20px] transition-all duration-500 left-[32px] opacity-0 max-[720px]:w-[90%] max-[575px]:w-[94%] team-shadow`}>
@@ -35,7 +35,7 @@ const TeamMember = () => {
             </div>
 
 
-            <div className='team-img-card relative duration-300 max-lg:w-[45%] max-[575px]:w-[95%]' >
+            <div className='team-img-card relative duration-300 max-lg:w-[45%] max-[575px]:w-[90%]' >
                 <img src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/11/instructor-03-02-2.webp" alt="" className=' rounded w-full' />
 
                 <div className={`bg-[#fff] w-[100%] py-[25px] px-[30px] rounded absolute bottom-[-20px] transition-all duration-500   left-[32px] opacity-0 max-[720px]:w-[90%] max-[575px]:w-[94%] team-shadow`}>
@@ -52,7 +52,7 @@ const TeamMember = () => {
                 </div>
             </div>
 
-            <div className='team-img-card relative duration-300 max-lg:w-[45%] max-[575px]:w-[95%]' >
+            <div className='team-img-card relative duration-300 max-lg:w-[45%] max-[575px]:w-[90%]' >
                 <img src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/11/instructor-03-03-2.webp" alt="" className=' rounded w-full ' />
 
                 <div className={`bg-[#fff] w-[100%] py-[25px] px-[30px] rounded absolute bottom-[-20px] transition-all duration-500   left-[32px] opacity-0 max-[720px]:w-[90%] max-[575px]:w-[94%] team-shadow`}>
@@ -70,7 +70,7 @@ const TeamMember = () => {
             </div>
 
 
-            <div className='team-img-card relative duration-300 max-lg:w-[45%] max-[575px]:w-[95%] box-border' >
+            <div className='team-img-card relative duration-300 max-lg:w-[45%] max-[575px]:w-[90%] box-border' >
                     <img src="https://eduvibe.devsvibe.com/main/wp-content/uploads/2022/11/instructor-03-06-2.webp" alt="" className=' rounded w-full' />
 
                     <div className={`bg-[#fff] w-[100%] py-[25px] px-[30px] rounded absolute bottom-[-20px] transition-all duration-500 left-[32px] opacity-0 max-[720px]:w-[90%] max-[575px]:w-[94%] team-shadow`}>
