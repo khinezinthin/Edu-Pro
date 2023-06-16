@@ -165,43 +165,43 @@ const Navbar = ({ value, absolute }) => {
               <GrClose />
             </div>
           </li>
-          <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
+          <li className="  hover:text-[--color-primary] flex justify-between items-center">
             <NavLink to="/" className="nav-link NavComponents ">
               Home
             </NavLink>
             <AiOutlinePlus />
           </li>
-          <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
+          <li className="  hover:text-[--color-primary] flex justify-between items-center">
             <NavLink to="/aboutUs" className="nav-link NavComponents ">
               About
             </NavLink>
             <AiOutlinePlus />
           </li>
-          <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
+          <li className="  hover:text-[--color-primary] flex justify-between items-center">
             <NavLink to="/courses" className="nav-link NavComponents ">
               Courses
             </NavLink>
             <AiOutlinePlus />
           </li>
-          <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
+          <li className="  hover:text-[--color-primary] flex justify-between items-center">
             <NavLink to="/blog" className="nav-link NavComponents ">
               Blogs
             </NavLink>
             <AiOutlinePlus />
           </li>
-          <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
+          <li className="  hover:text-[--color-primary] flex justify-between items-center">
             <NavLink to="/contactUS" className="nav-link NavComponents ">
               Contact Us
             </NavLink>
             <AiOutlinePlus />
           </li>
-          <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
+          <li className="  hover:text-[--color-primary] flex justify-between items-center">
             <NavLink to="/pricing" className="nav-link NavComponents ">
               Pricing
             </NavLink>
             <AiOutlinePlus />
           </li>
-          <li className=" underline-on-hover hover:text-[--color-primary] flex justify-between items-center">
+          <li className="  hover:text-[--color-primary] flex justify-between items-center">
             <NavLink to="/FAQ" className="nav-link NavComponents ">
               FAQ
             </NavLink>
