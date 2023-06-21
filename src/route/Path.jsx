@@ -16,11 +16,13 @@ import BlogDetails from "../pages/BlogDetails";
 
 import Blog from "../pages/Blog";
 import FAQ from "../components/FAQ/FAQ";
+import ScrollTop from "../components/ScrollTop";
 
 const Path = () => {
   return (
     <div>
       <BrowserRouter>
+      <ScrollTop/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutUs" element={<AboutUs />} />
