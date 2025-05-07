@@ -27,7 +27,7 @@ const AboutUs = () => {
         </section>
 
         <section>
-            <FreeWorkShop/>
+            {/* <FreeWorkShop/> */}
         </section>
 
         <section>
